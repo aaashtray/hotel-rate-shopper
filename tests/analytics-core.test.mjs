@@ -1,0 +1,42 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+import test from 'node:test';
+const source=fs.readFileSync(new URL('../src/rate_shopper/reporting/analytics-core.js',import.meta.url),'utf8');
+const {median,summarizeRegion,hotelMapKey,statisticRows}=vm.runInNewContext(source+';({median,summarizeRegion,hotelMapKey,statisticRows})');
+// Synthetic cases: coverage gaps must never become a zero-price advantage.
+test('missing comparisons stay missing; an observed zero is a tie',()=>{
+  assert.equal(median([null,undefined,NaN,Infinity]),null);
+  assert.equal(median([null,0]),0);
+  assert.equal(summarizeRegion([],[]).status,'empty');
+  assert.equal(summarizeRegion([{id:'a'}],[{hotel_id:'a',percent_gap:null}]).status,'excluded');
+  assert.equal(summarizeRegion([{id:'a'}],[{hotel_id:'a',percent_gap:'0',outcome:'tie'}]).status,'tie');
+});
+test('each hotel has equal weight regardless of competitor coverage',()=>{
+  const rows=[1,2,3].map(()=>({hotel_id:'a',percent_gap:'10',outcome:'loss'}));
+  rows.push({hotel_id:'b',percent_gap:'-30',outcome:'win'});
+  const s=summarizeRegion([{id:'a'},{id:'b'}],rows);
+  assert.equal(s.gap,-10);assert.equal(s.comparedHotels,2);assert.equal(s.pairs,4);
+  assert.equal(s.status,'win');
+  assert.equal(summarizeRegion([{id:'a'}],rows).gap,10);
+});
+test('Russian cities are separate from oblasts and Sochi maps to Krasnodar',()=>{
+  assert.equal(hotelMapKey({country:'Россия',geo:'Москва'},'russia'),'RU-MOW');
+  assert.equal(hotelMapKey({country:'Россия',geo:'Санкт-Петербург'},'russia'),'RU-SPE');
+  assert.equal(hotelMapKey({country:'Россия',geo:'Сочи'},'russia'),'RU-KDA');
+  assert.equal(hotelMapKey({country:'Турция'},'russia'),undefined);
+  assert.equal(hotelMapKey({country:'Мальдивы'},'world'),'MDV');
+  const maps=JSON.parse(fs.readFileSync(new URL('../src/rate_shopper/reporting/map-geometry.json',import.meta.url)));
+  assert.equal(maps.russia.regions.find(r=>r.id==='RU-MOW').name,'Москва');
+  assert.equal(maps.russia.regions.find(r=>r.id==='RU-SPE').name,'Санкт-Петербург');
+});
+test('switching price scopes uses the matching minima; strict mode clears unverified prices',()=>{
+  const base={hotel_id:'a',platform:'yandex_travel',reference_total:'100',competitor_total:'80',percent_gap:'25',outcome:'loss'};
+  const publicRow={...base,competitor_total:null,percent_gap:null,outcome:'excluded'};
+  const report={statistics:{rows:[publicRow],scopes:{all:{rows:[base]},public:{rows:[publicRow]}},verified_rows:[]}};
+  assert.equal(statisticRows(report,'all',false)[0].competitor_total,'80');
+  assert.equal(statisticRows(report,'public',false)[0].percent_gap,null);
+  const strict=statisticRows(report,'all',true)[0];
+  assert.equal(strict.reference_total,null);assert.equal(strict.competitor_total,null);
+  assert.equal(strict.outcome,'excluded');assert.equal(strict.reason,'unverified');
+});

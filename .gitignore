@@ -20,3 +20,5 @@ dist/
 /evidence/
 work/
 .DS_Store
+
+.map-cache/

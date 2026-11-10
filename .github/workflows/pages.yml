@@ -22,8 +22,8 @@ jobs:
       - uses: actions/checkout@v6
       - name: Validate public artifacts
         run: python3 scripts/validate-site.py
-      - name: Check tariff display rules
-        run: node --test tests/tariff-comparison.test.mjs
+      - name: Check tariff display and geographic statistics
+        run: node --test tests/*.test.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

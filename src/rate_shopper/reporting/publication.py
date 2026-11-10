@@ -16,7 +16,7 @@ PUBLIC_NOTE = (
 )
 ALL_PRICES_NOTE = (
     "Все собранные цены: публичные, личные, корпоративные и Пэй. Условия доступа указаны "
-    "у каждого тарифа. Статистика считает публичные цены. Это сохранённый срез."
+    "у каждого тарифа. В статистике можно выбрать типы цен. Это сохранённый срез."
 )
 URL_KEYS = {
     "checkin", "checkout", "checkIn", "checkOut", "check_in", "check_out",
@@ -50,6 +50,11 @@ def public_report(
         "scope": "all_collected_prices" if include_conditional else "public_only",
         "note": note,
     }
+    if not include_conditional and "scopes" in result["statistics"]:
+        result["statistics"]["scopes"] = {
+            "public": result["statistics"]["scopes"]["public"]
+        }
+        result["statistics"]["default_scope"] = "public"
     result["hotels"] = [
         {k: deepcopy(h[k]) for k in ("id", "name", "country", "geo", "stars")}
         for h in source["hotels"]
@@ -113,13 +118,22 @@ def public_report(
         comparable_pairs=sum(m["percent_gap"] is not None for m in result["matches"]),
         review_pairs=sum(m["manual_review_required"] for m in result["matches"]),
     )
-    # Displaying conditional prices must never let them into public-only statistics.
+    # Conditional statistics are separate; the public baseline and strict mode stay public.
     public_ids = {o["id"] for o in offers if o["access_type"] == "public"
                   and o["authorization_required"] is False and o["public_total"] is not None}
     for row in result["statistics"]["rows"] + result["statistics"]["verified_rows"]:
         for key in ("reference_offer_id", "competitor_offer_id"):
             if row[key] is not None and row[key] not in public_ids:
                 raise ValueError("Statistics reference a non-public offer")
+    for scope, statistics in result["statistics"].get("scopes", {}).items():
+        eligible = public_ids if scope == "public" else {
+            o["id"] for o in offers if scope == "all"
+            or (scope == "regular" and o["access_type"] not in {"bank", "corporate"})
+        }
+        for row in statistics["rows"]:
+            if any(row[k] is not None and row[k] not in eligible
+                   for k in ("reference_offer_id", "competitor_offer_id")):
+                raise ValueError(f"Statistics reference an ineligible offer for {scope}")
     result.update(status="PARTIAL_SUCCESS", collection_status="PARTIAL_SUCCESS",
                   notes=[note], rejected_captures=[], excluded_platforms={})
     return result

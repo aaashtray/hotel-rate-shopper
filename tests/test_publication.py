@@ -90,7 +90,7 @@ def test_explicit_all_prices_keeps_access_and_money_without_session_evidence() -
     assert result["publication"]["scope"] == "all_collected_prices"
 
 
-def test_all_prices_mode_still_rejects_conditional_statistics() -> None:
+def test_all_prices_mode_still_rejects_conditional_public_baseline() -> None:
     source = synthetic_report()
     source["statistics"]["rows"] = [
         dict(reference_offer_id="public", competitor_offer_id="private")
@@ -103,3 +103,30 @@ def test_public_mode_requires_a_public_total() -> None:
     source = synthetic_report()
     source["offers"][0].update(public_total=None, member_total="50")
     assert public_report(source)["offers"] == []
+
+
+def test_conditional_statistics_are_separate_and_removed_from_public_only_export() -> None:
+    source = synthetic_report()
+    source["offers"][0]["member_total"] = None
+    source["offers"][1].update(room_name_raw="Synthetic corporate room", public_total=None,
+                               member_total="85.50")
+    source["statistics"].update(default_scope="all", scopes={
+        "all": {"rows": [dict(reference_offer_id="public", competitor_offer_id="private")]},
+        "public": {"rows": []},
+    })
+    all_prices = public_report(source, include_conditional=True)
+    assert all_prices["statistics"]["scopes"]["all"]["rows"][0]["competitor_offer_id"] == "private"
+    assert "PRIVATE_SENTINEL" not in json.dumps(all_prices)
+    public = public_report(source)
+    assert set(public["statistics"]["scopes"]) == {"public"}
+    assert public["statistics"]["default_scope"] == "public"
+    assert "PRIVATE_SENTINEL" not in json.dumps(public)
+
+
+def test_regular_statistics_reject_corporate_references() -> None:
+    source = synthetic_report()
+    source["statistics"]["scopes"] = {
+        "regular": {"rows": [dict(reference_offer_id="public", competitor_offer_id="private")]}
+    }
+    with pytest.raises(ValueError, match="ineligible offer for regular"):
+        public_report(source, include_conditional=True)

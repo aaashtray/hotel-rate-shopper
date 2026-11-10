@@ -12,7 +12,7 @@ from rate_shopper.domain.models import Offer, Platform, Scenario, Status
 from rate_shopper.extraction.browser import capture_status, extract
 from rate_shopper.matching.rules import match
 from rate_shopper.quality.gates import issues
-from rate_shopper.reporting.statistics import preliminary_statistics, verified_statistics
+from rate_shopper.reporting.statistics import statistics_bundle
 from rate_shopper.storage.history import save_run
 
 STATUS_REASONS = {
@@ -189,8 +189,7 @@ def write_batch(
             "Налоги и точное время отмены не подтверждены для большинства тарифов.",
         ],
     }
-    report["statistics"] = preliminary_statistics(offers, config, observations)
-    report["statistics"]["verified_rows"] = verified_statistics(offers, matches)
+    report["statistics"] = statistics_bundle(offers, config, observations, matches)
     seed_path = config_path.with_name("registration-seeds.json")
     report["registration_references"] = (
         json.loads(seed_path.read_text()) if seed_path.exists() else []

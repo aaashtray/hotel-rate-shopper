@@ -7,7 +7,12 @@ import pytest
 
 from rate_shopper.domain.capture import BatchConfig, HotelTarget
 from rate_shopper.domain.models import Fixture, Offer, Platform
-from rate_shopper.reporting.statistics import preliminary_statistics, verified_statistics
+from rate_shopper.reporting.statistics import (
+    preliminary_statistics,
+    statistic_price,
+    statistics_bundle,
+    verified_statistics,
+)
 
 FIXTURE = Fixture.model_validate_json(
     (Path(__file__).parent / "fixtures/synthetic/reference.json").read_bytes()
@@ -81,3 +86,36 @@ def test_equal_prices_are_ties_and_cheaper_otello_is_negative() -> None:
     r = row([A, B.model_copy(update={"public_total": Decimal("60000")})])
     assert r["percent_gap"] == "-50.00"
     assert r["outcome"] == "win"
+
+
+def test_scopes_include_conditional_prices_only_when_selected() -> None:
+    personal = B.model_copy(update={"id": "personal", "public_total": None,
+                                    "member_total": Decimal("90"),
+                                    "access_type": "personal", "authorization_required": True})
+    bank = B.model_copy(update={"id": "bank", "public_total": None,
+                                "bank_product_total": Decimal("80"), "access_type": "bank"})
+    corporate = B.model_copy(update={"id": "corporate", "public_total": None,
+                                     "member_total": Decimal("70"), "access_type": "corporate"})
+    result = statistics_bundle([A, B, personal, bank, corporate], CONFIG, [], [])
+    assert result["rows"][0]["competitor_offer_id"] == B.id
+    assert result["scopes"]["all"]["rows"][0]["competitor_total"] == "70"
+    assert result["scopes"]["all"]["rows"][0]["competitor_access"] == "corporate"
+    assert result["scopes"]["regular"]["rows"][0]["competitor_offer_id"] == "personal"
+    assert result["verified_rows"] == []
+
+
+def test_conditional_price_uses_its_own_field_and_does_not_use_crossed_out_price() -> None:
+    bank = B.model_copy(update={"access_type": "bank", "public_total": Decimal("1"),
+                                "bank_product_total": Decimal("80"),
+                                "crossed_out_total": Decimal("200")})
+    assert statistic_price(bank, "all") == Decimal("80")
+    assert statistic_price(bank, "regular") is None
+    assert statistic_price(bank.model_copy(update={"bank_product_total": None}), "all") is None
+
+
+def test_conditional_mode_preserves_fee_and_identity_exclusions() -> None:
+    personal = B.model_copy(update={"public_total": None, "member_total": Decimal("1"),
+                                    "access_type": "personal", "taxes_included": False})
+    r = preliminary_statistics([A, personal], CONFIG, [], price_scope="all")["rows"][0]
+    assert r["reason"] == "separate_fees"
+    assert r["percent_gap"] is None

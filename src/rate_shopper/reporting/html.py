@@ -6,10 +6,20 @@ from typing import Any
 
 
 def write_html(report: dict[str, Any], output: Path) -> None:
-    template = Path(__file__).with_name("dashboard.html").read_text()
-    template = template.replace("__TARIFF_COMPARISON_JS__", Path(__file__).with_name(
-        "tariff-comparison.js"
-    ).read_text())
+    root = Path(__file__).parent
+    def expand(template: str) -> str:
+        # Recursive substitution keeps each delivered HTML autonomous and offline.
+        for token, filename in (
+            ("__ANALYTICS_JS__", "analytics.js"), ("__FILTER_UI_JS__", "filter-ui.js"),
+            ("__TARIFF_COMPARISON_JS__", "tariff-comparison.js"),
+            ("__ANALYTICS_CORE_JS__", "analytics-core.js"), ("__MAP_JS__", "maps.js"),
+            ("__LAYOUT_CSS__", "layout.css"), ("__MAP_CSS__", "maps.css"),
+            ("__MAP_DATA__", "map-geometry.json"),
+        ):
+            if token in template:
+                template = template.replace(token, (root / filename).read_text())
+        return template
+    template = expand((root / "dashboard.html").read_text())
     data = json.dumps(report, ensure_ascii=False).replace("<", "\\u003c")
     html = template.replace("__REPORT_DATA__", data)
     (output / "index.html").write_text(html)
@@ -28,12 +38,12 @@ def write_html(report: dict[str, Any], output: Path) -> None:
                 "data:font/ttf;base64," + base64.b64encode(font.read_bytes()).decode("ascii"),
             )
     (output / "hotel-interface-otello.html").write_text(html)
-    statistics = Path(__file__).with_name("statistics.html").read_text().replace(
-        "__REPORT_DATA__", data
-    )
-    for font in assets.glob("*.ttf"):
-        statistics = statistics.replace(
-            f"assets/{font.name}",
-            "data:font/ttf;base64," + base64.b64encode(font.read_bytes()).decode("ascii"),
-        )
-    (output / "hotel-statistics-otello.html").write_text(statistics)
+    for source, destination in (("statistics.html", "hotel-statistics-otello.html"),
+                                ("maps.html", "hotel-map-otello.html")):
+        page = expand((root / source).read_text()).replace("__REPORT_DATA__", data)
+        for font in assets.glob("*.ttf"):
+            page = page.replace(
+                f"assets/{font.name}",
+                "data:font/ttf;base64," + base64.b64encode(font.read_bytes()).decode("ascii"),
+            )
+        (output / destination).write_text(page)
