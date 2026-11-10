@@ -1,0 +1,553 @@
+{
+  "hotels": [
+    {
+      "id": "savoy",
+      "name": "Савой",
+      "aliases": [
+        "Савой"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4504127908372217?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-savoy-613324124/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=140158000&hotelId=36145778000&refreshAttempt=2",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid7573372/savoy_hotel/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/savoi/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/4504127908372217?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "cosmos",
+      "name": "Cosmos Москва ВДНХ Отель",
+      "aliases": [
+        "Cosmos"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4504127908384638?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/cosmos-moscow-vdnkh-hotel-612653164/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=140158000&hotelId=36144314000&refreshAttempt=1",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid7466678/cosmos_hotel/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/cosmos-moskva-vdnkh-otel/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/4504127908384638?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "stella",
+      "name": "Stella di Mosca by Bvlgari Hotels",
+      "aliases": [
+        "Stella"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001076929912?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/stella-di-mosca-1595961113/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=140158000&hotelId=8962508131000&refreshAttempt=1",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid11196975/hotel_stella_di_mosca/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/stella-di-mosca/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001076929912?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "maidens",
+      "name": "Maidens Hotel Moscow",
+      "aliases": [
+        "Maidens"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001088806149?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/maidens-hotel-moscow-1754254506/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=140158000&hotelId=9708481083000&refreshAttempt=1",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid13100159/hotel_maidens_hotel/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/maidens/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001088806149?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "vega",
+      "name": "Вега Измайлово",
+      "aliases": [
+        "Вега"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4504127908375254?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/vega-izmaylovo-614070993/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=140158000&hotelId=36137725000&refreshAttempt=1",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid7467768/best_western_vega_hotel/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/vega-izmailovo/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/4504127908375254?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "sunflower",
+      "name": "Sunflower Avenue by Zont Hotel Group",
+      "aliases": [
+        "Sunflower"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001035613298?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/sunflower-avenyu-otel-moskva-613316851/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=140158000&hotelId=1049750398000&refreshAttempt=1",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid8873685/sunflower_avenue_hotel/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/sunflower-aveniu-otel-moskva-by-zont-hotel-group/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001035613298?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "beta",
+      "name": "Бета",
+      "aliases": [
+        "Бета"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4504127908369718?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/izmaylovo-beta-612653393/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=140158000&hotelId=1068130451000&refreshAttempt=1",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid7819740/otel_izmailovo_beta/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/beta-izmailovo/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/4504127908369718?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "yes",
+      "name": "YES Botanica",
+      "aliases": [
+        "Botanica"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001051993277?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/apart-otel-ye-s-botanica-626682245/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=140158000&hotelId=5968136805000&refreshAttempt=3",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid9988912/yes_botanica_aparthotel/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/yes-botanika/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001051993277?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "safmar",
+      "name": "Сафмар Грандъ",
+      "aliases": [
+        "Сафмар"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4504127908367336?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/safmar-grand-moskva-byvshiy-marriott-grand-614071120/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=140158000&hotelId=602064874000&refreshAttempt=1",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid11231733/safmar_grand_moscow_exmarriott_grand/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/safmar-grand-moskva/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/4504127908367336?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "discovery",
+      "name": "Discovery",
+      "aliases": [
+        "Discovery"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001066226619?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid10159583/dvizhenie_aparthotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/apart-otel-discovery-1102256295/"
+      },
+      "country": "Россия",
+      "geo": "Москва",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001066226619?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "geo-0",
+      "name": "Bandos Maldives",
+      "aliases": [
+        "Bandos Maldives"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217098360?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/bandos-maldives-1115979417/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=235527856000&hotelId=238551924000&refreshAttempt=1",
+        "ostrovok": "https://ostrovok.ru/hotel/maldives/bandos_island/mid7404020/bandos_maldives_5/"
+      },
+      "country": "Мальдивы",
+      "geo": "Мальдивы",
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217098360?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "location_aliases": [
+        "Бандос"
+      ]
+    },
+    {
+      "id": "geo-1",
+      "name": "Отель Dhangethi Inn",
+      "aliases": [
+        "Отель Dhangethi Inn"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217621640?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-dhangethi-inn-1843136514/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=7052312185000&hotelId=10266194107000&refreshAttempt=1",
+        "ostrovok": "https://ostrovok.ru/hotel/maldives/alif_dhaalu_atoll/mid9931777/dhangethi_inn/"
+      },
+      "country": "Мальдивы",
+      "geo": "Мальдивы",
+      "stars": 2,
+      "stars_source": "https://otello.ru/hotel/70358702217621640?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "address_tokens": [
+        "Tokyo Villa"
+      ],
+      "location_aliases": [
+        "Алиф-Дхаалу"
+      ]
+    },
+    {
+      "id": "geo-2",
+      "name": "Villa Nautica Paradise Island Resort",
+      "aliases": [
+        "Villa Nautica Paradise Island Resort",
+        "Villa Nautica at Paradise Island",
+        "Villa Nautica Paradise Island"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216554780?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/maldives/lankanfinolhu/mid9260224/paradise_island_resort_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/kurortnyy-otel-villa-nautica-at-paradise-island-1102215698/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/maldives/villa-nautica-paradise-island/"
+      },
+      "country": "Мальдивы",
+      "geo": "Мальдивы",
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216554780?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "location_aliases": [
+        "Ланканфинолу"
+      ]
+    },
+    {
+      "id": "geo-3",
+      "name": "Karaa Village",
+      "aliases": [
+        "Karaa Village"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217024392?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/maldives/thoddoo/mid9004718/karaa_village/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/karaa-village-1130917165/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/maldives/karaa-village/"
+      },
+      "country": "Мальдивы",
+      "geo": "Мальдивы",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702217024392?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "location_aliases": [
+        "Тодду"
+      ]
+    },
+    {
+      "id": "geo-4",
+      "name": "Xanadu Beach Resort",
+      "aliases": [
+        "Xanadu Beach Resort"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702215824625?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/thailand/chon_buri/mid7769053/xanadu_beach_resort/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/xanadu-beach-resort-1724966315/"
+      },
+      "country": "Таиланд",
+      "geo": "Таиланд",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702215824625?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "location_aliases": [
+        "Чонбури"
+      ]
+    },
+    {
+      "id": "geo-5",
+      "name": "FX Hotel Pattaya",
+      "aliases": [
+        "FX Hotel Pattaya"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702215810711?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/thailand/pattaya/mid6532550/the_fourth_pratumnak/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/fx-hotel-pattaya-1115974827/"
+      },
+      "country": "Таиланд",
+      "geo": "Таиланд",
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702215810711?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "location_aliases": [
+        "Паттайя",
+        "Паттайе"
+      ]
+    },
+    {
+      "id": "geo-6",
+      "name": "Phuket Island View",
+      "aliases": [
+        "Phuket Island View"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702215840979?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/thailand/phuket/mid7594020/phuket_island_view_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/phuket-island-view-hotel-614082413/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/thailand/phuket-island-view-hotel/"
+      },
+      "country": "Таиланд",
+      "geo": "Таиланд",
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702215840979?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "location_aliases": [
+        "Пхукет"
+      ]
+    },
+    {
+      "id": "geo-7",
+      "name": "Dom Boutique Hotel",
+      "aliases": [
+        "Dom Boutique Hotel",
+        "Дом Бутик Отель"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001023116000?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid6988404/dom_boutique_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-dom-boutique-hotel-612664605/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/saint-petersburg/dom-butik-otel/"
+      },
+      "country": "Россия",
+      "geo": "Санкт-Петербург",
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001023116000?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "geo-8",
+      "name": "Yes Hoshimina",
+      "aliases": [
+        "Yes Hoshimina"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001007211894?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid9082658/yes_apartments/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/apart-otel-ye-s-hoshimina-1101606560/"
+      },
+      "country": "Россия",
+      "geo": "Санкт-Петербург",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001007211894?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "geo-9",
+      "name": "Отельбург на 5 углах",
+      "aliases": [
+        "Отельбург на 5 углах"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001097374987?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid13162192/kritik_otdykhaet_na_5_uglakh_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-kritik-otdyhaet-na-5-uglah-1900625832/"
+      },
+      "country": "Россия",
+      "geo": "Санкт-Петербург",
+      "stars": null,
+      "stars_source": null
+    },
+    {
+      "id": "geo-10",
+      "name": "Микс Отель Невский 47",
+      "aliases": [
+        "Микс Отель Невский 47",
+        "Микс Невский 47"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001050261471?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid9768643/mix_hotels_nevsky_47_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-mix-hotels-nevsky-47-632396847/"
+      },
+      "country": "Россия",
+      "geo": "Санкт-Петербург",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001050261471?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "geo-11",
+      "name": "Соло на Владимирской",
+      "aliases": [
+        "Соло на Владимирской"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001020633150?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid6336915/solo_na_bolshoi_moskovskoi_1/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/solo-na-vladimirskoy-ploshchadi-615567436/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/saint-petersburg/solo-na-vladimirskoi/"
+      },
+      "country": "Россия",
+      "geo": "Санкт-Петербург",
+      "stars": null,
+      "stars_source": null
+    },
+    {
+      "id": "geo-12",
+      "name": "Azimut",
+      "aliases": [
+        "Azimut"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001104780702?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid13429040/hotel_azimut_park_hotel_plyus_rezidens_sochi/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-park-otel-vinogradnaya-sochi-2964443845/"
+      },
+      "country": "Россия",
+      "geo": "Сочи",
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001104780702?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "geo-13",
+      "name": "Пушкин НеоЛит",
+      "aliases": [
+        "Пушкин НеоЛит",
+        "Апарт-отель Пушкин"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001063810187?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid10093508/apartotel_pushkin_neolit/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/apart-otel-pushkin-neolit-1102281095/"
+      },
+      "country": "Россия",
+      "geo": "Сочи",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001063810187?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "mapping_notes": {
+        "ozon_travel": "Адрес отличается: Отелло — Пирогова, 10/3; Ozon — 10 стр. 12. Требуется сверка по реестру."
+      }
+    },
+    {
+      "id": "geo-14",
+      "name": "Лиссабон НеоЛит 3*",
+      "aliases": [
+        "Лиссабон НеоЛит 3*",
+        "Лиссабон Неолит",
+        "Апарт-отель \"Лиссабон\""
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001069472339?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid10370458/lissabon_neolit_apart_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/apart-otel-lissabon-neolit-1102282290/"
+      },
+      "country": "Россия",
+      "geo": "Сочи",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001069472339?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "geo-15",
+      "name": "Mercure Sochi Centre",
+      "aliases": [
+        "Mercure Sochi Centre",
+        "Mercure Сочи Центр"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001006342128?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid8038812/mercure_sochi_centre/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mercure-sochi-tsentr-613308193/"
+      },
+      "country": "Россия",
+      "geo": "Сочи",
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001006342128?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "geo-16",
+      "name": "Pullman Sochi Centre",
+      "aliases": [
+        "Pullman Sochi Centre",
+        "Pullman Сочи Центр"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001006342148?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid8036142/hotel_pullman_sochi_centre_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/pullman-sochi-tsentr-612652938/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/sochi/pullman-sochi-tsentr/"
+      },
+      "country": "Россия",
+      "geo": "Сочи",
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001006342148?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "geo-17",
+      "name": "Miss Cleopatra Hotel",
+      "aliases": [
+        "Miss Cleopatra Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216389604?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/turkey/alanya/mid7848283/ozcan/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/miss-cleopatra-hotel-874656649/"
+      },
+      "country": "Турция",
+      "geo": "Аланья",
+      "stars": 2,
+      "stars_source": "https://otello.ru/hotel/70358702216389604?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "location_aliases": [
+        "Аланье"
+      ]
+    },
+    {
+      "id": "geo-18",
+      "name": "Kleopatra Atlas Hotel All Inclusive Adults Only",
+      "aliases": [
+        "Kleopatra Atlas Hotel All Inclusive Adults Only",
+        "Kleopatra Atlas Hotel - All Inclusive - Adults Only",
+        "Kleopatra Atlas Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217132603?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/turkey/alanya/mid6550640/kleopatra_atlas_hotel/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/alanya/kleopatra-atlas-hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/kleopatra-atlas-hotel-1102217839/"
+      },
+      "country": "Турция",
+      "geo": "Аланья",
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702217132603?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "location_aliases": [
+        "Аланье"
+      ]
+    },
+    {
+      "id": "geo-19",
+      "name": "Ergun Hotel",
+      "aliases": [
+        "Ergun Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217261496?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+        "ostrovok": "https://ostrovok.ru/hotel/turkey/alanya/mid6773362/ergun_hotel_2/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/antalya-antalya-tr/ergun-hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ergun-hotel-1102219699/"
+      },
+      "country": "Турция",
+      "geo": "Аланья",
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702217261496?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    }
+  ],
+  "platforms": [
+    "otello",
+    "ozon_travel",
+    "yandex_travel",
+    "ostrovok"
+  ],
+  "excluded_platforms": {}
+}

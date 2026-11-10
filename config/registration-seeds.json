@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Невский берег 122",
+    "registry": "ru_accommodation",
+    "country": "RU",
+    "registration_id": "С782026029186",
+    "source_url": "https://travel.yandex.ru/hotels/saint-petersburg/nevskii-bereg-122/",
+    "source_text": "ID указан пользователем в чате",
+    "verification_status": "user_supplied",
+    "checked_at": null,
+    "verification_note": "Страница источника вернула CAPTCHA; независимая проверка не выполнена"
+  }
+]
