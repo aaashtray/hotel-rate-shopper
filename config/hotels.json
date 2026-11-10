@@ -2061,6 +2061,1118 @@
         "otello": "https://otello.ru/hotel/70358702217333200",
         "ostrovok": "https://ostrovok.ru/hotel/morocco/casablanca/mid7766470/sofitel_casablanca_tour_blanche/"
       }
+    },
+    {
+      "id": "kazan-azimut-bauman",
+      "name": "AZIMUT Отель Бауман Казань",
+      "aliases": [
+        "AZIMUT",
+        "Azimut Бауман",
+        "АЗИМУТ Отель Бауман Казань",
+        "ibis Казань",
+        "Ибис Казань"
+      ],
+      "geo": "Казань",
+      "country": "Россия",
+      "location_aliases": [
+        "Казань",
+        "Казани",
+        "Kazan"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/2956015536643869",
+      "urls": {
+        "otello": "https://otello.ru/hotel/2956015536643869",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kazan/mid13113867/azimut_hotel_bauman_kazan/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-bauman-kazan-617473694/"
+      }
+    },
+    {
+      "id": "ekb-novotel",
+      "name": "Novotel Екатеринбург Центр",
+      "aliases": [
+        "Novotel",
+        "Новотель",
+        "Novotel Екатеринбург Центр"
+      ],
+      "geo": "Екатеринбург",
+      "country": "Россия",
+      "location_aliases": [
+        "Екатеринбург",
+        "Екатеринбурге",
+        "Ekaterinburg",
+        "Yekaterinburg"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/1267165676635107",
+      "urls": {
+        "otello": "https://otello.ru/hotel/1267165676635107",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/yekaterinburg/mid7404031/novotel_yekaterinburg_centre/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/novotel-ekaterinburg-tsentr-612652733/"
+      }
+    },
+    {
+      "id": "kaliningrad-ibis",
+      "name": "ibis Калининград Центр",
+      "aliases": [
+        "ibis",
+        "Ибис",
+        "ibis Калининград Центр"
+      ],
+      "geo": "Калининград",
+      "country": "Россия",
+      "location_aliases": [
+        "Калининград",
+        "Калининграде",
+        "Kaliningrad"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/5630028815505912",
+      "urls": {
+        "otello": "https://otello.ru/hotel/5630028815505912",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kaliningrad/mid7999515/hotel_ibis_kaliningrad_center/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-kaliningrad-tsentr-615524318/"
+      }
+    },
+    {
+      "id": "vladivostok-cosmos-smart",
+      "name": "Космос Смарт Владивосток",
+      "aliases": [
+        "Космос Смарт",
+        "Cosmos Smart",
+        "Астория",
+        "Astoria"
+      ],
+      "geo": "Владивосток",
+      "country": "Россия",
+      "location_aliases": [
+        "Владивосток",
+        "Владивостоке",
+        "Vladivostok"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001007491108",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001007491108",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/vladivostok/mid6304810/hotel_astoria_57/"
+      }
+    },
+    {
+      "id": "novosibirsk-azimut",
+      "name": "AZIMUT Отель Новосибирск",
+      "aliases": [
+        "AZIMUT",
+        "Азимут",
+        "AZIMUT Отель Сибирь",
+        "Азимут Сибирь"
+      ],
+      "geo": "Новосибирск",
+      "country": "Россия",
+      "location_aliases": [
+        "Новосибирск",
+        "Новосибирске",
+        "Novosibirsk"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/141265769361662",
+      "urls": {
+        "otello": "https://otello.ru/hotel/141265769361662",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/novosibirsk/mid7821624/azimut_hotel_sibir/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-novosibirsk-613329241/"
+      }
+    },
+    {
+      "id": "krasnoyarsk-ogni-eniseya",
+      "name": "Огни Енисея",
+      "aliases": [
+        "Огни Енисея",
+        "Ogni Eniseya"
+      ],
+      "geo": "Красноярск",
+      "country": "Россия",
+      "location_aliases": [
+        "Красноярск",
+        "Красноярске",
+        "Krasnoyarsk"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/985690699465451",
+      "urls": {
+        "otello": "https://otello.ru/hotel/985690699465451",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/krasnoyarsk/mid8043431/gostinitsa_ogni_eniseia/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ogni-eniseya-614073433/"
+      }
+    },
+    {
+      "id": "murmansk-cosmos",
+      "name": "Cosmos Мурманск Отель",
+      "aliases": [
+        "Cosmos",
+        "Космос",
+        "Park Inn Полярные Зори",
+        "Полярные зори"
+      ],
+      "geo": "Мурманск",
+      "country": "Россия",
+      "location_aliases": [
+        "Мурманск",
+        "Мурманске",
+        "Murmansk"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/13511327163090354",
+      "urls": {
+        "otello": "https://otello.ru/hotel/13511327163090354",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/murmansk/mid7405530/park_inn_poliarnie_zori_murmansk/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/cosmos-murmansk-hotel-612652898/"
+      }
+    },
+    {
+      "id": "irkutsk-angara",
+      "name": "Ангара",
+      "aliases": [
+        "Ангара",
+        "Angara Hotel"
+      ],
+      "geo": "Иркутск",
+      "country": "Россия",
+      "location_aliases": [
+        "Иркутск",
+        "Иркутске",
+        "Irkutsk"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/1548640652892450",
+      "urls": {
+        "otello": "https://otello.ru/hotel/1548640652892450",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/irkutsk/mid7806182/angara_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/angara-612654285/"
+      }
+    },
+    {
+      "id": "yaroslavl-alesha-popovich",
+      "name": "Алёша Попович Двор",
+      "aliases": [
+        "Алёша Попович",
+        "Алеша Попович",
+        "Алеша Попович Двор&Лукоморье"
+      ],
+      "geo": "Ярославль",
+      "country": "Россия",
+      "location_aliases": [
+        "Ярославль",
+        "Ярославле",
+        "Yaroslavl"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001031678646",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001031678646",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/yaroslavl/mid7773431/aljosha_popovich_dvor/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/alesha-popovich-dvor-612652807/"
+      }
+    },
+    {
+      "id": "nizhny-reddy",
+      "name": "Reddy",
+      "aliases": [
+        "Reddy",
+        "Рэдди",
+        "ibis Нижний Новгород",
+        "Ибис"
+      ],
+      "geo": "Нижний Новгород",
+      "country": "Россия",
+      "location_aliases": [
+        "Нижний Новгород",
+        "Нижнем Новгороде",
+        "Nizhniy Novgorod"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/2674540563356546",
+      "urls": {
+        "otello": "https://otello.ru/hotel/2674540563356546",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/nizhniy_novgorod/mid7806864/ibis_nizhny_novgorod/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-nizhniy-novgorod-615524805/"
+      }
+    },
+    {
+      "id": "ufa-hampton",
+      "name": "Hampton by Hilton Ufa",
+      "aliases": [
+        "Hampton",
+        "Хэмптон",
+        "Hampton by Hilton Ufa"
+      ],
+      "geo": "Уфа",
+      "country": "Россия",
+      "location_aliases": [
+        "Уфа",
+        "Уфе",
+        "Ufa"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001018632656",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001018632656",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/ufa/mid6790074/hampton_by_hilton_ufa/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hampton-by-hilton-ufa-612653582/"
+      }
+    },
+    {
+      "id": "perm-ural",
+      "name": "Урал",
+      "aliases": [
+        "Урал",
+        "Ural Hotel"
+      ],
+      "geo": "Пермь",
+      "country": "Россия",
+      "location_aliases": [
+        "Пермь",
+        "Перми",
+        "Perm"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/2252328094664801",
+      "urls": {
+        "otello": "https://otello.ru/hotel/2252328094664801",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/perm/mid7824278/gostinitsa_ural/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ural-616388428/"
+      }
+    },
+    {
+      "id": "tyumen-vostok",
+      "name": "Восток",
+      "aliases": [
+        "Восток",
+        "Отель-музей Восток",
+        "Vostok"
+      ],
+      "geo": "Тюмень",
+      "country": "Россия",
+      "location_aliases": [
+        "Тюмень",
+        "Тюмени",
+        "Tyumen"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/1830115629597642",
+      "urls": {
+        "otello": "https://otello.ru/hotel/1830115629597642",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/tyumen/mid7723793/otel_vostok_/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/vostok-613309132/"
+      }
+    },
+    {
+      "id": "chelyabinsk-markshtadt",
+      "name": "Маркштадт",
+      "aliases": [
+        "Маркштадт",
+        "Markshtadt",
+        "Markshtadt Hotel"
+      ],
+      "geo": "Челябинск",
+      "country": "Россия",
+      "location_aliases": [
+        "Челябинск",
+        "Челябинске",
+        "Chelyabinsk"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/2111590608178366",
+      "urls": {
+        "otello": "https://otello.ru/hotel/2111590608178366",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/chelyabinsk/mid7801993/markshtadt_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/markshtadt-614077448/"
+      }
+    },
+    {
+      "id": "omsk-turist",
+      "name": "Турист",
+      "aliases": [
+        "Турист",
+        "Турист Zont Hotel Group",
+        "Turist",
+        "Tourist",
+        "Турист ZONT Hotel Group",
+        "Tourist by ZONT Hotel Group"
+      ],
+      "geo": "Омск",
+      "country": "Россия",
+      "location_aliases": [
+        "Омск",
+        "Омске",
+        "Omsk"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/282003257694231",
+      "urls": {
+        "otello": "https://otello.ru/hotel/282003257694231",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/turist-614073048/",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/omsk/mid7781180/otel_turist_2/"
+      }
+    },
+    {
+      "id": "tomsk-bon-apart",
+      "name": "Бон Апарт",
+      "aliases": [
+        "Бон Апарт",
+        "Bon Apart",
+        "Бонапарт"
+      ],
+      "geo": "Томск",
+      "country": "Россия",
+      "location_aliases": [
+        "Томск",
+        "Томске",
+        "Tomsk"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/422740746058280",
+      "urls": {
+        "ostrovok": "https://ostrovok.ru/hotel/russia/tomsk/mid7742032/bon_apart/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/gostinichnyy-kompleks-bon-apart-614074538/",
+        "otello": "https://otello.ru/hotel/422740746058280"
+      }
+    },
+    {
+      "id": "kemerovo-kuzbass",
+      "name": "Кузбасс",
+      "aliases": [
+        "Кузбасс",
+        "Kuzbass"
+      ],
+      "geo": "Кемерово",
+      "country": "Россия",
+      "location_aliases": [
+        "Кемерово",
+        "Кемерове",
+        "Kemerovo"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/704215722754436",
+      "urls": {
+        "otello": "https://otello.ru/hotel/704215722754436",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kemerovo/mid7893331/kuzbass/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/kuzbass-614076603/"
+      }
+    },
+    {
+      "id": "barnaul-barnaul",
+      "name": "Барнаул",
+      "aliases": [
+        "Барнаул",
+        "Гостиница Барнаул",
+        "Barnaul Hotel"
+      ],
+      "geo": "Барнаул",
+      "country": "Россия",
+      "location_aliases": [
+        "Барнаул",
+        "Барнауле",
+        "Barnaul"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/563478234400350",
+      "urls": {
+        "otello": "https://otello.ru/hotel/563478234400350",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/barnaul/mid7614328/otel_barnaul/"
+      }
+    },
+    {
+      "id": "ulan-ude-buryatia",
+      "name": "Бурятия",
+      "aliases": [
+        "Бурятия",
+        "Buryatiya"
+      ],
+      "geo": "Улан-Удэ",
+      "country": "Россия",
+      "location_aliases": [
+        "Улан-Удэ",
+        "Улан Удэ",
+        "Ulan-Ude"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001033999436",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001033999436",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/ulan-ude/mid7787451/buryatiya_hotel/"
+      }
+    },
+    {
+      "id": "khabarovsk-azimut",
+      "name": "AZIMUT Сити Отель Хабаровск",
+      "aliases": [
+        "AZIMUT",
+        "Азимут",
+        "Верба",
+        "Verba"
+      ],
+      "geo": "Хабаровск",
+      "country": "Россия",
+      "location_aliases": [
+        "Хабаровск",
+        "Хабаровске",
+        "Khabarovsk"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001058705658",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001058705658",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/khabarovsk/mid8660468/verba/"
+      }
+    },
+    {
+      "id": "sakhalin-gagarin",
+      "name": "Гагарин",
+      "aliases": [
+        "Гагарин",
+        "Gagarin"
+      ],
+      "geo": "Южно-Сахалинск",
+      "country": "Россия",
+      "location_aliases": [
+        "Южно-Сахалинск",
+        "Южно-Сахалинске",
+        "Yuzhno-Sakhalinsk"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/12385427256247871",
+      "urls": {
+        "otello": "https://otello.ru/hotel/12385427256247871",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/yuzhno-sakhalinsk/mid7846126/otel_gagarin/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/gagarin-614077390/"
+      }
+    },
+    {
+      "id": "kamchatka-avacha",
+      "name": "Авача",
+      "aliases": [
+        "Авача",
+        "Avacha",
+        "Hotel Avacha"
+      ],
+      "geo": "Петропавловск-Камчатский",
+      "country": "Россия",
+      "location_aliases": [
+        "Петропавловск-Камчатский",
+        "Петропавловске-Камчатском",
+        "Petropavlovsk-Kamchatsky",
+        "Петропавловск-Камчатском"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001006446630",
+      "urls": {
+        "ostrovok": "https://ostrovok.ru/hotel/russia/petropavlovsk-kamchatsky/mid7786652/avacha/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/avacha-613327038/",
+        "otello": "https://otello.ru/hotel/70000001006446630"
+      }
+    },
+    {
+      "id": "petrozavodsk-fregat",
+      "name": "Фрегат",
+      "aliases": [
+        "Фрегат",
+        "Fregat"
+      ],
+      "geo": "Петрозаводск",
+      "country": "Россия",
+      "location_aliases": [
+        "Петрозаводск",
+        "Петрозаводске",
+        "Petrozavodsk"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/11259528349523135",
+      "urls": {
+        "otello": "https://otello.ru/hotel/11259528349523135",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/petrozavodsk/mid7734613/fregat_hotel_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/fregat-613312369/"
+      }
+    },
+    {
+      "id": "tula-armenia",
+      "name": "Армения",
+      "aliases": [
+        "Армения",
+        "Armenia",
+        "Armeniya"
+      ],
+      "geo": "Тула",
+      "country": "Россия",
+      "location_aliases": [
+        "Тула",
+        "Туле",
+        "Tula"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/5067077861769303",
+      "urls": {
+        "otello": "https://otello.ru/hotel/5067077861769303",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/tula/mid7724593/armeniya/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/armeniya-612652912/"
+      }
+    },
+    {
+      "id": "vladimir-amaks-golden",
+      "name": "АМАКС Золотое кольцо",
+      "aliases": [
+        "АМАКС Золотое кольцо",
+        "Amaks Golden Ring",
+        "AMAKS",
+        "АМАКС"
+      ],
+      "geo": "Владимир",
+      "country": "Россия",
+      "location_aliases": [
+        "Владимир",
+        "Владимире",
+        "Vladimir"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/8304040093942168",
+      "urls": {
+        "otello": "https://otello.ru/hotel/8304040093942168",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/vladimir/mid7810179/amaks_golden_ring_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/amaks-zolotoe-koltso-612653381/"
+      }
+    },
+    {
+      "id": "ibis_baku_city",
+      "name": "ibis Baku City",
+      "aliases": [
+        "ibis Baku City",
+        "İbis",
+        "Ibis"
+      ],
+      "country": "Азербайджан",
+      "geo": "Баку",
+      "location_aliases": [
+        "Baku",
+        "Баку"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001043782501",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001043782501",
+        "ostrovok": "https://ostrovok.ru/hotel/azerbaijan/baku/mid9751149/hotel_ibis_baku_city/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-ibis-baku-city-1102228570/"
+      }
+    },
+    {
+      "id": "ibis_yerevan_center",
+      "name": "ibis Yerevan Center",
+      "aliases": [
+        "ibis Yerevan Center",
+        "Ибис Ереван Центр"
+      ],
+      "country": "Армения",
+      "geo": "Ереван",
+      "location_aliases": [
+        "Yerevan",
+        "Erevan",
+        "Ереване"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216029571",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216029571",
+        "ostrovok": "https://ostrovok.ru/hotel/armenia/yerevan/mid8680701/ibis_yerevan_center/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-yerevan-center-1101491485/"
+      }
+    },
+    {
+      "id": "mercure_almaty",
+      "name": "Mercure Almaty City Center",
+      "aliases": [
+        "Mercure Almaty City Center",
+        "Меркюр Алматы Сити Центр"
+      ],
+      "country": "Казахстан",
+      "geo": "Алматы",
+      "location_aliases": [
+        "Almaty",
+        "Almatyi",
+        "Алматы"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001032070488",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001032070488",
+        "ostrovok": "https://ostrovok.ru/hotel/kazakhstan/almaty/mid8870278/mercure_almaty_city_center/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-mercure-almaty-city-center-614080129/"
+      }
+    },
+    {
+      "id": "holiday_inn_tbilisi",
+      "name": "Holiday Inn Tbilisi",
+      "aliases": [
+        "Holiday Inn Tbilisi",
+        "Holiday Inn Тбилиси",
+        "Holiday Inn - Tbilisi"
+      ],
+      "country": "Грузия",
+      "geo": "Тбилиси",
+      "location_aliases": [
+        "Tbilisi",
+        "Тбилиси"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216845090",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216845090",
+        "ostrovok": "https://ostrovok.ru/hotel/georgia/tbilisi/mid7840499/holiday_inn_tbilisi/"
+      }
+    },
+    {
+      "id": "courtyard_tashkent",
+      "name": "Courtyard by Marriott Tashkent",
+      "aliases": [
+        "Courtyard by Marriott Tashkent",
+        "Courtyard"
+      ],
+      "country": "Узбекистан",
+      "geo": "Ташкент",
+      "location_aliases": [
+        "Tashkent",
+        "Ташкенте"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702217621944",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217621944",
+        "ostrovok": "https://ostrovok.ru/hotel/uzbekistan/tashkent/mid9751901/courtyard_by_marriott_32/"
+      }
+    },
+    {
+      "id": "hampton_minsk",
+      "name": "Hampton by Hilton Minsk City Centre",
+      "aliases": [
+        "Hampton by Hilton Minsk City Centre",
+        "Hampton by Hilton Minsk City Center",
+        "Хэмптон"
+      ],
+      "country": "Беларусь",
+      "geo": "Минск",
+      "location_aliases": [
+        "Minsk",
+        "Минске"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001042003517",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001042003517",
+        "ostrovok": "https://ostrovok.ru/hotel/belarus/minsk/mid7062777/hempton_by_hilton_minsk_city_center/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hampton-by-hilton-minsk-city-centre-617419989/"
+      }
+    },
+    {
+      "id": "citymax_al_barsha_mall",
+      "name": "Citymax Hotel Al Barsha at the Mall",
+      "aliases": [
+        "Citymax Hotel Al Barsha at the Mall",
+        "Citymax Al Barsha At The Mall",
+        "Сitymax Hotel Al Barsha at the Mall"
+      ],
+      "country": "ОАЭ",
+      "geo": "Дубай",
+      "location_aliases": [
+        "Dubai",
+        "Дубае",
+        "Al Barsha"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001006436069",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001006436069",
+        "ostrovok": "https://ostrovok.ru/hotel/united_arab_emirates/dubai/mid9024656/citymax_hotel_al_barsha_at_the_mall/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-citymax-al-barsha-at-the-mall-614083465/"
+      }
+    },
+    {
+      "id": "mercure_hurghada",
+      "name": "Mercure Hurghada",
+      "aliases": [
+        "Mercure Hurghada",
+        "Меркюр Хургада"
+      ],
+      "country": "Египет",
+      "geo": "Хургада",
+      "location_aliases": [
+        "Hurghada",
+        "Хургаде"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216883666",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216883666",
+        "ostrovok": "https://ostrovok.ru/hotel/egypt/hurghada/mid7566228/mercure_hurghada/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mercure-hurghada-1115498428/"
+      }
+    },
+    {
+      "id": "novotel_nha_trang",
+      "name": "Novotel Nha Trang",
+      "aliases": [
+        "Novotel Nha Trang",
+        "Novotel Nha Trang Hotel"
+      ],
+      "country": "Вьетнам",
+      "geo": "Нячанг",
+      "location_aliases": [
+        "Nha Trang",
+        "Нячанге"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216551325",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216551325",
+        "ostrovok": "https://ostrovok.ru/hotel/vietnam/nha_trang/mid7446858/novotel_nha_trang/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/novotel-nha-trang-614077558/"
+      }
+    },
+    {
+      "id": "mercure_kuta_bali",
+      "name": "Mercure Kuta Bali",
+      "aliases": [
+        "Mercure Kuta Bali"
+      ],
+      "country": "Индонезия",
+      "geo": "Бали",
+      "location_aliases": [
+        "Bali",
+        "Kuta",
+        "Кута",
+        "Куте"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702218629557",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702218629557",
+        "ostrovok": "https://ostrovok.ru/hotel/indonesia/indonesia_bali_province/mid7545439/mercure_kuta_bali/"
+      }
+    },
+    {
+      "id": "radisson_blu_shanghai_new_world",
+      "name": "Radisson Blu Hotel Shanghai New World",
+      "aliases": [
+        "Radisson Blu Hotel Shanghai New World",
+        "Radisson Blu Shanghai New World"
+      ],
+      "country": "Китай",
+      "geo": "Шанхай",
+      "location_aliases": [
+        "Shanghai",
+        "Шанхае"
+      ],
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217301411",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217301411",
+        "ostrovok": "https://ostrovok.ru/hotel/china/shanghai/mid7750273/radisson_blu_hotel_shanghai_new_world/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/radisson-blu-hotel-shanghai-new-world-1101631094/"
+      }
+    },
+    {
+      "id": "ibis_kuala_lumpur_centre",
+      "name": "Ibis Kuala Lumpur City Centre Hotel",
+      "aliases": [
+        "Ibis Kuala Lumpur City Centre Hotel",
+        "ibis Kuala Lumpur City Centre"
+      ],
+      "country": "Малайзия",
+      "geo": "Куала-Лумпур",
+      "location_aliases": [
+        "Kuala Lumpur",
+        "Куала-Лумпуре"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216240254",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216240254",
+        "ostrovok": "https://ostrovok.ru/hotel/malaysia/kuala_lumpur/mid8880811/ibis_kuala_lumpur_city_centre_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-kuala-lumpur-city-centre-hotel-1116157759/"
+      }
+    },
+    {
+      "id": "boss_singapore",
+      "name": "Hotel Boss",
+      "aliases": [
+        "Hotel Boss",
+        "Boss"
+      ],
+      "country": "Сингапур",
+      "geo": "Сингапур",
+      "location_aliases": [
+        "Singapore",
+        "Сингапуре"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702217482390",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217482390",
+        "ostrovok": "https://ostrovok.ru/hotel/singapore/singapore2/mid7027568/hotel_boss_5/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-boss-1116091799/"
+      }
+    },
+    {
+      "id": "lemon_tree_amarante_candolim",
+      "name": "Lemon Tree Amarante Beach Resort, Goa",
+      "aliases": [
+        "Lemon Tree Amarante Beach Resort",
+        "Lemon Tree Amarante"
+      ],
+      "country": "Индия",
+      "geo": "Гоа — Кандолим",
+      "location_aliases": [
+        "Goa",
+        "Candolim",
+        "Кандолим",
+        "Кандолиме"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702217458060",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217458060",
+        "ostrovok": "https://ostrovok.ru/hotel/india/candolim/mid7822680/lemon_tree_amarante_beach_resort/"
+      }
+    },
+    {
+      "id": "ibis_muscat",
+      "name": "ibis Muscat",
+      "aliases": [
+        "ibis Muscat",
+        "Ibis Muscat"
+      ],
+      "country": "Оман",
+      "geo": "Маскат",
+      "location_aliases": [
+        "Muscat",
+        "Маскате",
+        "Мускат"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216851682",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216851682",
+        "ostrovok": "https://ostrovok.ru/hotel/oman/muscat/mid7446017/ibis_muscat/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-muscat-1102276713/"
+      }
+    },
+    {
+      "id": "holiday_inn_express_cape_town",
+      "name": "Holiday Inn Express Cape Town City-Centre by IHG",
+      "aliases": [
+        "Holiday Inn Express Cape Town City-Centre",
+        "Holiday Inn Express City Centre",
+        "Holiday Inn Express Cape Town City Centre by IHG"
+      ],
+      "country": "ЮАР",
+      "geo": "Кейптаун",
+      "location_aliases": [
+        "Cape Town",
+        "Кейптауне"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216145163",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216145163",
+        "ostrovok": "https://ostrovok.ru/hotel/south_africa/cape_town/mid7565707/holiday_inn_express_city_centre/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/holiday-inn-express-city-centre-1131124201/"
+      }
+    },
+    {
+      "id": "moskva_belgrade",
+      "name": "Hotel Moskva",
+      "aliases": [
+        "Hotel Moskva",
+        "Moskva Hotel",
+        "Отель Moskva"
+      ],
+      "country": "Сербия",
+      "geo": "Белград",
+      "location_aliases": [
+        "Belgrade",
+        "Beograd",
+        "Белграде"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702217592073",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217592073",
+        "ostrovok": "https://ostrovok.ru/hotel/serbia/belgrade/mid7523513/hotel_moskva/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-moskva-1102223188/"
+      }
+    },
+    {
+      "id": "ibis_praha_old_town",
+      "name": "ibis Praha Old Town",
+      "aliases": [
+        "ibis Praha Old Town",
+        "Ibis Prague Old Town"
+      ],
+      "country": "Чехия",
+      "geo": "Прага",
+      "location_aliases": [
+        "Prague",
+        "Praha",
+        "Праге"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702217074360",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217074360",
+        "ostrovok": "https://ostrovok.ru/hotel/czech_republic/prague/mid7496587/ibis_praha_old_town/"
+      }
+    },
+    {
+      "id": "apollo_athens",
+      "name": "Apollo Hotel",
+      "aliases": [
+        "Apollo Hotel",
+        "Apollo"
+      ],
+      "country": "Греция",
+      "geo": "Афины",
+      "location_aliases": [
+        "Athens",
+        "Афинах"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216346941",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216346941",
+        "ostrovok": "https://ostrovok.ru/hotel/greece/athens/mid7820446/apollo_hotel_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/apollo-hotel-1115748763/"
+      }
+    },
+    {
+      "id": "ajax_limassol",
+      "name": "Ajax Hotel",
+      "aliases": [
+        "Ajax Hotel",
+        "Ajax"
+      ],
+      "country": "Кипр",
+      "geo": "Лимассол",
+      "location_aliases": [
+        "Limassol",
+        "Лимассоле",
+        "Айос-Атанасиос"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216219866",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216219866",
+        "ostrovok": "https://ostrovok.ru/hotel/cyprus/limassol/mid7540691/ajax_hotel/"
+      }
+    },
+    {
+      "id": "nh_sevilla_plaza_armas",
+      "name": "NH Sevilla Plaza de Armas",
+      "aliases": [
+        "NH Sevilla Plaza de Armas",
+        "NH Plaza de Armas"
+      ],
+      "country": "Испания",
+      "geo": "Севилья",
+      "location_aliases": [
+        "Seville",
+        "Sevilla",
+        "Севилье"
+      ],
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216612195",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216612195",
+        "ostrovok": "https://ostrovok.ru/hotel/spain/seville/mid7483224/nh_plaza_de_armas_2/"
+      }
+    },
+    {
+      "id": "ibis_paris_bastille_opera",
+      "name": "ibis Paris Bastille Opera 11ème",
+      "aliases": [
+        "ibis Paris Bastille Opera",
+        "ibis Paris Bastille Opera 11ème",
+        "Hotel ibis Paris Bastille Opera 11eme"
+      ],
+      "country": "Франция",
+      "geo": "Париж",
+      "location_aliases": [
+        "Paris",
+        "Париже"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216787834",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216787834",
+        "ostrovok": "https://ostrovok.ru/hotel/france/paris/mid8069099/hotel_ibis_paris_bastille_opera_11eme/"
+      }
+    },
+    {
+      "id": "hampton_frankfurt_east",
+      "name": "Hampton by Hilton Frankfurt City Centre East",
+      "aliases": [
+        "Hampton by Hilton Frankfurt City Centre East",
+        "Hampton Frankfurt City Centre East"
+      ],
+      "country": "Германия",
+      "geo": "Франкфурт-на-Майне",
+      "location_aliases": [
+        "Frankfurt",
+        "Frankfurt am Main",
+        "Франкфурте-на-Майне"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702215985359",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702215985359",
+        "ostrovok": "https://ostrovok.ru/hotel/germany/frankfurt/mid8994188/hampton_by_hilton_frankfurt_city_centre_east/"
+      }
+    },
+    {
+      "id": "ibis_budapest_centrum",
+      "name": "ibis Budapest Centrum",
+      "aliases": [
+        "ibis Budapest Centrum",
+        "Ibis Budapest Centrum"
+      ],
+      "country": "Венгрия",
+      "geo": "Будапешт",
+      "location_aliases": [
+        "Budapest",
+        "Будапеште"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216520362",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216520362",
+        "ostrovok": "https://ostrovok.ru/hotel/hungary/budapest/mid7498601/ibis_budapest_centrum/"
+      }
+    },
+    {
+      "id": "bb_como_city_center",
+      "name": "B&B Hotel Como City Center",
+      "aliases": [
+        "B&B Hotel Como City Center",
+        "B&B HOTEL Como City Center",
+        "Best Western Hotel Continental"
+      ],
+      "country": "Италия",
+      "geo": "Комо",
+      "location_aliases": [
+        "Como",
+        "Комо"
+      ],
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216541531",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216541531",
+        "ostrovok": "https://ostrovok.ru/hotel/italy/como/mid7471490/best_western_hotel_continental_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/b-b-hotel-como-city-center-1116148331/"
+      }
     }
   ],
   "platforms": [
