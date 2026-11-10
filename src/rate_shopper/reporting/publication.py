@@ -1,4 +1,4 @@
-"""Build a public-only, allowlisted report without publishing session evidence."""
+"""Build an allowlisted report without publishing account or session evidence."""
 
 import argparse
 import json
@@ -14,10 +14,15 @@ PUBLIC_NOTE = (
     "Публичный срез. Личные, корпоративные и банковские цены не опубликованы. "
     "Это сохранённые наблюдения, а не цены в реальном времени."
 )
+ALL_PRICES_NOTE = (
+    "Все собранные цены: публичные, личные, корпоративные и Пэй. Условия доступа указаны "
+    "у каждого тарифа. Статистика считает публичные цены. Это сохранённый срез."
+)
 URL_KEYS = {
     "checkin", "checkout", "checkIn", "checkOut", "check_in", "check_out",
     "guest_groups", "guests", "adults", "children", "rooms", "dates",
     "currency", "cityOrRegionId", "hotelId", "Dlts",
+    "checkinDate", "checkoutDate",
 }
 HOSTS = {"otello.ru", "www.ozon.ru", "ozon.ru", "ostrovok.ru", "travel.yandex.ru"}
 
@@ -32,12 +37,19 @@ def public_url(value: str | None) -> str:
     return urlunsplit(("https", u.hostname, u.path, query, ""))
 
 
-def public_report(source: dict[str, Any]) -> dict[str, Any]:
+def public_report(
+    source: dict[str, Any], *, include_conditional: bool = False
+) -> dict[str, Any]:
     """Prices remain unchanged; do not carry arbitrary source fields into public JSON."""
     result = {k: deepcopy(source[k]) for k in (
         "schema_version", "platforms", "provenance", "checked_at", "scenario", "statistics",
     )}
-    result["publication"] = {"public_only": True, "note": PUBLIC_NOTE}
+    note = ALL_PRICES_NOTE if include_conditional else PUBLIC_NOTE
+    result["publication"] = {
+        "public_only": not include_conditional,
+        "scope": "all_collected_prices" if include_conditional else "public_only",
+        "note": note,
+    }
     result["hotels"] = [
         {k: deepcopy(h[k]) for k in ("id", "name", "country", "geo", "stars")}
         for h in source["hotels"]
@@ -48,14 +60,21 @@ def public_report(source: dict[str, Any]) -> dict[str, Any]:
         "cancellation_type", "cancellation_deadline", "payment_timing", "public_total",
         "taxes_total", "taxes_included", "currency", "availability_status",
         "authorization_required", "access_type", "price_basis",
+        "special_payment_product", "loyalty_program",
     )
+    price_fields = ("public_total", "member_total", "bank_product_total", "mobile_total")
     offers = []
     for o in source["offers"]:
-        if o["access_type"] != "public" or o["authorization_required"] is not False:
+        if not include_conditional and (
+            o["access_type"] != "public" or o["authorization_required"] is not False
+            or o["public_total"] is None
+        ):
             continue
-        if o["public_total"] is None:
+        if not any(o.get(k) is not None for k in price_fields):
             continue
         item = {k: deepcopy(o.get(k)) for k in fields}
+        if include_conditional:
+            item.update({k: deepcopy(o.get(k)) for k in (*price_fields, "crossed_out_total")})
         item["source_url"] = public_url(o["source_url"])
         # Room descriptions can contain neighbouring prices. Publish only individual
         # public tariff conditions, never a full room/page snapshot or session text.
@@ -72,6 +91,7 @@ def public_report(source: dict[str, Any]) -> dict[str, Any]:
     for o in source["observations"]:
         item = {k: deepcopy(o.get(k)) for k in (
             "hotel_id", "hotel", "platform", "status", "checked_at", "mapping_note",
+            "capture_method",
         )}
         item["source_url"] = public_url(o.get("source_url"))
         item["offer_count"] = counts[(o["hotel_id"], o["platform"])]
@@ -93,27 +113,33 @@ def public_report(source: dict[str, Any]) -> dict[str, Any]:
         comparable_pairs=sum(m["percent_gap"] is not None for m in result["matches"]),
         review_pairs=sum(m["manual_review_required"] for m in result["matches"]),
     )
-    # A future report must not accidentally retain a private reference in a statistic.
+    # Displaying conditional prices must never let them into public-only statistics.
+    public_ids = {o["id"] for o in offers if o["access_type"] == "public"
+                  and o["authorization_required"] is False and o["public_total"] is not None}
     for row in result["statistics"]["rows"] + result["statistics"]["verified_rows"]:
         for key in ("reference_offer_id", "competitor_offer_id"):
-            if row[key] is not None and row[key] not in ids:
+            if row[key] is not None and row[key] not in public_ids:
                 raise ValueError("Statistics reference a non-public offer")
     result.update(status="PARTIAL_SUCCESS", collection_status="PARTIAL_SUCCESS",
-                  notes=[PUBLIC_NOTE], rejected_captures=[], excluded_platforms={})
+                  notes=[note], rejected_captures=[], excluded_platforms={})
     return result
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Prepare public-only static report")
+    parser = argparse.ArgumentParser(description="Prepare sanitized static report")
     parser.add_argument("source", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--include-conditional", action="store_true",
+                        help="Include conditional prices when owner authorizes publication")
     args = parser.parse_args()
-    report = public_report(json.loads(args.source.read_text()))
+    report = public_report(json.loads(args.source.read_text()),
+                           include_conditional=args.include_conditional)
     args.output.mkdir(parents=True, exist_ok=True)
     (args.output / "report.json").write_text(json.dumps(report, ensure_ascii=False) + "\n")
     write_html(report, args.output)
     (args.output / ".nojekyll").touch()
-    print(f"Published projection: {len(report['offers'])} public offers")
+    print(f"Published projection: {len(report['offers'])} offers; "
+          f"scope={report['publication']['scope']}")
 
 
 if __name__ == "__main__":

@@ -67,3 +67,39 @@ def test_url_allowlist_rejects_credentials_and_unexpected_hosts() -> None:
     assert public_url("https://ostrovok.ru/hotel/1?guests=2&session=secret#private") == (
         "https://ostrovok.ru/hotel/1?guests=2"
     )
+    assert public_url(
+        "https://travel.yandex.ru/hotels/test/?checkinDate=2026-11-20"
+        "&checkoutDate=2026-11-22&adults=2&rooms=1&session=secret"
+    ) == ("https://travel.yandex.ru/hotels/test/?checkinDate=2026-11-20"
+          "&checkoutDate=2026-11-22&adults=2&rooms=1")
+
+
+def test_explicit_all_prices_keeps_access_and_money_without_session_evidence() -> None:
+    source = synthetic_report()
+    source["offers"][0]["member_total"] = None
+    source["offers"][1].update(room_name_raw="Synthetic corporate room", public_total=None,
+                               member_total="85.50", crossed_out_total="100.01")
+    result = public_report(source, include_conditional=True)
+    assert "PRIVATE_SENTINEL" not in json.dumps(result)
+    assert len(result["offers"]) == 2
+    assert result["offers"][1]["member_total"] == "85.50"
+    assert result["offers"][1]["public_total"] is None
+    assert result["offers"][1]["access_type"] == "corporate"
+    assert result["observations"][1]["status"] == "AVAILABLE"
+    assert result["observations"][1]["offer_count"] == 1
+    assert result["publication"]["scope"] == "all_collected_prices"
+
+
+def test_all_prices_mode_still_rejects_conditional_statistics() -> None:
+    source = synthetic_report()
+    source["statistics"]["rows"] = [
+        dict(reference_offer_id="public", competitor_offer_id="private")
+    ]
+    with pytest.raises(ValueError, match="non-public"):
+        public_report(source, include_conditional=True)
+
+
+def test_public_mode_requires_a_public_total() -> None:
+    source = synthetic_report()
+    source["offers"][0].update(public_total=None, member_total="50")
+    assert public_report(source)["offers"] == []

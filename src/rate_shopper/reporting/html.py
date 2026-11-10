@@ -7,6 +7,9 @@ from typing import Any
 
 def write_html(report: dict[str, Any], output: Path) -> None:
     template = Path(__file__).with_name("dashboard.html").read_text()
+    template = template.replace("__TARIFF_COMPARISON_JS__", Path(__file__).with_name(
+        "tariff-comparison.js"
+    ).read_text())
     data = json.dumps(report, ensure_ascii=False).replace("<", "\\u003c")
     html = template.replace("__REPORT_DATA__", data)
     (output / "index.html").write_text(html)

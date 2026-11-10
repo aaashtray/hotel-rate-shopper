@@ -16,6 +16,6 @@
 - Do not bypass CAPTCHA, authentication or rate limits; never book or pay.
 - Do not collect private cookies/tokens/profiles or commit runtime evidence without sanitizing.
 - Keep connector, extraction, normalization, matching, quality and persistence separate.
-- M1 stays offline. User now authorizes multi-source capture, local HTML and Excel reports. User authorized public GitHub Pages publication on 2026-11-10; publish a sanitized public-only snapshot and source. Scheduled collection remains a later task. No repricing or heavy infrastructure.
+- M1 stays offline. User now authorizes multi-source capture, local HTML and Excel reports. User authorized public GitHub Pages publication on 2026-11-10; publish a sanitized snapshot and source. User explicitly authorized publishing ALL collected public, personal, corporate and bank prices on 2026-11-10; preserve access labels and keep statistics public-only. Scheduled collection remains a later task. No repricing or heavy infrastructure.
 - Run pytest, Ruff and strict mypy before declaring completion; record actual results.
 - No push/publication or local commits unless explicitly requested.

@@ -7,10 +7,17 @@ from pathlib import Path
 
 site = Path(__file__).resolve().parents[1] / "site"
 report = json.loads((site / "report.json").read_text())
-assert report["publication"]["public_only"] is True
+assert report["publication"]["scope"] in {"public_only", "all_collected_prices"}
 assert report["metrics"]["extracted_offers"] == len(report["offers"])
-assert all(o["access_type"] == "public" and o["authorization_required"] is False
-           and o["public_total"] is not None for o in report["offers"])
+assert all(o["access_type"] in {"public", "personal", "corporate", "bank", "mobile", "member"}
+           for o in report["offers"])
+public_ids = {o["id"] for o in report["offers"] if o["access_type"] == "public"
+              and o["authorization_required"] is False and o["public_total"] is not None}
+for row in report["statistics"]["rows"] + report["statistics"]["verified_rows"]:
+    assert all(row[k] is None or row[k] in public_ids
+               for k in ("reference_offer_id", "competitor_offer_id"))
+if report["publication"]["public_only"]:
+    assert len(public_ids) == len(report["offers"])
 for name in ("index.html", "hotel-interface-otello.html", "hotel-statistics-otello.html"):
     html = (site / name).read_text()
     match = re.search(r'<script type="application/json" id="data">(.*?)</script>', html, re.S)
@@ -31,4 +38,4 @@ with zipfile.ZipFile(site / "hotel-rates.xlsx") as z:
     for name in z.namelist():
         if name.startswith("xl/worksheets/") and name.endswith(".xml"):
             assert not ET.fromstring(z.read(name)).findall('.//x:c[@t="e"]', ns)
-print(f"Static release valid: {len(report['offers'])} public offers; HTML and Excel agree")
+print(f"Static release valid: {len(report['offers'])} offers; HTML and Excel agree")
