@@ -96,7 +96,14 @@ def source_scenario(capture: BrowserCapture, requested: Scenario) -> Scenario | 
                 rf"\b{start.day} {months[start.month - 1]}[а-я]*\s*[—–-]\s*"
                 rf"{end.day} {months[end.month - 1]}[а-я]*\b", visible.casefold()
             )
-            if (f"{requested.nights} ноч" not in visible and not date_pair
+            # Safari selection exposes the two date fields separately on sold-out pages.
+            # Anchor to the actual search form, never to neighbouring-date suggestions.
+            selection_dates = capture.capture_method == "safari_selection_text" and re.search(
+                rf"Даты и гости {start.day} {months[start.month - 1]}[а-я]* "
+                rf"{end.day} {months[end.month - 1]}[а-я]* {adults} взрослых Найти",
+                visible, re.I,
+            )
+            if (f"{requested.nights} ноч" not in visible and not date_pair and not selection_dates
                     or f"{adults} взрослых" not in visible):
                 return None
             if query.get("rooms", ["1"]) != ["1"]:
@@ -159,6 +166,8 @@ def capture_status(capture: BrowserCapture, requested: Scenario, target: HotelTa
         return Status.CAPTCHA
     if capture.collection_error == "RATE_LIMITED":
         return Status.RATE_LIMITED
+    if capture.collection_error == "HOTEL_NOT_FOUND":
+        return Status.HOTEL_NOT_FOUND
     if capture.collection_error:
         return Status.CONNECTOR_ERROR
     if not hotel_verified(capture, target):

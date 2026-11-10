@@ -178,7 +178,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217098360?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
         "ozon_travel": "https://www.ozon.ru/travel/hotels/product/bandos-maldives-1115979417/?Dlts=2&checkIn=2026-11-20&checkOut=2026-11-22&cityOrRegionId=235527856000&hotelId=238551924000&refreshAttempt=1",
-        "ostrovok": "https://ostrovok.ru/hotel/maldives/bandos_island/mid7404020/bandos_maldives_5/"
+        "ostrovok": "https://ostrovok.ru/hotel/maldives/bandos_island/mid7404020/bandos_maldives_5/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/maldives/bandos-maldives/"
       },
       "country": "Мальдивы",
       "geo": "Мальдивы",
@@ -261,7 +262,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702215824625?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
         "ostrovok": "https://ostrovok.ru/hotel/thailand/chon_buri/mid7769053/xanadu_beach_resort/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/xanadu-beach-resort-1724966315/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/xanadu-beach-resort-1724966315/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/thailand/xanadu-beach-resort/"
       },
       "country": "Таиланд",
       "geo": "Таиланд",
@@ -280,7 +282,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702215810711?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
         "ostrovok": "https://ostrovok.ru/hotel/thailand/pattaya/mid6532550/the_fourth_pratumnak/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/fx-hotel-pattaya-1115974827/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/fx-hotel-pattaya-1115974827/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/pattaya/fx-hotel-pattaya/"
       },
       "country": "Таиланд",
       "geo": "Таиланд",
@@ -349,12 +352,14 @@
       "id": "geo-9",
       "name": "Отельбург на 5 углах",
       "aliases": [
-        "Отельбург на 5 углах"
+        "Отельбург на 5 углах",
+        "Отельбург на Разъезжей"
       ],
       "urls": {
         "otello": "https://otello.ru/hotel/70000001097374987?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
         "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid13162192/kritik_otdykhaet_na_5_uglakh_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-kritik-otdyhaet-na-5-uglah-1900625832/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-kritik-otdyhaet-na-5-uglah-1900625832/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/saint-petersburg/otelburg-na-raz-ezzhei/"
       },
       "country": "Россия",
       "geo": "Санкт-Петербург",
@@ -366,12 +371,14 @@
       "name": "Микс Отель Невский 47",
       "aliases": [
         "Микс Отель Невский 47",
-        "Микс Невский 47"
+        "Микс Невский 47",
+        "Микс Хотелс Невский 47"
       ],
       "urls": {
         "otello": "https://otello.ru/hotel/70000001050261471?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
         "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid9768643/mix_hotels_nevsky_47_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-mix-hotels-nevsky-47-632396847/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-mix-hotels-nevsky-47-632396847/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/saint-petersburg/miks-khotels-nevskii-47/"
       },
       "country": "Россия",
       "geo": "Санкт-Петербург",
@@ -459,7 +466,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001006342128?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
         "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid8038812/mercure_sochi_centre/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mercure-sochi-tsentr-613308193/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mercure-sochi-tsentr-613308193/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/sochi/mercure-sochi-centre/"
       },
       "country": "Россия",
       "geo": "Сочи",
@@ -613,7 +621,7 @@
         "otello": "https://otello.ru/hotel/3518965489936525",
         "ostrovok": "https://ostrovok.ru/hotel/russia/vladivostok/mid7403049/azimut_otel_vladivostok/",
         "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-vladivostok-614071221/",
-        "yandex_travel": "https://travel.yandex.ru/hotels/vladivostok/azimut-otel-vladivostok/"
+        "yandex_travel": "https://travel.yandex.ru/hotels/vladivostok/azimut-siti-otel-vladivostok/"
       },
       "stars_source": "https://otello.ru/hotel/3518965489936525",
       "location_aliases": [
@@ -1028,7 +1036,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001022000989",
         "ostrovok": "https://ostrovok.ru/hotel/russia/tyumen/mid7818877/hotel_tyumen/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/doubletree-by-hilton-tyumen-613312379/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/doubletree-by-hilton-tyumen-613312379/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tyumen/doubletree-by-hilton/"
       }
     },
     {
@@ -1093,7 +1102,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001028474137",
         "ostrovok": "https://ostrovok.ru/hotel/russia/tomsk/mid8733323/xander/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-xander-613321289/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-xander-613321289/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tomsk/xander/"
       }
     },
     {
@@ -1116,7 +1126,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001023154683",
         "ostrovok": "https://ostrovok.ru/hotel/russia/kemerovo/mid8437936/tom_river_plaza_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/tom-river-plaza-612654321/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/tom-river-plaza-612654321/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kemerovo/tom-river-plaza/"
       }
     },
     {
@@ -1138,7 +1149,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/563478234400360",
         "ostrovok": "https://ostrovok.ru/hotel/russia/barnaul/mid6599013/centralnaya_2/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-tsentralnyy-614073158/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-tsentralnyy-614073158/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/barnaul/tsentralnyi/"
       }
     },
     {
@@ -1160,7 +1172,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001019268907",
         "ostrovok": "https://ostrovok.ru/hotel/russia/abakan/mid6691619/otel_aziia_biznes/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/aziya-biznes-otel-614076646/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/aziya-biznes-otel-614076646/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/abakan/biznes-otel-aziia/"
       }
     },
     {
@@ -1180,7 +1193,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001033999623",
         "ostrovok": "https://ostrovok.ru/hotel/russia/ulan-ude/mid7763479/baikal_plaza_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/baykal-plaza-1101086362/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/baykal-plaza-1101086362/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/ulan-ude/baikal-plaza/"
       }
     },
     {
@@ -1224,7 +1238,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/4926340373413919",
         "ostrovok": "https://ostrovok.ru/hotel/russia/khabarovsk/mid7851607/businesscenter_parus/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-parus-614074125/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-parus-614074125/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/khabarovsk/parus/"
       }
     },
     {
@@ -1247,7 +1262,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/7037402698749834",
         "ostrovok": "https://ostrovok.ru/hotel/russia/yakutsk/mid7603827/hotel_polar_star/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-yakutsk-614077674/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-yakutsk-614077674/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yakutsk/azimut-otel-iakutsk/"
       }
     },
     {
@@ -1269,7 +1285,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/12385427256249673",
         "ostrovok": "https://ostrovok.ru/hotel/russia/yuzhno-sakhalinsk/mid7840370/mega_palas_hotel_/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mega-palas-otel-614073953/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mega-palas-otel-614073953/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yuzhno-sakhalinsk/mega-palas/"
       }
     },
     {
@@ -1290,7 +1307,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/13370589674736686",
         "ostrovok": "https://ostrovok.ru/hotel/russia/petropavlovsk-kamchatsky/mid6321409/best_eastern_petropavlovsk/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/petropavlovsk-614073740/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/petropavlovsk-614073740/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/petropavlovsk/gostinichnyi-kompleks-petropavlovsk/"
       }
     },
     {
@@ -1312,7 +1330,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/6896665210394367",
         "ostrovok": "https://ostrovok.ru/hotel/russia/arkhangelsk/mid7894661/purnavolok_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/pur-navolok-613318963/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/pur-navolok-613318963/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/arkhangelsk/pur-navolok-otel/"
       }
     },
     {
@@ -1334,7 +1353,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/11259527349406048",
         "ostrovok": "https://ostrovok.ru/hotel/russia/petrozavodsk/mid8870698/cosmos_petrozavodsk_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-cosmos-petrozavodsk-612653502/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-cosmos-petrozavodsk-612653502/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/petrozavodsk/cosmos-petrozavodsk-otel/"
       }
     },
     {
@@ -1355,7 +1375,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/12666902232957120",
         "ostrovok": "https://ostrovok.ru/hotel/russia/pskov/mid7384057/old_estate_hotel_and_spa/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/old-estate-hotel-and-spa-1626729485/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/old-estate-hotel-and-spa-1626729485/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/pskov/spa-otel-old-estate/"
       }
     },
     {
@@ -1377,7 +1398,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/10837314884337975",
         "ostrovok": "https://ostrovok.ru/hotel/russia/velikiy_novgorod/mid9331138/volhov_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-volhov-615533399/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-volhov-615533399/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/veliky-novgorod/otel-volkhov/"
       }
     },
     {
@@ -1398,7 +1420,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/10978052372694161",
         "ostrovok": "https://ostrovok.ru/hotel/russia/vologda/mid7789405/otel_atrium/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/atrium-615536453/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/atrium-615536453/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/vologda/atrium/"
       }
     },
     {
@@ -1424,7 +1447,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001098643629",
         "ostrovok": "https://ostrovok.ru/hotel/russia/kostroma/mid11350233/susanin_park_hotel_f_azimut_park_hotel_kostroma/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/susanin-park-otel-1739197040/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/susanin-park-otel-1739197040/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kostroma/susanin-park/"
       }
     },
     {
@@ -1448,7 +1472,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/9148465024200038",
         "ostrovok": "https://ostrovok.ru/hotel/russia/ivanovo/mid7888753/best_western_russkii_manchester/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/best-western-russkiy-manchester-615541676/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/best-western-russkiy-manchester-615541676/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/ivanovo/best-western-russkii-manchester/"
       }
     },
     {
@@ -1473,7 +1498,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001006635448",
         "ostrovok": "https://ostrovok.ru/hotel/russia/tula/mid6537299/sk_royal_hotel_tula/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/sk-royal-otel-tula-612654101/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/sk-royal-otel-tula-612654101/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tula/sk-royal-hotel/"
       }
     },
     {
@@ -1497,7 +1523,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001024561201",
         "ostrovok": "https://ostrovok.ru/hotel/russia/ryazan/mid8417658/amaks_kongress_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/amaks-kongress-otel-612653800/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/amaks-kongress-otel-612653800/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/ryazan/amaks-kongress-otel/"
       }
     },
     {
@@ -1521,7 +1548,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/8304040093943060",
         "ostrovok": "https://ostrovok.ru/hotel/russia/vladimir/mid7389078/otel_vladimir/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/gostinitsa-vladimir-1740255453/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/gostinitsa-vladimir-1740255453/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/vladimir/gostinitsa-vladimir/"
       }
     },
     {
@@ -1541,7 +1569,8 @@
       "stars_source": "https://otello.ru/hotel/70358702216182793",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216182793",
-        "ostrovok": "https://ostrovok.ru/hotel/japan/tokyo/mid7383641/hotel_nikko_tokyo/"
+        "ostrovok": "https://ostrovok.ru/hotel/japan/tokyo/mid7383641/hotel_nikko_tokyo/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tokyo/hilton-tokyo-odaiba/"
       }
     },
     {
@@ -1563,7 +1592,8 @@
       "stars_source": "https://otello.ru/hotel/70358702217597529",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217597529",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/holiday-inn-express-shanghai-jinqiao-central-1115566770/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/holiday-inn-express-shanghai-jinqiao-central-1115566770/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/shanghai/holiday-inn-express-shanghai-jinqiao-central-an-ihg-hotel/"
       }
     },
     {
@@ -1588,7 +1618,8 @@
       "urls": {
         "ostrovok": "https://ostrovok.ru/hotel/malaysia/kuala_lumpur/mid7547364/mandarin_oriental_2/",
         "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mandarin-oriental-kuala-lumpur-1116156367/",
-        "otello": "https://otello.ru/hotel/70358702217365315"
+        "otello": "https://otello.ru/hotel/70358702217365315",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kuala-lumpur/mandarin-oriental-kuala-lumpur/"
       }
     },
     {
@@ -1607,7 +1638,8 @@
       "stars_source": "https://otello.ru/hotel/70358702216494365",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216494365",
-        "ostrovok": "https://ostrovok.ru/hotel/singapore/singapore2/mid10017110/hilton_singapore_orchard/"
+        "ostrovok": "https://ostrovok.ru/hotel/singapore/singapore2/mid10017110/hilton_singapore_orchard/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/singapore-sg/hilton-singapore-orchard/"
       }
     },
     {
@@ -1693,7 +1725,8 @@
       "stars_source": "https://otello.ru/hotel/70358702217118896",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217118896",
-        "ostrovok": "https://ostrovok.ru/hotel/montenegro/tivat/mid7739899/hotel_palma_9/"
+        "ostrovok": "https://ostrovok.ru/hotel/montenegro/tivat/mid7739899/hotel_palma_9/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tivat/palma/"
       }
     },
     {
@@ -1713,7 +1746,8 @@
       "stars_source": "https://otello.ru/hotel/70358702217210522",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217210522",
-        "ostrovok": "https://ostrovok.ru/hotel/sri_lanka/colombo/mid7801982/the_kingsbury/"
+        "ostrovok": "https://ostrovok.ru/hotel/sri_lanka/colombo/mid7801982/the_kingsbury/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/colombo/the-kingsbury/"
       }
     },
     {
@@ -1733,7 +1767,8 @@
       "stars_source": "https://otello.ru/hotel/70358702217314496",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217314496",
-        "ostrovok": "https://ostrovok.ru/hotel/cyprus/limassol/mid10448798/nyx_hotel_limassol_by_leonardo_hotels/"
+        "ostrovok": "https://ostrovok.ru/hotel/cyprus/limassol/mid10448798/nyx_hotel_limassol_by_leonardo_hotels/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/limassol/nyx-hotel-limassol-by-leonardo-hotels/"
       }
     },
     {
@@ -1796,7 +1831,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216073788",
         "ostrovok": "https://ostrovok.ru/hotel/spain/seville/mid7481344/melia_lebreros/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/melia-lebreros-1115707807/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/melia-lebreros-1115707807/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/seville/melia-lebreros/"
       }
     },
     {
@@ -1841,7 +1877,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702215941411",
         "ostrovok": "https://ostrovok.ru/hotel/south_africa/cape_town/mid7566944/capetonian_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/capetonian-hotel-1131124182/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/capetonian-hotel-1131124182/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/capetown/capetonian-hotel/"
       }
     },
     {
@@ -1862,7 +1899,8 @@
       "stars_source": "https://otello.ru/hotel/70358702216161643",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216161643",
-        "ostrovok": "https://ostrovok.ru/hotel/italy/como/mid7472411/hotel_villa_flori/"
+        "ostrovok": "https://ostrovok.ru/hotel/italy/como/mid7472411/hotel_villa_flori/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/italy/hotel-villa-flori/"
       }
     },
     {
@@ -1908,7 +1946,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217556272",
         "ostrovok": "https://ostrovok.ru/hotel/oman/muscat/mid7667836/muscat_international/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/muscat-international-hotel-1102276035/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/muscat-international-hotel-1102276035/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/bawshar/muscat-international-hotel/"
       }
     },
     {
@@ -1993,7 +2032,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216117252",
         "ostrovok": "https://ostrovok.ru/hotel/bulgaria/sofia/mid6723052/hotel_central_17/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-central-1101945095/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-central-1101945095/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/sofia/central-hotel-sofia/"
       }
     },
     {
@@ -2001,7 +2041,8 @@
       "name": "Prima Tel Aviv Hotel",
       "aliases": [
         "Prima Tel Aviv Hotel",
-        "Prima Tel Aviv"
+        "Prima Tel Aviv",
+        "Прима Тель Авив"
       ],
       "country": "Израиль",
       "geo": "Тель-Авив",
@@ -2015,7 +2056,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216155946",
         "ostrovok": "https://ostrovok.ru/hotel/israel/tel_aviv/mid7543215/prima_tel_aviv_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/prima-tel-aviv-hotel-614082193/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/prima-tel-aviv-hotel-614082193/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tel-aviv/prima-tel-aviv-hyrkvn/"
       }
     },
     {
@@ -2084,7 +2126,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/2956015536643869",
         "ostrovok": "https://ostrovok.ru/hotel/russia/kazan/mid13113867/azimut_hotel_bauman_kazan/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-bauman-kazan-617473694/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-bauman-kazan-617473694/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kazan/gostinitsa-ibis-kazan-hotel-ibis-kazan/"
       }
     },
     {
@@ -2108,7 +2151,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/1267165676635107",
         "ostrovok": "https://ostrovok.ru/hotel/russia/yekaterinburg/mid7404031/novotel_yekaterinburg_centre/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/novotel-ekaterinburg-tsentr-612652733/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/novotel-ekaterinburg-tsentr-612652733/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yekaterinburg/novotel/"
       }
     },
     {
@@ -2131,7 +2175,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/5630028815505912",
         "ostrovok": "https://ostrovok.ru/hotel/russia/kaliningrad/mid7999515/hotel_ibis_kaliningrad_center/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-kaliningrad-tsentr-615524318/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-kaliningrad-tsentr-615524318/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/~permalink/1383962419/"
       }
     },
     {
@@ -2154,7 +2199,8 @@
       "stars_source": "https://otello.ru/hotel/70000001007491108",
       "urls": {
         "otello": "https://otello.ru/hotel/70000001007491108",
-        "ostrovok": "https://ostrovok.ru/hotel/russia/vladivostok/mid6304810/hotel_astoria_57/"
+        "ostrovok": "https://ostrovok.ru/hotel/russia/vladivostok/mid6304810/hotel_astoria_57/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/vladivostok/kosmos-smart-vladivostok-otel/"
       }
     },
     {
@@ -2178,7 +2224,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/141265769361662",
         "ostrovok": "https://ostrovok.ru/hotel/russia/novosibirsk/mid7821624/azimut_hotel_sibir/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-novosibirsk-613329241/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-novosibirsk-613329241/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/novosibirsk/azimut-otel-novosibirsk/"
       }
     },
     {
@@ -2200,7 +2247,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/985690699465451",
         "ostrovok": "https://ostrovok.ru/hotel/russia/krasnoyarsk/mid8043431/gostinitsa_ogni_eniseia/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ogni-eniseya-614073433/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ogni-eniseya-614073433/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/krasnoyarsk/ogni-eniseia/"
       }
     },
     {
@@ -2224,7 +2272,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/13511327163090354",
         "ostrovok": "https://ostrovok.ru/hotel/russia/murmansk/mid7405530/park_inn_poliarnie_zori_murmansk/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/cosmos-murmansk-hotel-612652898/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/cosmos-murmansk-hotel-612652898/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/murmansk/cosmos-murmansk-otel/"
       }
     },
     {
@@ -2269,7 +2318,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001031678646",
         "ostrovok": "https://ostrovok.ru/hotel/russia/yaroslavl/mid7773431/aljosha_popovich_dvor/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/alesha-popovich-dvor-612652807/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/alesha-popovich-dvor-612652807/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yaroslavl/aliosha-popovich-dvor/"
       }
     },
     {
@@ -2293,7 +2343,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/2674540563356546",
         "ostrovok": "https://ostrovok.ru/hotel/russia/nizhniy_novgorod/mid7806864/ibis_nizhny_novgorod/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-nizhniy-novgorod-615524805/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-nizhniy-novgorod-615524805/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/nizhny-novgorod/reddi/"
       }
     },
     {
@@ -2316,7 +2367,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001018632656",
         "ostrovok": "https://ostrovok.ru/hotel/russia/ufa/mid6790074/hampton_by_hilton_ufa/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hampton-by-hilton-ufa-612653582/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hampton-by-hilton-ufa-612653582/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/ufa/hampton-by-hilton-ufa/"
       }
     },
     {
@@ -2338,7 +2390,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/2252328094664801",
         "ostrovok": "https://ostrovok.ru/hotel/russia/perm/mid7824278/gostinitsa_ural/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ural-616388428/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ural-616388428/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/perm/ural/"
       }
     },
     {
@@ -2384,7 +2437,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/2111590608178366",
         "ostrovok": "https://ostrovok.ru/hotel/russia/chelyabinsk/mid7801993/markshtadt_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/markshtadt-614077448/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/markshtadt-614077448/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/chelyabinsk/markshtadt/"
       }
     },
     {
@@ -2410,7 +2464,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/282003257694231",
         "ozon_travel": "https://www.ozon.ru/travel/hotels/product/turist-614073048/",
-        "ostrovok": "https://ostrovok.ru/hotel/russia/omsk/mid7781180/otel_turist_2/"
+        "ostrovok": "https://ostrovok.ru/hotel/russia/omsk/mid7781180/otel_turist_2/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/omsk/turist/"
       }
     },
     {
@@ -2433,7 +2488,8 @@
       "urls": {
         "ostrovok": "https://ostrovok.ru/hotel/russia/tomsk/mid7742032/bon_apart/",
         "ozon_travel": "https://www.ozon.ru/travel/hotels/product/gostinichnyy-kompleks-bon-apart-614074538/",
-        "otello": "https://otello.ru/hotel/422740746058280"
+        "otello": "https://otello.ru/hotel/422740746058280",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tomsk/bon-apart/"
       }
     },
     {
@@ -2455,7 +2511,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/704215722754436",
         "ostrovok": "https://ostrovok.ru/hotel/russia/kemerovo/mid7893331/kuzbass/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/kuzbass-614076603/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/kuzbass-614076603/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kemerovo/kuzbass/"
       }
     },
     {
@@ -2477,7 +2534,8 @@
       "stars_source": "https://otello.ru/hotel/563478234400350",
       "urls": {
         "otello": "https://otello.ru/hotel/563478234400350",
-        "ostrovok": "https://ostrovok.ru/hotel/russia/barnaul/mid7614328/otel_barnaul/"
+        "ostrovok": "https://ostrovok.ru/hotel/russia/barnaul/mid7614328/otel_barnaul/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/barnaul/gostinitsa-barnaul/"
       }
     },
     {
@@ -2521,7 +2579,8 @@
       "stars_source": "https://otello.ru/hotel/70000001058705658",
       "urls": {
         "otello": "https://otello.ru/hotel/70000001058705658",
-        "ostrovok": "https://ostrovok.ru/hotel/russia/khabarovsk/mid8660468/verba/"
+        "ostrovok": "https://ostrovok.ru/hotel/russia/khabarovsk/mid8660468/verba/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/khabarovsk/azimut-siti-otel-khabarovsk/"
       }
     },
     {
@@ -2543,7 +2602,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/12385427256247871",
         "ostrovok": "https://ostrovok.ru/hotel/russia/yuzhno-sakhalinsk/mid7846126/otel_gagarin/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/gagarin-614077390/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/gagarin-614077390/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yuzhno-sakhalinsk/gagarin/"
       }
     },
     {
@@ -2567,7 +2627,8 @@
       "urls": {
         "ostrovok": "https://ostrovok.ru/hotel/russia/petropavlovsk-kamchatsky/mid7786652/avacha/",
         "ozon_travel": "https://www.ozon.ru/travel/hotels/product/avacha-613327038/",
-        "otello": "https://otello.ru/hotel/70000001006446630"
+        "otello": "https://otello.ru/hotel/70000001006446630",
+        "yandex_travel": "https://travel.yandex.ru/hotels/petropavlovsk/avacha/"
       }
     },
     {
@@ -2589,7 +2650,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/11259528349523135",
         "ostrovok": "https://ostrovok.ru/hotel/russia/petrozavodsk/mid7734613/fregat_hotel_2/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/fregat-613312369/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/fregat-613312369/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/petrozavodsk/fregat/"
       }
     },
     {
@@ -2612,7 +2674,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/5067077861769303",
         "ostrovok": "https://ostrovok.ru/hotel/russia/tula/mid7724593/armeniya/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/armeniya-612652912/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/armeniya-612652912/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tula/armeniia/"
       }
     },
     {
@@ -2636,7 +2699,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/8304040093942168",
         "ostrovok": "https://ostrovok.ru/hotel/russia/vladimir/mid7810179/amaks_golden_ring_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/amaks-zolotoe-koltso-612653381/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/amaks-zolotoe-koltso-612653381/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/vladimir/amaks-zolotoe-koltso/"
       }
     },
     {
@@ -2658,7 +2722,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001043782501",
         "ostrovok": "https://ostrovok.ru/hotel/azerbaijan/baku/mid9751149/hotel_ibis_baku_city/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-ibis-baku-city-1102228570/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-ibis-baku-city-1102228570/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/baku/ibis-baku-city/"
       }
     },
     {
@@ -2680,7 +2745,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216029571",
         "ostrovok": "https://ostrovok.ru/hotel/armenia/yerevan/mid8680701/ibis_yerevan_center/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-yerevan-center-1101491485/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-yerevan-center-1101491485/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yerevan/ibis-yerevan-center/"
       }
     },
     {
@@ -2702,7 +2768,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001032070488",
         "ostrovok": "https://ostrovok.ru/hotel/kazakhstan/almaty/mid8870278/mercure_almaty_city_center/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-mercure-almaty-city-center-614080129/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-mercure-almaty-city-center-614080129/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/almaty/mercure-almaty-city-center/"
       }
     },
     {
@@ -2723,7 +2790,8 @@
       "stars_source": "https://otello.ru/hotel/70358702216845090",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216845090",
-        "ostrovok": "https://ostrovok.ru/hotel/georgia/tbilisi/mid7840499/holiday_inn_tbilisi/"
+        "ostrovok": "https://ostrovok.ru/hotel/georgia/tbilisi/mid7840499/holiday_inn_tbilisi/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tbilisi/holiday-inn-tbilisi/"
       }
     },
     {
@@ -2743,7 +2811,8 @@
       "stars_source": "https://otello.ru/hotel/70358702217621944",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217621944",
-        "ostrovok": "https://ostrovok.ru/hotel/uzbekistan/tashkent/mid9751901/courtyard_by_marriott_32/"
+        "ostrovok": "https://ostrovok.ru/hotel/uzbekistan/tashkent/mid9751901/courtyard_by_marriott_32/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tashkent/kort-iard-marriott-tashkent/"
       }
     },
     {
@@ -2765,7 +2834,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001042003517",
         "ostrovok": "https://ostrovok.ru/hotel/belarus/minsk/mid7062777/hempton_by_hilton_minsk_city_center/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hampton-by-hilton-minsk-city-centre-617419989/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hampton-by-hilton-minsk-city-centre-617419989/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/minsk/hampton-by-hilton-minsk-city-centre/"
       }
     },
     {
@@ -2788,7 +2858,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70000001006436069",
         "ostrovok": "https://ostrovok.ru/hotel/united_arab_emirates/dubai/mid9024656/citymax_hotel_al_barsha_at_the_mall/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-citymax-al-barsha-at-the-mall-614083465/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-citymax-al-barsha-at-the-mall-614083465/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/dubai/citymax-hotel/"
       }
     },
     {
@@ -2809,7 +2880,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216883666",
         "ostrovok": "https://ostrovok.ru/hotel/egypt/hurghada/mid7566228/mercure_hurghada/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mercure-hurghada-1115498428/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mercure-hurghada-1115498428/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/hurgada/mercure-hurghada-hotel/"
       }
     },
     {
@@ -2830,7 +2902,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216551325",
         "ostrovok": "https://ostrovok.ru/hotel/vietnam/nha_trang/mid7446858/novotel_nha_trang/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/novotel-nha-trang-614077558/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/novotel-nha-trang-614077558/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/nha-trang/novotel-nha-trang-tran-phu-street/"
       }
     },
     {
@@ -2851,7 +2924,8 @@
       "stars_source": "https://otello.ru/hotel/70358702218629557",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702218629557",
-        "ostrovok": "https://ostrovok.ru/hotel/indonesia/indonesia_bali_province/mid7545439/mercure_kuta_bali/"
+        "ostrovok": "https://ostrovok.ru/hotel/indonesia/indonesia_bali_province/mid7545439/mercure_kuta_bali/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/indonesia/mercure-kuta-bali/"
       }
     },
     {
@@ -2859,7 +2933,8 @@
       "name": "Radisson Blu Hotel Shanghai New World",
       "aliases": [
         "Radisson Blu Hotel Shanghai New World",
-        "Radisson Blu Shanghai New World"
+        "Radisson Blu Shanghai New World",
+        "Radisson Blu New World Hotel Shanghai"
       ],
       "country": "Китай",
       "geo": "Шанхай",
@@ -2872,7 +2947,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217301411",
         "ostrovok": "https://ostrovok.ru/hotel/china/shanghai/mid7750273/radisson_blu_hotel_shanghai_new_world/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/radisson-blu-hotel-shanghai-new-world-1101631094/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/radisson-blu-hotel-shanghai-new-world-1101631094/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/shanghai/radisson-blu-new-world-hotel-shanghai/"
       }
     },
     {
@@ -2893,7 +2969,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216240254",
         "ostrovok": "https://ostrovok.ru/hotel/malaysia/kuala_lumpur/mid8880811/ibis_kuala_lumpur_city_centre_hotel/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-kuala-lumpur-city-centre-hotel-1116157759/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-kuala-lumpur-city-centre-hotel-1116157759/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kuala-lumpur/ibis-kuala-lumpur-city-centre/"
       }
     },
     {
@@ -2914,7 +2991,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217482390",
         "ostrovok": "https://ostrovok.ru/hotel/singapore/singapore2/mid7027568/hotel_boss_5/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-boss-1116091799/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-boss-1116091799/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/singapore-sg/hotel-boss/"
       }
     },
     {
@@ -2936,7 +3014,8 @@
       "stars_source": "https://otello.ru/hotel/70358702217458060",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217458060",
-        "ostrovok": "https://ostrovok.ru/hotel/india/candolim/mid7822680/lemon_tree_amarante_beach_resort/"
+        "ostrovok": "https://ostrovok.ru/hotel/india/candolim/mid7822680/lemon_tree_amarante_beach_resort/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/india/lemon-tree-amarante-beach-resort-goa/"
       }
     },
     {
@@ -2958,7 +3037,11 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216851682",
         "ostrovok": "https://ostrovok.ru/hotel/oman/muscat/mid7446017/ibis_muscat/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-muscat-1102276713/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-muscat-1102276713/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/bawshar/ibis-muscat/"
+      },
+      "mapping_notes": {
+        "yandex_travel": "Яндекс показывает только город Маскат без улицы и дома. Полный адрес объекта пока не подтверждён; цены сохранены, сравнение исключено."
       }
     },
     {
@@ -2989,7 +3072,8 @@
       "aliases": [
         "Hotel Moskva",
         "Moskva Hotel",
-        "Отель Moskva"
+        "Отель Moskva",
+        "Отель Москва"
       ],
       "country": "Сербия",
       "geo": "Белград",
@@ -3003,7 +3087,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217592073",
         "ostrovok": "https://ostrovok.ru/hotel/serbia/belgrade/mid7523513/hotel_moskva/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-moskva-1102223188/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-moskva-1102223188/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/belgrade/otel-moskva/"
       }
     },
     {
@@ -3024,7 +3109,8 @@
       "stars_source": "https://otello.ru/hotel/70358702217074360",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702217074360",
-        "ostrovok": "https://ostrovok.ru/hotel/czech_republic/prague/mid7496587/ibis_praha_old_town/"
+        "ostrovok": "https://ostrovok.ru/hotel/czech_republic/prague/mid7496587/ibis_praha_old_town/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/prague/ibis-praha-old-town/"
       }
     },
     {
@@ -3045,7 +3131,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216346941",
         "ostrovok": "https://ostrovok.ru/hotel/greece/athens/mid7820446/apollo_hotel_2/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/apollo-hotel-1115748763/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/apollo-hotel-1115748763/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/athens-gr/apollo-hotel-athens/"
       }
     },
     {
@@ -3066,7 +3153,8 @@
       "stars_source": "https://otello.ru/hotel/70358702216219866",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216219866",
-        "ostrovok": "https://ostrovok.ru/hotel/cyprus/limassol/mid7540691/ajax_hotel/"
+        "ostrovok": "https://ostrovok.ru/hotel/cyprus/limassol/mid7540691/ajax_hotel/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/limassol/ajax/"
       }
     },
     {
@@ -3087,7 +3175,8 @@
       "stars_source": "https://otello.ru/hotel/70358702216612195",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216612195",
-        "ostrovok": "https://ostrovok.ru/hotel/spain/seville/mid7483224/nh_plaza_de_armas_2/"
+        "ostrovok": "https://ostrovok.ru/hotel/spain/seville/mid7483224/nh_plaza_de_armas_2/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/seville/nh-sevilla-plaza-de-armas/"
       }
     },
     {
@@ -3129,7 +3218,8 @@
       "stars_source": "https://otello.ru/hotel/70358702215985359",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702215985359",
-        "ostrovok": "https://ostrovok.ru/hotel/germany/frankfurt/mid8994188/hampton_by_hilton_frankfurt_city_centre_east/"
+        "ostrovok": "https://ostrovok.ru/hotel/germany/frankfurt/mid8994188/hampton_by_hilton_frankfurt_city_centre_east/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/germany/hampton-by-hilton-frankfurt-city-centre-east/"
       }
     },
     {
@@ -3149,7 +3239,8 @@
       "stars_source": "https://otello.ru/hotel/70358702216520362",
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216520362",
-        "ostrovok": "https://ostrovok.ru/hotel/hungary/budapest/mid7498601/ibis_budapest_centrum/"
+        "ostrovok": "https://ostrovok.ru/hotel/hungary/budapest/mid7498601/ibis_budapest_centrum/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/budapest/ibis-budapest-centrum/"
       }
     },
     {
@@ -3171,7 +3262,8 @@
       "urls": {
         "otello": "https://otello.ru/hotel/70358702216541531",
         "ostrovok": "https://ostrovok.ru/hotel/italy/como/mid7471490/best_western_hotel_continental_2/",
-        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/b-b-hotel-como-city-center-1116148331/"
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/b-b-hotel-como-city-center-1116148331/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/como/b-b-hotel-como-city-center/"
       }
     }
   ],

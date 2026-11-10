@@ -29,7 +29,7 @@ function table(sh,headers,rows,widths){
 }
 const hotel=id=>r.hotels.find(h=>h.id===id);
 const platform=p=>({otello:'Отелло',ozon_travel:'Ozon Travel',yandex_travel:'Яндекс',ostrovok:'Островок'}[p]||p);
-const state=s=>({WITHHELD:'Только непубличные цены',AVAILABLE:'Есть тарифы',SOLD_OUT:'Нет номеров',UNKNOWN:'Не собрано',PRICE_NOT_EXPOSED:'Цена не получена',SCENARIO_MISMATCH:'Не совпал сценарий',CONNECTOR_ERROR:'Ошибка сбора',CAPTCHA:'Проверка CAPTCHA',RATE_LIMITED:'Ограничение запросов'}[s]||s);
+const state=s=>({WITHHELD:'Только непубличные цены',AVAILABLE:'Есть тарифы',SOLD_OUT:'Нет номеров',UNKNOWN:'Не собрано',HOTEL_NOT_FOUND:'Страница отеля не найдена',PRICE_NOT_EXPOSED:'Цена не получена',SCENARIO_MISMATCH:'Не совпал сценарий',CONNECTOR_ERROR:'Ошибка сбора',CAPTCHA:'Проверка CAPTCHA',RATE_LIMITED:'Ограничение запросов'}[s]||s);
 const meal=x=>({none:'Без питания',breakfast:'Завтрак',half_board:'Полупансион',full_board:'Полный пансион',all_inclusive:'Всё включено'}[x]||'Не подтверждено');
 const cancel=x=>({free:'Возвратный',non_refundable:'Невозвратный'}[x]||'Не уточнено');
 const access=x=>({public:'Публичная',personal:'Личная сессия',member:'Для участников',bank:'Банковская',mobile:'В приложении',corporate:'Корпоративная'}[x]||'Не уточнено');
