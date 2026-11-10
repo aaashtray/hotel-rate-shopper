@@ -48,7 +48,8 @@ for name in ("index.html", "hotel-interface-otello.html", "hotel-statistics-otel
             continue
         assert (site / href).is_file(), f"Broken local resource: {name} -> {href}"
 allowed = {"assets", "index.html", "hotel-interface-otello.html", "hotel-statistics-otello.html",
-           "hotel-map-otello.html", "парсер цен.html", "hotel-rates.xlsx", "report.json", ".nojekyll"}
+           "hotel-map-otello.html", "парсер цен.html", "hotel-rates.xlsx",
+           "report.json", ".nojekyll"}
 assert not (set(p.name for p in site.iterdir()) - allowed), "Unexpected publish artifact"
 with zipfile.ZipFile(site / "hotel-rates.xlsx") as z:
     ns = {"x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
@@ -57,8 +58,9 @@ with zipfile.ZipFile(site / "hotel-rates.xlsx") as z:
     assert cell is not None and int(float(cell.text)) == len(report["offers"]), "Stale Excel"
     stats = report["statistics"]["scopes"][report["statistics"]["default_scope"]]["rows"]
     counts = Counter(row["outcome"] for row in stats)
-    for col, outcome in zip("ABCD", ("loss", "win", "tie", "excluded")):
-        cell = sheet.find(f'.//x:c[@r="{col}27"]/x:v', ns)
+    summary_row = 27 + max(0, len({h["geo"] for h in report["hotels"]}) - 6)
+    for col, outcome in zip("ABCD", ("loss", "win", "tie", "excluded"), strict=True):
+        cell = sheet.find(f'.//x:c[@r="{col}{summary_row}"]/x:v', ns)
         assert cell is not None and int(float(cell.text)) == counts[outcome], "Stale Excel stats"
     stat_sheet = ET.fromstring(z.read("xl/worksheets/sheet2.xml"))
     for i, row in enumerate(stats, 6):

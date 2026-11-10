@@ -51,28 +51,29 @@ obs.getRange(`H6:H${r.observations.length+5}`).setNumberFormat('dd.mm.yyyy hh:mm
 obs.getRange(`K6:K${r.observations.length+5}`).setNumberFormat('#,##0.00');
 table(offers,['Отель','Страна','Город / курорт','Звёзды (Отелло)','Площадка','Номер','Питание','Отмена','Цена за период RUB','Доступ','Оплата','Проверка сравнения','Дополнительные сборы','Источник'],r.offers.map(o=>{const h=hotel(o.hotel_canonical_id);return[h.name,h.country,h.geo,h.stars,platform(o.platform),o.room_name_raw,meal(o.meal_plan),cancel(o.cancellation_type),total(o)==null?null:Number(total(o)),access(o.access_type),({now:'Сейчас',at_hotel:'В отеле',later:'Позже'}[o.payment_timing]||'Не уточнено'),(r.quality_issues[o.id]||[]).length?'Объект и полные условия требуют проверки':'Условия проверены',o.source_fragments.additional_fees||'',o.source_url]}),[35,17,23,15,18,50,23,20,20,25,20,48,32,60]);
 offers.getRange(`I6:I${r.offers.length+5}`).setNumberFormat('#,##0.00');
+const geos=[...new Set(r.hotels.map(h=>h.geo))].sort();
+const summaryOffset=Math.max(0,geos.length-6);
 summary.showGridLines=false;
-summary.getRange('A1:H23').format.font.name='SB Sans Text';
-summary.getRange('A1:H23').format.font.color='#084008';
+summary.getRange(`A1:H${23+summaryOffset}`).format.font.name='SB Sans Text';
+summary.getRange(`A1:H${23+summaryOffset}`).format.font.color='#084008';
 summary.getRange('A1:H3').format.fill='#084008';summary.getRange('A1:H3').format.font.color='#ffffff';
 summary.mergeCells('A1:H2');summary.getRange('A1').values=[['HOTEL RATE SHOPPER']];summary.getRange('A1').format.font.size=24;
 summary.mergeCells('A3:H3');summary.getRange('A3').values=[[`${r.scenario.checkin} — ${r.scenario.checkout} · ${r.scenario.adults} взрослых · ${r.scenario.rooms} номер · RUB`]];
-summary.getRange('A1:H23').format.columnWidth=17;summary.getRange('E1:E23').format.columnWidth=3;
+summary.getRange(`A1:H${23+summaryOffset}`).format.columnWidth=17;summary.getRange(`E1:E${23+summaryOffset}`).format.columnWidth=3;
 summary.getRange('A5:C9').values=[['Показатель','Значение',''],['Отелей',r.hotels.length,''],['Тарифов',r.offers.length,''],['Проверенных сравнений',r.metrics.comparable_pairs,''],['Ожидаемых наблюдений',r.metrics.expected_observations,'']];
 summary.getRange('A5:A9').format.columnWidth=32;summary.getRange('B6:B9').format.font.size=20;summary.getRange('A6:H9').format.rowHeight=32;
 summary.getRange('A11:D11').values=[['Направление','Ожидается','Есть тарифы','Нет номеров']];
-const geos=[...new Set(r.hotels.map(h=>h.geo))].sort();
 for(let i=0;i<geos.length;i++){const row=12+i,geo=geos[i];summary.getRange(`A${row}`).values=[[geo]];summary.getRange(`B${row}:D${row}`).formulas=[[`=COUNTIF('Наличие'!C6:C${r.observations.length+5},A${row})`,`=COUNTIFS('Наличие'!C6:C${r.observations.length+5},A${row},'Наличие'!F6:F${r.observations.length+5},"Есть тарифы")`,`=COUNTIFS('Наличие'!C6:C${r.observations.length+5},A${row},'Наличие'!F6:F${r.observations.length+5},"Нет номеров")`]];}
 summary.getRange('F11:H11').values=[['Площадка','Проверено','С ценами']];
 summary.getRange('F11:H11').format.fill='#A7FC26';summary.getRange('F11:H11').format.font.bold=true;
 for(let i=0;i<r.platforms.length;i++){const row=12+i;summary.getRange(`F${row}`).values=[[platform(r.platforms[i])]];summary.getRange(`G${row}:H${row}`).formulas=[[`=COUNTIFS('Наличие'!E6:E${r.observations.length+5},F${row},'Наличие'!H6:H${r.observations.length+5},">0")`,`=COUNTIFS('Наличие'!E6:E${r.observations.length+5},F${row},'Наличие'!F6:F${r.observations.length+5},"Есть тарифы")`]];}
-summary.getRange('A11:D17').format.rowHeight=26;summary.getRange('A11:D11').format.fill='#A7FC26';summary.getRange('A11:D11').format.font.bold=true;
-summary.mergeCells('A19:H20');summary.getRange('A19').values=[['Подтверждённых разрывов пока нет. Лист «Статистика» включает Яндекс и все типы цен: публичные, личные, корпоративные и Пэй. Доступ указан в отдельных столбцах. Условия требуют проверки; известные доплаты и спорные объекты исключены.']];summary.getRange('A19:H20').format.wrapText=true;summary.getRange('A19:H20').format.fill='#DDFED2';summary.getRange('A19:H20').format.rowHeight=30;
-summary.mergeCells('A22:H23');summary.getRange('A22').values=[['Фильтры по стране, направлению и звёздам — в заголовках таблиц «Наличие» и «Тарифы». Сводка показывает всю выборку; интерактивные выводы по фильтрам — в HTML. Звёздность площадок может различаться.']];summary.getRange('A22:H23').format.wrapText=true;
-summary.mergeCells('A25:H25');summary.getRange('A25').values=[['Предварительные минимумы · все типы цен · одна пара = отель × конкурент']];summary.getRange('A25:H25').format.fill='#A7FC26';summary.getRange('A25:H30').format.font.name='SB Sans Text';summary.getRange('A25:H30').format.font.color='#084008';summary.getRange('A25:H30').format.rowHeight=26;
-summary.getRange('A26:D26').values=[['Отелло дороже','Отелло дешевле','Одинаковые цены','Нет сравнения']];summary.getRange('A26:D26').format.wrapText=true;summary.getRange('A26:D26').format.rowHeight=36;
-summary.getRange('A27:D27').formulas=[['Отелло дороже','Отелло дешевле','Одинаковая цена','Без сравнения'].map(v=>`=COUNTIFS('Статистика'!I6:I${statRows.length+5},"${v}")`)];summary.getRange('A27:D27').format.font.size=22;
-summary.mergeCells('A29:H30');summary.getRange('A29').values=[['Разрыв = (Отелло − конкурент) / конкурент. Положительное значение — Отелло дороже. Разные питание, отмена и категория номера могут объяснять разницу. Это список кандидатов для проверки, а не подтверждённое преимущество.']];summary.getRange('A29:H30').format.wrapText=true;
+summary.getRange(`A11:D${11+geos.length}`).format.rowHeight=26;summary.getRange('A11:D11').format.fill='#A7FC26';summary.getRange('A11:D11').format.font.bold=true;
+summary.mergeCells(`A${19+summaryOffset}:H${20+summaryOffset}`);summary.getRange(`A${19+summaryOffset}`).values=[['Подтверждённых разрывов пока нет. Лист «Статистика» включает Яндекс и все типы цен: публичные, личные, корпоративные и Пэй. Доступ указан в отдельных столбцах. Условия требуют проверки; известные доплаты и спорные объекты исключены.']];summary.getRange(`A${19+summaryOffset}:H${20+summaryOffset}`).format.wrapText=true;summary.getRange(`A${19+summaryOffset}:H${20+summaryOffset}`).format.fill='#DDFED2';summary.getRange(`A${19+summaryOffset}:H${20+summaryOffset}`).format.rowHeight=30;
+summary.mergeCells(`A${22+summaryOffset}:H${23+summaryOffset}`);summary.getRange(`A${22+summaryOffset}`).values=[['Фильтры по стране, направлению и звёздам — в заголовках таблиц «Наличие» и «Тарифы». Сводка показывает всю выборку; интерактивные выводы по фильтрам — в HTML. Звёздность площадок может различаться.']];summary.getRange(`A${22+summaryOffset}:H${23+summaryOffset}`).format.wrapText=true;
+summary.mergeCells(`A${25+summaryOffset}:H${25+summaryOffset}`);summary.getRange(`A${25+summaryOffset}`).values=[['Предварительные минимумы · все типы цен · одна пара = отель × конкурент']];summary.getRange(`A${25+summaryOffset}:H${25+summaryOffset}`).format.fill='#A7FC26';summary.getRange(`A${25+summaryOffset}:H${30+summaryOffset}`).format.font.name='SB Sans Text';summary.getRange(`A${25+summaryOffset}:H${30+summaryOffset}`).format.font.color='#084008';summary.getRange(`A${25+summaryOffset}:H${30+summaryOffset}`).format.rowHeight=26;
+summary.getRange(`A${26+summaryOffset}:D${26+summaryOffset}`).values=[['Отелло дороже','Отелло дешевле','Одинаковые цены','Нет сравнения']];summary.getRange(`A${26+summaryOffset}:D${26+summaryOffset}`).format.wrapText=true;summary.getRange(`A${26+summaryOffset}:D${26+summaryOffset}`).format.rowHeight=36;
+summary.getRange(`A${27+summaryOffset}:D${27+summaryOffset}`).formulas=[['Отелло дороже','Отелло дешевле','Одинаковая цена','Без сравнения'].map(v=>`=COUNTIFS('Статистика'!I6:I${statRows.length+5},"${v}")`)];summary.getRange(`A${27+summaryOffset}:D${27+summaryOffset}`).format.font.size=22;
+summary.mergeCells(`A${29+summaryOffset}:H${30+summaryOffset}`);summary.getRange(`A${29+summaryOffset}`).values=[['Разрыв = (Отелло − конкурент) / конкурент. Положительное значение — Отелло дороже. Разные питание, отмена и категория номера могут объяснять разницу. Это список кандидатов для проверки, а не подтверждённое преимущество.']];summary.getRange(`A${29+summaryOffset}:H${30+summaryOffset}`).format.wrapText=true;
 wb.recalculate();
 const probeIndex=r.observations.findIndex(o=>o.status==='AVAILABLE');
 const probeRow=probeIndex+6,probeGeo=hotel(r.observations[probeIndex].hotel_id).geo;
@@ -89,12 +90,12 @@ const originalPrice=stats.getRange(`E${statRow}`).values[0][0];stats.getRange(`E
 if(Number(stats.getRange(`H${statRow}`).values[0][0])!==1)throw Error('Statistics input-change failed');stats.getRange(`E${statRow}`).values=[[originalPrice]];wb.recalculate();
 console.log('STATISTICS input-change check passed');
 const expectedOutcomes=['loss','win','tie','excluded'].map(k=>statRows.filter(s=>s.outcome===k).length);
-if(JSON.stringify(summary.getRange('A27:D27').values[0].map(Number))!==JSON.stringify(expectedOutcomes))throw Error('Summary statistics mismatch');
+if(JSON.stringify(summary.getRange(`A${27+summaryOffset}:D${27+summaryOffset}`).values[0].map(Number))!==JSON.stringify(expectedOutcomes))throw Error('Summary statistics mismatch');
 for(let i=0;i<statRows.length;i++){const s=statRows[i];if(s.percent_gap!=null&&Math.abs(Number(stats.getRange(`H${i+6}`).values[0][0])-Number(s.percent_gap)/100)>.000051)throw Error(`Wrong gap at row ${i+6}`)}
 console.log('ALL STATISTICS checked',expectedOutcomes);
 console.log((await wb.inspect({kind:'region',sheetId:summary.id,range:'A5:D17',maxChars:2500,tableMaxRows:13,tableMaxCols:4})).ndjson);
 console.log((await wb.inspect({kind:'match',searchTerm:'#REF!|#VALUE!|#DIV/0!|#NAME\\?',options:{useRegex:true,maxResults:30},maxChars:1500})).ndjson);
-const png=await wb.render({sheetName:'Сводка',range:'A1:H30',scale:1.5,format:'png'});await fs.writeFile(`${dir}/workbook-preview.png`,new Uint8Array(await png.arrayBuffer()));
+const png=await wb.render({sheetName:'Сводка',range:`A1:H${30+summaryOffset}`,scale:1.5,format:'png'});await fs.writeFile(`${dir}/workbook-preview.png`,new Uint8Array(await png.arrayBuffer()));
 const statPng=await wb.render({sheetName:'Статистика',range:'A1:P9',scale:1.2,format:'png'});await fs.writeFile(`${dir}/workbook-statistics.png`,new Uint8Array(await statPng.arrayBuffer()));
 if(!process.argv.includes('--summary-preview-only'))for(const [sheetName,range,suffix] of [['Наличие','A1:N8','availability'],['Тарифы','A1:N8','rates']]){const p=await wb.render({sheetName,range,scale:1.2,format:'png'});await fs.writeFile(`${dir}/workbook-${suffix}.png`,new Uint8Array(await p.arrayBuffer()));}
 await(await SpreadsheetFile.exportXlsx(wb)).save(`${dir}/hotel-rates.xlsx`);

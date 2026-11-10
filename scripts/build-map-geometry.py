@@ -5,8 +5,9 @@
 """Build offline SVG geometry from pinned Natural Earth 5.1.1 archives.
 
 Run with `uv run scripts/build-map-geometry.py --cache /path/to/cache`.
-No statistical values are stored here. Natural Earth's source borders are retained;
-projection and simplification only serve rendering. The Moscow city/oblast ISO
+No statistical values are stored here. Ukraine is shown within its internationally
+recognized borders. Crimea and Sevastopol are reassigned from Natural Earth's
+Russia geometry to Ukraine; already-Ukrainian regions are retained. The Moscow city/oblast ISO
 codes are interchanged in this source release, so internal IDs are corrected by
 feature name while sourceId preserves the source value.
 """
@@ -23,8 +24,8 @@ from zipfile import ZipFile
 
 import shapefile
 from pyproj import Transformer
-from shapely.geometry import MultiPolygon, Polygon, shape
-from shapely.ops import transform
+from shapely.geometry import MultiPolygon, Point, Polygon, shape
+from shapely.ops import transform, unary_union
 
 SOURCES = {
     "world": {
@@ -41,8 +42,20 @@ SOURCES = {
     },
 }
 
+# Natural Earth 5.1.1 already places the latter four regions in Ukraine.
+UKRAINE_REGION_IDS = {"UA-43", "UA-40", "UA-14", "UA-09", "UA-23", "UA-65"}
+UKRAINE_CHECK_POINTS = {
+    "Crimea (Simferopol)": (34.10, 44.95),
+    "Sevastopol": (33.54, 44.60),
+    "Donetsk": (37.80, 48.02),
+    "Luhansk": (39.31, 48.57),
+    "Kherson": (32.62, 46.64),
+    "Zaporizhzhia": (35.14, 47.84),
+}
+RUSSIA_CHECK_POINTS = {"Moscow": (37.617, 55.755), "Saint Petersburg": (30.335, 59.934)}
 
-def features(kind: str, cache: Path) -> list[tuple[dict, Polygon | MultiPolygon]]:
+
+def source_features(kind: str, cache: Path) -> list[tuple[dict, Polygon | MultiPolygon]]:
     source = SOURCES[kind]
     archive = cache / (source["stem"] + ".zip")
     if not archive.exists():
@@ -64,10 +77,49 @@ def features(kind: str, cache: Path) -> list[tuple[dict, Polygon | MultiPolygon]
             properties = feature.record.as_dict()
             if kind == "world" and properties["ADM0_A3"] == "ATA":
                 continue
-            if kind == "russia" and properties["adm0_a3"] != "RUS":
+            if kind == "russia" and properties["adm0_a3"] not in {"RUS", "UKR"}:
                 continue
             result.append((properties, shape(feature.shape.__geo_interface__)))
         return result
+
+
+def features(kind: str, cache: Path) -> list[tuple[dict, Polygon | MultiPolygon]]:
+    """Apply the requested boundary presentation before projection/simplification."""
+    subdivisions = source_features("russia", cache)
+    if kind == "russia":
+        return [(p, g) for p, g in subdivisions
+                if p["adm0_a3"] == "RUS" and p["iso_3166_2"] not in UKRAINE_REGION_IDS]
+
+    countries = source_features("world", cache)
+    source_russia = next(g for p, g in countries if p["ADM0_A3"] == "RUS")
+    source_ukraine = next(g for p, g in countries if p["ADM0_A3"] == "UKR")
+    # Use actual admin-1 boundaries to identify the detached Crimea polygon in
+    # the 50m layer. Transfer that complete 50m polygon, not a clipped 10m coast:
+    # mixing coastline resolutions would leave narrow Russian coastal slivers.
+    correction_mask = unary_union([
+        g for p, g in subdivisions
+        if p["iso_3166_2"] in UKRAINE_REGION_IDS and p["adm0_a3"] == "RUS"
+    ])
+    transferred = [polygon for polygon in source_russia.geoms
+                   if polygon.intersection(correction_mask).area / polygon.area > .90]
+    if len(transferred) != 1:
+        raise ValueError("Pinned source no longer contains one detached Crimea polygon")
+    transfer = unary_union(transferred)
+    if not transfer.covers(Point(UKRAINE_CHECK_POINTS["Crimea (Simferopol)"])):
+        raise ValueError("Crimea transfer failed its geographic control point")
+    russia = source_russia.difference(transfer)
+    ukraine = source_ukraine.union(transfer)
+    if not russia.is_valid or not ukraine.is_valid or russia.intersection(ukraine).area > 1e-10:
+        raise ValueError("Invalid or overlapping Russia/Ukraine geometries")
+    result = [(p, russia if p["ADM0_A3"] == "RUS" else
+               ukraine if p["ADM0_A3"] == "UKR" else g) for p, g in countries]
+    for name, coordinates in UKRAINE_CHECK_POINTS.items():
+        if not ukraine.covers(Point(coordinates)) or russia.covers(Point(coordinates)):
+            raise ValueError(f"Wrong country for {name}")
+    for name, coordinates in RUSSIA_CHECK_POINTS.items():
+        if not russia.covers(Point(coordinates)) or ukraine.covers(Point(coordinates)):
+            raise ValueError(f"Wrong country for {name}")
+    return result
 
 
 def build_map(kind: str, cache: Path) -> dict:
@@ -169,10 +221,19 @@ def main() -> None:
         "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
         "url": "https://www.naturalearthdata.com/",
         "sources": SOURCES,
-        "boundaryNote": "Границы Natural Earth 5.1.1; картографическая подложка источника.",
+        "boundaryNote": "Украина показана в международно признанных границах, "
+                        "включая Крым и Севастополь.",
+        "boundaryPolicy": {
+            "ukraineRegionIds": sorted(UKRAINE_REGION_IDS),
+            "transferredFromSourceRussia": ["UA-43", "UA-40"],
+            "alreadyInSourceUkraine": ["UA-14", "UA-09", "UA-23", "UA-65"],
+        },
         "processing": "Projection, topology-preserving simplification, Antarctica omitted. "
                       "Moscow city/oblast internal IDs normalized by source feature name; "
-                      "original IDs remain in sourceId. Source boundaries are not reassigned.",
+                      "original IDs remain in sourceId. Crimea/Sevastopol excluded from the "
+                      "Russia regional layer. The corresponding 50m Crimea polygon is identified "
+                      "using 10m admin-1 geometry and transferred intact from Russia to Ukraine, "
+                      "preserving the world layer's coastline. Other country geometries unchanged.",
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, separators=(",", ":")) + "\n")

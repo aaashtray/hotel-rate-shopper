@@ -3,7 +3,7 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import test from 'node:test';
 const source=fs.readFileSync(new URL('../src/rate_shopper/reporting/analytics-core.js',import.meta.url),'utf8');
-const {median,summarizeRegion,hotelMapKey,statisticRows}=vm.runInNewContext(source+';({median,summarizeRegion,hotelMapKey,statisticRows})');
+const {median,summarizeRegion,hotelMapKey,statisticRows,placeMapLabels}=vm.runInNewContext(source+';({median,summarizeRegion,hotelMapKey,statisticRows,placeMapLabels})');
 // Synthetic cases: coverage gaps must never become a zero-price advantage.
 test('missing comparisons stay missing; an observed zero is a tie',()=>{
   assert.equal(median([null,undefined,NaN,Infinity]),null);
@@ -39,4 +39,18 @@ test('switching price scopes uses the matching minima; strict mode clears unveri
   const strict=statisticRows(report,'all',true)[0];
   assert.equal(strict.reference_total,null);assert.equal(strict.competitor_total,null);
   assert.equal(strict.outcome,'excluded');assert.equal(strict.reason,'unverified');
+});
+test('every configured hotel has a map region and populated labels do not overlap',()=>{
+  const {hotels}=JSON.parse(fs.readFileSync(new URL('../config/hotels.json',import.meta.url)));
+  const maps=JSON.parse(fs.readFileSync(new URL('../src/rate_shopper/reporting/map-geometry.json',import.meta.url)));
+  for(const kind of ['russia','world']){
+    const relevant=hotels.filter(h=>kind==='world'||h.country==='Россия');
+    for(const h of relevant)assert.ok(maps[kind].regions.some(r=>r.id===hotelMapKey(h,kind)),h.name);
+    const regions=maps[kind].regions.filter(r=>relevant.some(h=>hotelMapKey(h,kind)===r.id));
+    const labels=placeMapLabels(regions,maps[kind].viewBox);
+    for(let i=0;i<labels.length;i++){
+      const a=labels[i].box;assert.ok(a,labels[i].region.name);
+      for(const b of labels.slice(i+1).map(x=>x.box).filter(Boolean))assert.ok(a.x+a.w<=b.x||b.x+b.w<=a.x||a.y+a.h<=b.y||b.y+b.h<=a.y);
+    }
+  }
 });

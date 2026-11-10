@@ -541,6 +541,428 @@
       "geo": "Аланья",
       "stars": 3,
       "stars_source": "https://otello.ru/hotel/70358702217261496?checkin=2026-11-20&checkout=2026-11-22&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    },
+    {
+      "id": "kazan-nogay",
+      "name": "Ногай",
+      "country": "Россия",
+      "geo": "Казань",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001018741959",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/nogay-612652828/",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kazan/mid6759653/nogai/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kazan/nogai/"
+      },
+      "stars_source": "https://otello.ru/hotel/70000001018741959",
+      "location_aliases": [
+        "Казани"
+      ],
+      "aliases": [
+        "Ногай"
+      ]
+    },
+    {
+      "id": "ekb-onegin",
+      "name": "Онегин",
+      "country": "Россия",
+      "geo": "Екатеринбург",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/1267165676492023",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/yekaterinburg/mid7459681/onegin_hotel/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yekaterinburg/onegin/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/onegin-613326891/"
+      },
+      "stars_source": "https://otello.ru/hotel/1267165676492023",
+      "location_aliases": [
+        "Екатеринбурге"
+      ],
+      "aliases": [
+        "Онегин",
+        "Onegin"
+      ]
+    },
+    {
+      "id": "kaliningrad-holiday",
+      "name": "Холидей Инн",
+      "country": "Россия",
+      "geo": "Калининград",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001030352995",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kaliningrad/mid8874278/holiday_inn_kaliningrad/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kaliningrad/kholidei-inn/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/holiday-inn-kaliningrad-615524323/"
+      },
+      "stars_source": "https://otello.ru/hotel/70000001030352995",
+      "location_aliases": [
+        "Калининграде"
+      ],
+      "aliases": [
+        "Холидей Инн"
+      ]
+    },
+    {
+      "id": "vladivostok-azimut",
+      "name": "AZIMUT Сити",
+      "country": "Россия",
+      "geo": "Владивосток",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/3518965489936525",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/vladivostok/mid7403049/azimut_otel_vladivostok/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-otel-vladivostok-614071221/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/vladivostok/azimut-otel-vladivostok/"
+      },
+      "stars_source": "https://otello.ru/hotel/3518965489936525",
+      "location_aliases": [
+        "Владивостоке"
+      ],
+      "aliases": [
+        "Azimut",
+        "Азимут"
+      ]
+    },
+    {
+      "id": "novosibirsk-domina",
+      "name": "Domina",
+      "country": "Россия",
+      "geo": "Новосибирск",
+      "stars": 5,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001017581497",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/novosibirsk/mid6609364/domina_hotel_novosibirsk/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/domina-hotel-novosibirsk-612653179/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/novosibirsk/domina/"
+      },
+      "stars_source": "https://otello.ru/hotel/70000001017581497",
+      "location_aliases": [
+        "Новосибирске"
+      ],
+      "aliases": [
+        "Domina",
+        "Домина"
+      ]
+    },
+    {
+      "id": "krasnoyarsk-hilton-garden",
+      "name": "Hilton Garden Inn Красноярск",
+      "country": "Россия",
+      "geo": "Красноярск",
+      "stars": 4,
+      "aliases": [
+        "Hilton Garden Inn",
+        "Hilton Garden Inn Krasnoyarsk"
+      ],
+      "location_aliases": [
+        "Красноярске",
+        "Krasnoyarsk"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/985691699808811",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/krasnoyarsk/mid7898659/hilton_garden_inn_krasnoyarsk/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hilton-garden-inn-krasnoyarsk-613311052/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/krasnoyarsk/hilton-garden-inn-krasnoyarsk/"
+      },
+      "stars_source": "https://otello.ru/hotel/985691699808811"
+    },
+    {
+      "id": "murmansk-azimut",
+      "name": "AZIMUT Сити Отель Мурманск",
+      "country": "Россия",
+      "geo": "Мурманск",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001006961806",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/murmansk/mid6528809/azimut_otel_murmansk/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/azimut-siti-otel-murmansk-615528980/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/murmansk/azimut-siti-otel-murmansk/"
+      },
+      "stars_source": "https://otello.ru/hotel/70000001006961806",
+      "location_aliases": [
+        "Мурманске"
+      ],
+      "aliases": [
+        "Azimut",
+        "Азимут"
+      ]
+    },
+    {
+      "id": "irkutsk-victoria",
+      "name": "Виктория",
+      "country": "Россия",
+      "geo": "Иркутск",
+      "stars": 3,
+      "urls": {
+        "otello": "https://otello.ru/hotel/1548640653378828",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/irkutsk/mid8457230/victory_hotel_4/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/viktoriya-613327823/"
+      },
+      "stars_source": "https://otello.ru/hotel/1548640653378828",
+      "location_aliases": [
+        "Иркутске"
+      ],
+      "aliases": [
+        "Виктория"
+      ]
+    },
+    {
+      "id": "yaroslavl-ibis",
+      "name": "ibis Ярославль Центр",
+      "country": "Россия",
+      "geo": "Ярославль",
+      "stars": 3,
+      "urls": {
+        "otello": "https://otello.ru/hotel/3941177955047780",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/yaroslavl/mid7763780/ibis_yaroslavl_center/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ibis-yaroslavl-tsentr-615526330/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/~permalink/1391846527/"
+      },
+      "stars_source": "https://otello.ru/hotel/3941177955047780",
+      "location_aliases": [
+        "Ярославле"
+      ],
+      "aliases": [
+        "ibis",
+        "Ибис"
+      ]
+    },
+    {
+      "id": "nizhny-marins",
+      "name": "Marins Нижний Новгород",
+      "country": "Россия",
+      "geo": "Нижний Новгород",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/2674540559730813",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/nizhniy_novgorod/mid7404170/marins_park_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/marins-park-hotel-nizhniy-novgorod-615524279/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/nizhny-novgorod/marins-nizhnii-novgorod/"
+      },
+      "stars_source": "https://otello.ru/hotel/2674540559730813",
+      "location_aliases": [
+        "Нижнем Новгороде"
+      ],
+      "aliases": [
+        "Marins",
+        "Маринс"
+      ]
+    },
+    {
+      "id": "rove_dubai_marina",
+      "name": "Rove Dubai Marina",
+      "country": "ОАЭ",
+      "geo": "Дубай",
+      "stars": 3,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001031648872",
+        "ostrovok": "https://ostrovok.ru/hotel/united_arab_emirates/dubai/mid8748297/rove_dubai_marina/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-rove-dubai-marina-1626768489/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/dubai/rove-dubai-marina/"
+      },
+      "stars_source": "https://otello.ru/hotel/70000001031648872",
+      "location_aliases": [
+        "Dubai",
+        "Dubai Marina"
+      ],
+      "aliases": [
+        "Rove Dubai Marina"
+      ]
+    },
+    {
+      "id": "ibis_styles_old_tbilisi",
+      "name": "ibis Styles Old Tbilisi",
+      "country": "Грузия",
+      "geo": "Тбилиси",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217797171",
+        "ostrovok": "https://ostrovok.ru/hotel/georgia/tbilisi/mid13117861/ibis_styles_old_tbilisi/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tbilisi/ibis-styles-old-tbilisi/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-ibis-styles-old-tbilisi-1843026955/"
+      },
+      "stars_source": "https://otello.ru/hotel/70358702217797171",
+      "location_aliases": [
+        "Tbilisi"
+      ],
+      "aliases": [
+        "ibis Styles Old Tbilisi"
+      ]
+    },
+    {
+      "id": "ani_plaza_yerevan",
+      "name": "Ani Plaza Hotel",
+      "country": "Армения",
+      "geo": "Ереван",
+      "stars": 3,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217348760",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yerevan/ani-plaza-hotel/",
+        "ostrovok": "https://ostrovok.ru/hotel/armenia/yerevan/mid7752500/ani_plaza_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ani-plaza-hotel-614076455/"
+      },
+      "stars_source": "https://otello.ru/hotel/70358702217348760",
+      "location_aliases": [
+        "Yerevan"
+      ],
+      "aliases": [
+        "Ani Plaza",
+        "Ани Плаза"
+      ]
+    },
+    {
+      "id": "kazakhstan_almaty",
+      "name": "Kazakhstan Hotel",
+      "country": "Казахстан",
+      "geo": "Алматы",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/9429940000796163",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/kazahstan-629059171/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/almaty/kazakhstan/",
+        "ostrovok": "https://ostrovok.ru/hotel/kazakhstan/almaty/mid7828468/kazakhstan/"
+      },
+      "stars_source": "https://otello.ru/hotel/9429940000796163",
+      "location_aliases": [
+        "Almaty",
+        "Алма-Ата"
+      ],
+      "aliases": [
+        "Казахстан",
+        "Kazakhstan"
+      ]
+    },
+    {
+      "id": "uzbekistan_tashkent",
+      "name": "Hotel Uzbekistan",
+      "country": "Узбекистан",
+      "geo": "Ташкент",
+      "stars": 3,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217630486",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tashkent/otel-uzbekistan/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-uzbekistan-1101952654/"
+      },
+      "stars_source": "https://otello.ru/hotel/70358702217630486",
+      "location_aliases": [
+        "Tashkent"
+      ],
+      "aliases": [
+        "Узбекистан",
+        "Uzbekistan"
+      ]
+    },
+    {
+      "id": "pekin_minsk",
+      "name": "Пекин",
+      "aliases": [
+        "Пекин",
+        "Beijing"
+      ],
+      "country": "Беларусь",
+      "geo": "Минск",
+      "location_aliases": [
+        "Минске",
+        "Minsk"
+      ],
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001042353970",
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001042353970",
+        "ostrovok": "https://ostrovok.ru/hotel/belarus/minsk/mid8163938/gostinitsa_pekin_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/pekin-1101421561/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/minsk/pekin/"
+      }
+    },
+    {
+      "id": "hilton_baku",
+      "name": "Hilton Baku",
+      "country": "Азербайджан",
+      "geo": "Баку",
+      "stars": 5,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001038377545",
+        "ostrovok": "https://ostrovok.ru/hotel/azerbaijan/baku/mid7764424/hilton_baku/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hilton-baku-632531274/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/baku/hilton-baku/"
+      },
+      "stars_source": "https://otello.ru/hotel/70000001038377545",
+      "location_aliases": [
+        "Baku"
+      ],
+      "aliases": [
+        "Hilton"
+      ],
+      "mapping_notes": {
+        "otello": "Требуется сверка адреса: Отелло — проспект Нефтчиляр, 89; официальный Hilton, Ozon и Островок — Azadlig Avenue, 1B. До проверки разрыв не рассчитывается."
+      }
+    },
+    {
+      "id": "jasmine_palace_hurghada",
+      "name": "Jasmine Palace Resort & Spa",
+      "country": "Египет",
+      "geo": "Хургада",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216954632",
+        "ostrovok": "https://ostrovok.ru/hotel/egypt/hurghada/mid8168423/jasmine_palace_resort__spa__all_inclusive/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-jasmine-palace-resort-spa-617504348/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/hurgada/sharm-el-naga-resort-and-diving-center/"
+      },
+      "stars_source": "https://otello.ru/hotel/70358702216954632",
+      "location_aliases": [
+        "Hurghada",
+        "Сахл-Хашиш",
+        "Sahl Hasheesh",
+        "Сахл-Хашиш",
+        "Sahl Hasheesh"
+      ],
+      "aliases": [
+        "Jasmine Palace"
+      ]
+    },
+    {
+      "id": "rigel_nha_trang",
+      "name": "Rigel Hotel",
+      "country": "Вьетнам",
+      "geo": "Нячанг",
+      "stars": 4,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216390200",
+        "ostrovok": "https://ostrovok.ru/hotel/vietnam/nha_trang/mid8817068/rigel_hotel_3/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/rigel-hotel-1101787441/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/nha-trang/rigel-hotel/"
+      },
+      "stars_source": "https://otello.ru/hotel/70358702216390200",
+      "location_aliases": [
+        "Nha Trang"
+      ],
+      "aliases": [
+        "Rigel"
+      ]
+    },
+    {
+      "id": "novotel_bali_benoa",
+      "name": "Novotel Bali Benoa",
+      "country": "Индонезия",
+      "geo": "Бали",
+      "stars": 5,
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702218772178",
+        "ostrovok": "https://ostrovok.ru/hotel/indonesia/indonesia_bali_province/mid7545432/novotel_bali_benoa/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/indonesia/novotel-bali-benoa/"
+      },
+      "stars_source": "https://otello.ru/hotel/70358702218772178",
+      "location_aliases": [
+        "Tanjung Benoa",
+        "Танжунг Беноа",
+        "Nusa Dua",
+        "Нуса-Дуа"
+      ],
+      "aliases": [
+        "Novotel Bali Benoa"
+      ]
     }
   ],
   "platforms": [
