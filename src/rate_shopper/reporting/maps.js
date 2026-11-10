@@ -19,13 +19,16 @@ function renderMaps(hotels,rows,verified){
     const regionAttrs=(r,s)=>`data-map-kind="${kind}" data-region-id="${esc(r.id)}" role="button" tabindex="${s.inSample?0:-1}" aria-label="${esc(description(r,s))}"`;
     const fill=s=>s.status==='excluded'?`url(#hatch-${kind})`:mapColors[s.status];
     const paths=map.regions.map(r=>{const s=summaries.get(r.id);return `<path class="region ${mapSelection===kind+'|'+r.id?'selected':''}" d="${r.path}" fill="${fill(s)}" fill-rule="evenodd" ${r.tiny?'':regionAttrs(r,s)}><title>${esc(description(r,s))}</title></path>`}).join('');
-    const labelRegions=map.regions.filter(r=>summaries.get(r.id).inSample).sort((a,b)=>summaries.get(b.id).inSample-summaries.get(a.id).inSample);
+    const labelRegions=map.regions.filter(r=>summaries.get(r.id).inSample).map(r=>{
+      const sample=R.hotels.filter(h=>hotelMapKey(h,kind)===r.id);
+      return {...r,labelName:kind==='russia'&&new Set(sample.map(h=>h.geo)).size===1?sample[0].geo:r.name};
+    }).sort((a,b)=>Number(mapSelection===kind+'|'+b.id)-Number(mapSelection===kind+'|'+a.id)||summaries.get(b.id).inSample-summaries.get(a.id).inSample);
     const labels=placeMapLabels(labelRegions,map.viewBox).map(({region:r,x,y,lx,ly})=>{
       const s=summaries.get(r.id);
       const marker=r.tiny?`<circle class="map-marker" cx="${x}" cy="${y}" r="6" fill="${fill(s)}" ${regionAttrs(r,s)}><title>${esc(description(r,s))}</title></circle>`:'';
       if(lx===null)return marker;
       const displaced=Math.abs(lx-x)>10||Math.abs(ly-y)>20;
-      return `${marker}${displaced?`<path class="map-label-line" d="M${x},${y} L${lx},${ly}"/>`:''}<text class="map-label" x="${lx}" y="${ly}" text-anchor="middle">${esc(r.name)}<tspan class="map-label-value" x="${lx}" dy="16">${s.gap===null?'—':pct(s.gap)}</tspan></text>`;
+      return `${marker}${displaced?`<path class="map-label-line" d="M${x},${y} L${lx},${ly}"/>`:''}<text class="map-label" x="${lx}" y="${ly}" text-anchor="middle">${esc(r.labelName||r.name)}<tspan class="map-label-value" x="${lx}" dy="16">${s.gap===null?'—':pct(s.gap)}</tspan></text>`;
     }).join('');
     $('map-'+kind).innerHTML=`<svg viewBox="${map.viewBox}" aria-label="${kind==='russia'?'Карта регионов России':'Карта мира'}"><defs><pattern id="hatch-${kind}" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#e9eceb"/><rect width="2" height="7" fill="#a8b3ad"/></pattern></defs>${paths}${labels}</svg>`;
   }

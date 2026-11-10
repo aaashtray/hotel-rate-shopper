@@ -5,8 +5,8 @@ function statisticRows(report,scope,verified){
   const matches=new Map(report.statistics.verified_rows.map(r=>[r.hotel_id+'|'+r.platform,r]));
   return rows.map(r=>matches.get(r.hotel_id+'|'+r.platform)||{...r,reference_offer_id:null,competitor_offer_id:null,reference_total:null,competitor_total:null,reference_access:null,competitor_access:null,percent_gap:null,absolute_gap:null,outcome:'excluded',reason:'unverified'});
 }
-const countryMapKeys={"ОАЭ":"ARE","Грузия":"GEO","Армения":"ARM","Казахстан":"KAZ","Узбекистан":"UZB","Беларусь":"BLR","Азербайджан":"AZE","Египет":"EGY","Вьетнам":"VNM","Индонезия":"IDN",'Россия':'RUS','Турция':'TUR','Таиланд':'THA','Мальдивы':'MDV'};
-const regionMapKeys={"Казань":"RU-TA","Екатеринбург":"RU-SVE","Калининград":"RU-KGD","Владивосток":"RU-PRI","Новосибирск":"RU-NVS","Красноярск":"RU-KYA","Мурманск":"RU-MUR","Иркутск":"RU-IRK","Ярославль":"RU-YAR","Нижний Новгород":"RU-NIZ",'Москва':'RU-MOW','Санкт-Петербург':'RU-SPE','Сочи':'RU-KDA'};
+const countryMapKeys={"ОАЭ":"ARE","Грузия":"GEO","Армения":"ARM","Казахстан":"KAZ","Узбекистан":"UZB","Беларусь":"BLR","Азербайджан":"AZE","Египет":"EGY","Вьетнам":"VNM","Индонезия":"IDN","Россия":"RUS","Турция":"TUR","Таиланд":"THA","Мальдивы":"MDV","Япония":"JPN","Китай":"CHN","Южная Корея":"KOR","Сингапур":"SGP","Сербия":"SRB","Чехия":"CZE","Греция":"GRC","Черногория":"MNE","Шри-Ланка":"LKA","Кипр":"CYP","Венгрия":"HUN","Германия":"DEU","Испания":"ESP","Франция":"FRA","ЮАР":"ZAF","Италия":"ITA","Индия":"IND","Оман":"OMN","Португалия":"PRT","Австрия":"AUT","Польша":"POL","Болгария":"BGR","Израиль":"ISR","Румыния":"ROU","Марокко":"MAR","Малайзия":"MYS"};
+const regionMapKeys={"Казань":"RU-TA","Екатеринбург":"RU-SVE","Калининград":"RU-KGD","Владивосток":"RU-PRI","Новосибирск":"RU-NVS","Красноярск":"RU-KYA","Мурманск":"RU-MUR","Иркутск":"RU-IRK","Ярославль":"RU-YAR","Нижний Новгород":"RU-NIZ","Москва":"RU-MOW","Санкт-Петербург":"RU-SPE","Сочи":"RU-KDA","Уфа":"RU-BA","Пермь":"RU-PER","Тюмень":"RU-TYU","Челябинск":"RU-CHE","Омск":"RU-OMS","Томск":"RU-TOM","Кемерово":"RU-KEM","Барнаул":"RU-ALT","Абакан":"RU-KK","Улан-Удэ":"RU-BU","Чита":"RU-ZAB","Хабаровск":"RU-KHA","Якутск":"RU-SA","Южно-Сахалинск":"RU-SAK","Петропавловск-Камчатский":"RU-KAM","Архангельск":"RU-ARK","Петрозаводск":"RU-KR","Псков":"RU-PSK","Великий Новгород":"RU-NGR","Вологда":"RU-VLG","Кострома":"RU-KOS","Иваново":"RU-IVA","Тула":"RU-TUL","Рязань":"RU-RYA","Владимир":"RU-VLA"};
 function hotelMapKey(h,kind){return kind==='world'?countryMapKeys[h.country]:(h.country==='Россия'?regionMapKeys[h.geo]:undefined)}
 function summarizeRegion(hotels,rows){
   const ids=new Set(hotels.map(h=>h.id)),valid=rows.filter(r=>ids.has(r.hotel_id)&&r.percent_gap!=null&&Number.isFinite(Number(r.percent_gap))),groups=new Map();
@@ -18,11 +18,9 @@ function summarizeRegion(hotels,rows){
 function placeMapLabels(regions,viewBox){
   const [left,top,width,height]=viewBox.split(' ').map(Number),placed=[];
   return regions.map(region=>{
-    const [x,y]=region.anchor,w=Math.max(52,region.name.length*7+12),h=34;
-    const candidates=[region.labelOffset||[0,-13],[0,30],[-85,-25],[85,-25],[-90,35],[90,35],[0,65],[0,-65],[-130,75],[130,75],[-130,-75],[130,-75]];
-    for(let radius=120;radius<=280;radius+=40){
-      for(let angle=0;angle<8;angle++)candidates.push([Math.cos(angle*Math.PI/4)*radius,Math.sin(angle*Math.PI/4)*radius]);
-    }
+    const [x,y]=region.anchor,w=Math.max(52,(region.labelName||region.name).length*7+12),h=34;
+    // Dense areas keep nearby labels only; every region remains selectable.
+    const candidates=[region.labelOffset||[0,-13],[0,30],[-65,-25],[65,-25],[-70,35],[70,35],[0,65],[0,-65]];
     for(const [dx,dy] of candidates){
       const lx=Math.max(left+w/2+4,Math.min(left+width-w/2-4,x+dx));
       const ly=Math.max(top+18,Math.min(top+height-22,y+dy));

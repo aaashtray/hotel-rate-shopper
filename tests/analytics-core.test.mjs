@@ -49,8 +49,19 @@ test('every configured hotel has a map region and populated labels do not overla
     const regions=maps[kind].regions.filter(r=>relevant.some(h=>hotelMapKey(h,kind)===r.id));
     const labels=placeMapLabels(regions,maps[kind].viewBox);
     for(let i=0;i<labels.length;i++){
-      const a=labels[i].box;assert.ok(a,labels[i].region.name);
+      const a=labels[i].box;if(!a)continue;
       for(const b of labels.slice(i+1).map(x=>x.box).filter(Boolean))assert.ok(a.x+a.w<=b.x||b.x+b.w<=a.x||a.y+a.h<=b.y||b.y+b.h<=a.y);
     }
   }
+});
+
+test('dense labels stay nearby and selected region can take first priority',()=>{
+  const regions=Array.from({length:30},(_,i)=>({id:String(i),name:'Dense region '+i,anchor:[300,200]}));
+  const labels=placeMapLabels(regions,'0 0 600 400');
+  assert.ok(labels[0].box);
+  assert.ok(labels.some(l=>l.box===null));
+  assert.equal(labels.length,regions.length);
+  for(const l of labels.filter(l=>l.box))assert.ok(Math.hypot(l.lx-l.x,l.ly-l.y)<=90);
+  const selected=placeMapLabels([regions[29],...regions.slice(0,29)],'0 0 600 400');
+  assert.equal(selected[0].region.id,'29');assert.ok(selected[0].box);
 });
