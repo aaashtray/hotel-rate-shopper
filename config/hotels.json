@@ -3265,6 +3265,3016 @@
         "ozon_travel": "https://www.ozon.ru/travel/hotels/product/b-b-hotel-como-city-center-1116148331/",
         "yandex_travel": "https://travel.yandex.ru/hotels/como/b-b-hotel-como-city-center/"
       }
+    },
+    {
+      "id": "add250-70000001033435399",
+      "name": "Radisson Blu Олимпийский Москва",
+      "aliases": [
+        "Radisson Blu Олимпийский Москва",
+        "Гостиница Radisson Blu Олимпийский, Москва",
+        "Рэдиссон Блу Олимпийский Москва",
+        "Radisson Blu Olympiyskiy Moscow",
+        "Radisson Blu Олимпийский"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001033435399",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid8869780/radisson_blu_olympiyskiy_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-radisson-blu-olympiyskiy-hotel-moscow-613315839/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/radisson-blu-olimpiiskii/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Москва",
+      "location_aliases": [
+        "Москва"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001033435399",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С772024009198",
+          "source_url": "https://travel.yandex.ru/hotels/moscow/radisson-blu-olimpiiskii/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С772024009198",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T11:56:40.060000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-4504127908366838",
+      "name": "Hilton Moscow Leningradskaya",
+      "aliases": [
+        "Hilton Moscow Leningradskaya",
+        "Отель Hilton Москва Ленинградская",
+        "Hilton Moscow Leningradskaya (Хилтон Ленинградская)"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4504127908366838",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid7601804/gostinitsa_khilton_leningradskaia/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hilton-moskva-leningradskaya-614070977/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/hilton-moscow-leningradskaya/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Москва",
+      "location_aliases": [
+        "Москва"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/4504127908366838",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С772024007303",
+          "source_url": "https://travel.yandex.ru/hotels/moscow/hilton-moscow-leningradskaya/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С772024007303",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T11:59:11.821000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-4504127908393745",
+      "name": "Radisson Collection Москва",
+      "aliases": [
+        "Radisson Collection Москва",
+        "Гостиница Radisson Collection Москва",
+        "Radisson Collection Moscow (Рэдиссон Коллекшен Москва)",
+        "Radisson Collection Hotel Moscow"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4504127908393745",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid8876782/radisson_collection_hotel_moscow/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-radisson-collection-hotel-moscow-612656495/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/moscow/radisson-collection-hotel-moscow/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Москва",
+      "location_aliases": [
+        "Москва"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/4504127908393745",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С772024022247",
+          "source_url": "https://travel.yandex.ru/hotels/moscow/radisson-collection-hotel-moscow/?adults=2&checkinDate=2026-11-27&checkoutDate=2026-11-29&childrenAges=&lastSearchTimeMarker=1795607875475&oneNightChecked=false&roomCount=1",
+          "source_text": "Объект №С772024022247",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T11:59:07.697000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-4504127908370115",
+      "name": "Альфа Измайлово",
+      "aliases": [
+        "Альфа Измайлово",
+        "Гостиница Альфа Измайлово"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4504127908370115",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/moscow/mid7467385/izmailovo_alpha_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/alfa-614071115/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/~permalink/1056004860/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Москва",
+      "location_aliases": [
+        "Москва"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/4504127908370115",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С772024001831",
+          "source_url": "https://travel.yandex.ru/hotels/~permalink/1056004860/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С772024001831",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T11:59:47.067000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-5348552838479919",
+      "name": "Palace Bridge",
+      "aliases": [
+        "Palace Bridge",
+        "Palace Bridge Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/5348552838479919",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid7597486/otel_sokos_palas_bridzh/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/palace-bridge-hotel-704313971/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/~permalink/143534385501/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Санкт-Петербург",
+      "location_aliases": [
+        "Санкт-Петербург"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/5348552838479919",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С782024011687",
+          "source_url": "https://travel.yandex.ru/hotels/~permalink/143534385501/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С782024011687",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:00:15.619000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-5348552839524917",
+      "name": "Cosmos Selection Санкт-Петербург Невский Роял Отель",
+      "aliases": [
+        "Cosmos Selection Санкт-Петербург Невский Роял Отель",
+        "Отель Cosmos Selection Санкт-Петербург Невский Роял",
+        "Cosmos Selection Невский Роял Отель"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/5348552839524917",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid7597283/radisson_royal_st_petersburg/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/cosmos-selection-saint-petersburg-nevsky-royal-hotel-614071245/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/saint-petersburg/cosmos-selection-nevskii-roial-otel/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Санкт-Петербург",
+      "location_aliases": [
+        "Санкт-Петербург"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/5348552839524917",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С782024000889",
+          "source_url": "https://travel.yandex.ru/hotels/saint-petersburg/cosmos-selection-nevskii-roial-otel/?adults=2&checkinDate=2026-11-27&checkoutDate=2026-11-29&childrenAges=&lastSearchTimeMarker=1795609135516&oneNightChecked=false&roomCount=1",
+          "source_text": "Объект №С782024000889",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:19:13.042000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-5348552838479907",
+      "name": "Коринтия",
+      "aliases": [
+        "Коринтия",
+        "Отель Коринтия Санкт-Петербург",
+        "Corinthia"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/5348552838479907",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid7597102/otel_corinthia/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/korintiya-sankt-peterburg-612654191/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/saint-petersburg/korintiia/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Санкт-Петербург",
+      "location_aliases": [
+        "Санкт-Петербург"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/5348552838479907",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С782024010657",
+          "source_url": "https://travel.yandex.ru/hotels/saint-petersburg/korintiia/?adults=2&checkinDate=2026-11-27&checkoutDate=2026-11-29&childrenAges=&lastSearchTimeMarker=1795609158164&oneNightChecked=false&roomCount=1",
+          "source_text": "Объект №С782024010657",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:19:20.456000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-5348552838552001",
+      "name": "Полюстрово",
+      "aliases": [
+        "Полюстрово",
+        "Отель Полюстрово",
+        "Премьер Отель Полюстрово"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/5348552838552001",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/st._petersburg/mid7373866/otel_poliustrovo/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/polyustrovo-612673971/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/saint-petersburg/poliustrovo/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Санкт-Петербург",
+      "location_aliases": [
+        "Санкт-Петербург"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/5348552838552001",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С782026021314",
+          "source_url": "https://travel.yandex.ru/hotels/saint-petersburg/poliustrovo/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С782026021314",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:15:14.924000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001006342042",
+      "name": "Grand Karat Sochi",
+      "aliases": [
+        "Grand Karat Sochi",
+        "Отель GRAND KARAT SOCHI",
+        "GRAND KARAT SOCHI (Гранд Карат) ex.Hyatt Regency"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001006342042",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid7936791/hyatt_regency_sochi/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/grand-karat-sochi-614071150/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/sochi/grand-karat-sochi/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Сочи",
+      "location_aliases": [
+        "Сочи"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001006342042",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С232024011104",
+          "source_url": "https://travel.yandex.ru/hotels/sochi/grand-karat-sochi/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С232024011104",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:00:30.370000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-4222653932175556",
+      "name": "Swissotel Resort Сочи Камелия",
+      "aliases": [
+        "Swissotel Resort Сочи Камелия",
+        "Отель Swissôtel Resort Sochi Kamelia",
+        "Swissôtel Resort Сочи Камелия"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4222653932175556",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid7967155/swissotel_sochi_kamelia/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/swissotel-resort-sochi-kameliya-615526030/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/sochi/swissotel-resort-sochi-kameliia/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Сочи",
+      "location_aliases": [
+        "Сочи"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/4222653932175556",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С232024007324",
+          "source_url": "https://travel.yandex.ru/hotels/sochi/swissotel-resort-sochi-kameliia/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С232024007324",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:00:41.504000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001081556935",
+      "name": "Luciano",
+      "aliases": [
+        "Luciano",
+        "Отель Luciano Hotel & Spa Sochi",
+        "Luciano Отель и Спа Сочи"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001081556935",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid11161658/luciano_hotel_spa_sochi_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/luciano-hotel-spa-sochi-1354183568/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/sochi/luciano/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Сочи",
+      "location_aliases": [
+        "Сочи"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001081556935",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С232026026618",
+          "source_url": "https://travel.yandex.ru/hotels/sochi/luciano/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С232026026618",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:00:45.284000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001053511218",
+      "name": "Сити Парк Отель Сочи",
+      "aliases": [
+        "Сити Парк Отель Сочи",
+        "Отель City Park Hotel Sochi",
+        "City Park Hotel Sochi (Сити Парк)",
+        "City Park Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001053511218",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/sochi/mid7467615/marins_park_hotel_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-city-park-hotel-sochi-614070969/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/sochi/siti-park/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Сочи",
+      "location_aliases": [
+        "Сочи"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001053511218",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С232024011627",
+          "source_url": "https://travel.yandex.ru/hotels/sochi/siti-park/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С232024011627",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:00:50.899000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-2956015536487879",
+      "name": "Мираж",
+      "aliases": [
+        "Мираж",
+        "Гостиница Мираж"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/2956015536487879",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kazan/mid7467368/mirage_hotel_23/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mirazh-612654751/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kazan/mirazh/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Казань",
+      "location_aliases": [
+        "Казань",
+        "Казани"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/2956015536487879",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С162024006895",
+          "source_url": "https://travel.yandex.ru/hotels/kazan/mirazh/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С162024006895",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:00:56.619000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001033089306",
+      "name": "Kazan Palace by Tasigo",
+      "aliases": [
+        "Kazan Palace by Tasigo",
+        "Отель  Kazan Palace by Tasigo"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001033089306",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kazan/mid8869250/kazan_palace_by_tasigo/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/tasigo-kazan-palace-612653552/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kazan/kazan-palace-by-tasigo/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Казань",
+      "location_aliases": [
+        "Казань",
+        "Казани"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001033089306",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С162024017739",
+          "source_url": "https://travel.yandex.ru/hotels/kazan/kazan-palace-by-tasigo/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С162024017739",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:20:30.842000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-2956016536571501",
+      "name": "Кристалл",
+      "aliases": [
+        "Кристалл",
+        "Отель «Кристалл»",
+        "Кристалл отель"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/2956016536571501",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kazan/mid7663227/kristall_hotel__2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/kristall-612653346/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/~permalink/1140143684/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Казань",
+      "location_aliases": [
+        "Казань",
+        "Казани"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/2956016536571501",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С162024010722",
+          "source_url": "https://travel.yandex.ru/hotels/~permalink/1140143684/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С162024010722",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:01:00.254000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-1267165676524765",
+      "name": "Ramada by Wyndham Yekaterinburg Hotel&Spa",
+      "aliases": [
+        "Ramada by Wyndham Yekaterinburg Hotel&Spa",
+        "Отель Ramada by Wyndham Yekaterinburg",
+        "Ramada By Wyndham Yekaterinburg Hotel & Spa",
+        "Ramada"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/1267165676524765",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/yekaterinburg/mid7467347/ramada_ekaterinburg_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/ramada-ekaterinburg-otel-spa-614071229/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yekaterinburg/ramada/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Екатеринбург",
+      "location_aliases": [
+        "Екатеринбург",
+        "Екатеринбурге"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/1267165676524765",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С662024006505",
+          "source_url": "https://travel.yandex.ru/hotels/yekaterinburg/ramada/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С662024006505",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:01:05.172000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-1267165676607053",
+      "name": "Hyatt Regency Ekaterinburg",
+      "aliases": [
+        "Hyatt Regency Ekaterinburg",
+        "Отель Хаятт Ридженси Екатеринбург",
+        "Хаятт Ридженси Екатеринбург"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/1267165676607053",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/yekaterinburg/mid7467994/hyatt_regency_ekaterinburg/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hyatt-regency-613315210/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yekaterinburg/khaiatt-ridzhensi-ekaterinburg/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Екатеринбург",
+      "location_aliases": [
+        "Екатеринбург",
+        "Екатеринбурге"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/1267165676607053",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С662024004143",
+          "source_url": "https://travel.yandex.ru/hotels/yekaterinburg/khaiatt-ridzhensi-ekaterinburg/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С662024004143",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:01:21.227000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-1267165676204162",
+      "name": "Cosmos Екатеринбург Отель",
+      "aliases": [
+        "Cosmos Екатеринбург Отель"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/1267165676204162",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/yekaterinburg/mid7467332/park_inn_by_radisson_ekaterinburg/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/cosmos-ekaterinburg-hotel-a-member-of-radisson-individuals-614071244/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yekaterinburg/cosmos-ekaterinburg-otel/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Екатеринбург",
+      "location_aliases": [
+        "Екатеринбург",
+        "Екатеринбурге"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/1267165676204162",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С662024018867",
+          "source_url": "https://travel.yandex.ru/hotels/yekaterinburg/cosmos-ekaterinburg-otel/?adults=2&checkinDate=2026-11-27&checkoutDate=2026-11-29&childrenAges=&lastSearchTimeMarker=1795609204491&oneNightChecked=false&roomCount=1",
+          "source_text": "Объект №С662024018867",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:20:06.224000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001006540360",
+      "name": "Гранд Автограф Отель Новосибирск",
+      "aliases": [
+        "Гранд Автограф Отель Новосибирск",
+        "Отель Гранд Автограф Отель Новосибирск",
+        "Гранд Автограф отель Новосибирск (бывш. Марриотт Новосибирск)",
+        "Grand Autograph"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001006540360",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/novosibirsk/mid6540962/novosibirsk_marriott_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/grand-autograph-hotel-novosibirsk-ex-marriott-613317533/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/novosibirsk/grand-autograph/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Новосибирск",
+      "location_aliases": [
+        "Новосибирск",
+        "Новосибирске"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001006540360",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С542024000018",
+          "source_url": "https://travel.yandex.ru/hotels/novosibirsk/grand-autograph/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С542024000018",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:01:24.998000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-141265769363659",
+      "name": "Marins Новосибирск",
+      "aliases": [
+        "Marins Новосибирск",
+        "Отель Marins Новосибирск"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/141265769363659",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/novosibirsk/mid7401889/novosibirsk_kongress_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/marins-park-otel-novosibirsk-614071141/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/novosibirsk/marins-novosibirsk/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Новосибирск",
+      "location_aliases": [
+        "Новосибирск",
+        "Новосибирске"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/141265769363659",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С542024013063",
+          "source_url": "https://travel.yandex.ru/hotels/novosibirsk/marins-novosibirsk/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С542024013063",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:01:30.133000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001060186098",
+      "name": "Crystal House Suite Hotel&SPA",
+      "aliases": [
+        "Crystal House Suite Hotel&SPA",
+        "Отель Crystal House Suite Hotel & Spa",
+        "Crystal House Suite Hotel & Spa (Кристалл Хаус)"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001060186098",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kaliningrad/mid8742970/kristal_khaus_siuit/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/crystal-house-suite-hotel-spa-614077350/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kaliningrad/crystal-house-suite-hotel-spa/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Калининград",
+      "location_aliases": [
+        "Калининград",
+        "Калининграде"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001060186098",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С392024016156",
+          "source_url": "https://travel.yandex.ru/hotels/kaliningrad/crystal-house-suite-hotel-spa/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С392024016156",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:15:17.771000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-5630027815194861",
+      "name": "Калининград",
+      "aliases": [
+        "Калининград",
+        "Гостиница Калининград"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/5630027815194861",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/kaliningrad/mid7465036/kaliningrad_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/kaliningrad-615525172/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kaliningrad/gostinitsa-kaliningrad/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Калининград",
+      "location_aliases": [
+        "Калининград",
+        "Калининграде"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/5630027815194861",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С392024011450",
+          "source_url": "https://travel.yandex.ru/hotels/kaliningrad/gostinitsa-kaliningrad/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С392024011450",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:20:35.180000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001029159688",
+      "name": "Sheraton",
+      "aliases": [
+        "Sheraton",
+        "Отель Sheraton (Шератон) Нижний Новгород Кремль",
+        "Sheraton Nizhny Novgorod Kremlin"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001029159688",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/nizhniy_novgorod/mid8744831/sheraton_nizhny_novgorod_kremlin/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/sheraton-nizhniy-novgorod-kreml-612652794/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/nizhny-novgorod/sheraton/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Нижний Новгород",
+      "location_aliases": [
+        "Нижний Новгород",
+        "Нижнем Новгороде"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001029159688",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С522024006466",
+          "source_url": "https://travel.yandex.ru/hotels/nizhny-novgorod/sheraton/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С522024006466",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:01:39.451000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001022307461",
+      "name": "Hampton by Hilton",
+      "aliases": [
+        "Hampton by Hilton",
+        "Отель Hampton by Hilton Нижний Новгород",
+        "Hampton by Hilton Нижний Новгород"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001022307461",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/nizhniy_novgorod/mid6982487/hampton_by_hilton_nizhny_novgorod/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hampton-by-hilton-nizhniy-novgorod-615525167/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/nizhny-novgorod/hampton-by-hilton/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Нижний Новгород",
+      "location_aliases": [
+        "Нижний Новгород",
+        "Нижнем Новгороде"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001022307461",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С522024009624",
+          "source_url": "https://travel.yandex.ru/hotels/nizhny-novgorod/hampton-by-hilton/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С522024009624",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:01:43.434000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-2393065583019903",
+      "name": "Башкирия",
+      "aliases": [
+        "Башкирия",
+        "Гостиничный Комплекс Башкирия",
+        "Гостиница Башкирия"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/2393065583019903",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/ufa/mid9024584/bashkiriya_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/bashkiriya-614074152/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/ufa/gostinitsa-bashkiriia/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Уфа",
+      "location_aliases": [
+        "Уфа",
+        "Уфе"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/2393065583019903",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С022024012215",
+          "source_url": "https://travel.yandex.ru/hotels/ufa/gostinitsa-bashkiriia/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С022024012215",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:01:47.931000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001017881800",
+      "name": "Урал тау",
+      "aliases": [
+        "Урал тау",
+        "Отель Урал Тау",
+        "Гостиница \"УРАЛ ТАУ\"",
+        "Урал Тау"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001017881800",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/ufa/mid6784861/atola_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-ural-tau-612653384/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/ufa/ural-tau/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Уфа",
+      "location_aliases": [
+        "Уфа",
+        "Уфе"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001017881800",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С022024005051",
+          "source_url": "https://travel.yandex.ru/hotels/ufa/ural-tau/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С022024005051",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:01:51.630000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001043591652",
+      "name": "History",
+      "aliases": [
+        "History",
+        "Отель HISTORY Бутик-отель и СПА",
+        "HISTORY Бутик-отель и СПА"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001043591652",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/irkutsk/mid9741097/history_boutiquehotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-history-boutique-hotel-spa-614080809/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/irkutsk/history-butik-otel-i-spa/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Иркутск",
+      "location_aliases": [
+        "Иркутск",
+        "Иркутске"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001043591652",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С382024016081",
+          "source_url": "https://travel.yandex.ru/hotels/irkutsk/history-butik-otel-i-spa/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С382024016081",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:02:02.687000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-1548640652892443",
+      "name": "Звезда",
+      "aliases": [
+        "Звезда",
+        "Отель Звезда"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/1548640652892443",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/irkutsk/mid7806155/best_eastern_hotel_zvezda/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/zvezda-614080346/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/irkutsk/zvezda/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Иркутск",
+      "location_aliases": [
+        "Иркутск",
+        "Иркутске"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/1548640652892443",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С382024004092",
+          "source_url": "https://travel.yandex.ru/hotels/irkutsk/zvezda/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С382024004092",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:02:07.717000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-1830115629732498",
+      "name": "Ремезов",
+      "aliases": [
+        "Ремезов",
+        "Отель Ремезов",
+        "Отель \"Ремезов\""
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/1830115629732498",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/tyumen/mid7374239/remezov_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/remezov-613314114/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tyumen/remezov/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Тюмень",
+      "location_aliases": [
+        "Тюмень",
+        "Тюмени"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/1830115629732498",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С722024003124",
+          "source_url": "https://travel.yandex.ru/hotels/tyumen/remezov/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С722024003124",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:02:14.733000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-1830115629600168",
+      "name": "Волна",
+      "aliases": [
+        "Волна",
+        "Гостиница Волна"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/1830115629600168",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/tyumen/mid9084661/volna_hotel_11/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Тюмень",
+      "location_aliases": [
+        "Тюмень",
+        "Тюмени"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/1830115629600168",
+      "registrations": []
+    },
+    {
+      "id": "add250-70000001006693195",
+      "name": "Media Rotana",
+      "aliases": [
+        "Media Rotana",
+        "Отель Radisson Blu Barsha Heights",
+        "Media Rotana Dubai"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001006693195",
+        "ostrovok": "https://ostrovok.ru/hotel/united_arab_emirates/dubai/mid7492128/media_rotana_barsha__dubai/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/media-rotana-1101563408/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/dubai/media-rotana-dubai/"
+      },
+      "address_tokens": [],
+      "country": "ОАЭ",
+      "geo": "Дубай",
+      "location_aliases": [
+        "Дубай",
+        "Дубае"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001006693195",
+      "registrations": []
+    },
+    {
+      "id": "add250-70000001007185775",
+      "name": "Jumeirah Creekside",
+      "aliases": [
+        "Jumeirah Creekside",
+        "Отель The Creekside Hotel Dubai an Accor Hotel",
+        "The Creekside Hotel Dubai an Accor Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001007185775",
+        "ostrovok": "https://ostrovok.ru/hotel/united_arab_emirates/dubai/mid13648407/the_creekside_hotel_dubai_an_accor_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/jumeirah-creekside-hotel-1101556894/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/dubai/the-creekside-hotel-dubai-an-accor-hotel/"
+      },
+      "address_tokens": [],
+      "country": "ОАЭ",
+      "geo": "Дубай",
+      "location_aliases": [
+        "Дубай",
+        "Дубае"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001007185775",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216127076",
+      "name": "Tbilisi Marriott Hotel",
+      "aliases": [
+        "Tbilisi Marriott Hotel",
+        "Отель Marriott Tbilisi"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216127076",
+        "ostrovok": "https://ostrovok.ru/hotel/georgia/tbilisi/mid7847323/tbilisi_marriott_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/tbilisi-marriott-hotel-1102259487/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tbilisi/tbilisi-marriott-hotel/"
+      },
+      "address_tokens": [],
+      "country": "Грузия",
+      "geo": "Тбилиси",
+      "location_aliases": [
+        "Тбилиси"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216127076",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216185864",
+      "name": "Liberty Theatre Hotel",
+      "aliases": [
+        "Liberty Theatre Hotel",
+        "Hotel Liberty Theatre",
+        "Hotel Liberty Theatre (Либерти Театр)"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216185864",
+        "ostrovok": "https://ostrovok.ru/hotel/georgia/tbilisi/mid11178492/hotel_liberty_theatre_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-liberty-theatre-1102258754/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tbilisi/hotel-liberty-theatre/"
+      },
+      "address_tokens": [],
+      "country": "Грузия",
+      "geo": "Тбилиси",
+      "location_aliases": [
+        "Тбилиси"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216185864",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217358375",
+      "name": "National by Stellar Hotels Yerevan",
+      "aliases": [
+        "National by Stellar Hotels Yerevan",
+        "National by Stellar Hotels, Yerevan",
+        "National by Stellar Hotels, Yerevan (Националь бай Стеллар Хотелс, Ереван)",
+        "National by Stellar Hotels"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217358375",
+        "ostrovok": "https://ostrovok.ru/hotel/armenia/yerevan/mid10666046/national_hotel_19/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/national-by-stellar-hotels-yerevan-1606958764/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yerevan/national-by-stellar-hotels/"
+      },
+      "address_tokens": [],
+      "country": "Армения",
+      "geo": "Ереван",
+      "location_aliases": [
+        "Ереван",
+        "Ереване"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217358375",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216760445",
+      "name": "Anga Yerevan Hotel",
+      "aliases": [
+        "Anga Yerevan Hotel",
+        "Отель Anga Yerevan Hotel",
+        "Anga Yerevan Hotel (Анга Ереван)",
+        "Анга"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216760445",
+        "ostrovok": "https://ostrovok.ru/hotel/armenia/yerevan/mid10016596/hotel_anga_yerevan_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-anga-yerevan-hotel-1101490171/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/yerevan/anga/"
+      },
+      "address_tokens": [],
+      "country": "Армения",
+      "geo": "Ереван",
+      "location_aliases": [
+        "Ереван",
+        "Ереване"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216760445",
+      "registrations": []
+    },
+    {
+      "id": "add250-9429940000789746",
+      "name": "Rixos Almaty",
+      "aliases": [
+        "Rixos Almaty",
+        "Отель Rixos Almaty",
+        "Rixos Almaty (Риксос Алматы)"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/9429940000789746",
+        "ostrovok": "https://ostrovok.ru/hotel/kazakhstan/almaty/mid7829783/rixos_almaty_hotel_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/rixos-almaty-614082102/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/almaty/otel-rixos-almaty/"
+      },
+      "address_tokens": [],
+      "country": "Казахстан",
+      "geo": "Алматы",
+      "location_aliases": [
+        "Алматы"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/9429940000789746",
+      "registrations": []
+    },
+    {
+      "id": "add250-9429940000787810",
+      "name": "InterContinental Almaty",
+      "aliases": [
+        "InterContinental Almaty",
+        "Отель InterContinental Almaty"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/9429940000787810",
+        "ostrovok": "https://ostrovok.ru/hotel/kazakhstan/almaty/mid7812109/intercontinental_almaty/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/intercontinental-almaty-1101979508/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/almaty/intercontinental-almaty/"
+      },
+      "address_tokens": [],
+      "country": "Казахстан",
+      "geo": "Алматы",
+      "location_aliases": [
+        "Алматы"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/9429940000787810",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217623095",
+      "name": "InterContinental Tashkent by IHG",
+      "aliases": [
+        "InterContinental Tashkent by IHG",
+        "InterContinental Tashkent, an IHG Hotel",
+        "Intercontinental (Интерконтиненталь)"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217623095",
+        "ostrovok": "https://ostrovok.ru/hotel/uzbekistan/tashkent/mid10215481/hotel_intercontinental_tashkent/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-intercontinental-tashkent-1101951647/"
+      },
+      "address_tokens": [],
+      "country": "Узбекистан",
+      "geo": "Ташкент",
+      "location_aliases": [
+        "Ташкент",
+        "Ташкенте"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217623095",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217632310",
+      "name": "Shodlik Palace",
+      "aliases": [
+        "Shodlik Palace",
+        "Отель Шодлик Палас",
+        "Shodlik Palace (Шодлик Палас)"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217632310",
+        "ostrovok": "https://ostrovok.ru/hotel/uzbekistan/tashkent/mid7728161/shodlik_palace/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/shodlik-palace-hotel-617495533/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tashkent/shodlik-palace/"
+      },
+      "address_tokens": [],
+      "country": "Узбекистан",
+      "geo": "Ташкент",
+      "location_aliases": [
+        "Ташкент",
+        "Ташкенте"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702217632310",
+      "registrations": []
+    },
+    {
+      "id": "add250-70000001042577388",
+      "name": "President Hotel Minsk",
+      "aliases": [
+        "President Hotel Minsk",
+        "Отель Президент",
+        "President (Президент)",
+        "Президент-Отель"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001042577388",
+        "ostrovok": "https://ostrovok.ru/hotel/belarus/minsk/mid8068537/president_hotel_11/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/prezident-otel-615531338/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/minsk/prezident-otel/"
+      },
+      "address_tokens": [],
+      "country": "Беларусь",
+      "geo": "Минск",
+      "location_aliases": [
+        "Минск",
+        "Минске"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001042577388",
+      "registrations": []
+    },
+    {
+      "id": "add250-70000001042495259",
+      "name": "Minsk hotel",
+      "aliases": [
+        "Minsk hotel",
+        "Отель Минск",
+        "Минск"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001042495259",
+        "ostrovok": "https://ostrovok.ru/hotel/belarus/minsk/mid7787004/minsk_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/minsk-615523995/"
+      },
+      "address_tokens": [],
+      "country": "Беларусь",
+      "geo": "Минск",
+      "location_aliases": [
+        "Минск",
+        "Минске"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001042495259",
+      "registrations": []
+    },
+    {
+      "id": "add250-70000001038963190",
+      "name": "Baku Marriott Hotel Boulevard",
+      "aliases": [
+        "Baku Marriott Hotel Boulevard",
+        "Отель Baku Marriott Hotel Boulevard",
+        "Baku Marriott Boulevard (Баку Марриотт Боулевард)"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001038963190",
+        "ostrovok": "https://ostrovok.ru/hotel/azerbaijan/baku/mid6791087/boulevard_hotel_baku_autograph_collection/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/boulevard-hotel-baku-autograph-collection-1102228691/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/baku/baku-marriott-otel-bulvar/"
+      },
+      "address_tokens": [],
+      "country": "Азербайджан",
+      "geo": "Баку",
+      "location_aliases": [
+        "Баку"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001038963190",
+      "registrations": []
+    },
+    {
+      "id": "add250-70000001038034869",
+      "name": "Sheraton Baku Intourist",
+      "aliases": [
+        "Sheraton Baku Intourist",
+        "Sheraton Baku Intourist (Шератон Баку Интурист)"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001038034869",
+        "ostrovok": "https://ostrovok.ru/hotel/azerbaijan/baku/mid6791084/intourist_hotel_baku_autograph_collection/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/intourist-hotel-baku-autograph-collection-1102228753/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/bayburt-bayburt-tr/sheraton-baku-inturist/"
+      },
+      "address_tokens": [],
+      "country": "Азербайджан",
+      "geo": "Баку",
+      "location_aliases": [
+        "Баку"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001038034869",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216989881",
+      "name": "Titanic Beach - Families and Couples only",
+      "aliases": [
+        "Titanic Beach - Families and Couples only",
+        "Titanic Beach"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216989881",
+        "ostrovok": "https://ostrovok.ru/hotel/egypt/hurghada/mid11180778/titanic_beach_spa_aqua_park_all_inclusive/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/titanic-beach-spa-and-aqua-park-1702682655/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/hurgada/titanic-beach-spa/"
+      },
+      "address_tokens": [],
+      "country": "Египет",
+      "geo": "Хургада",
+      "location_aliases": [
+        "Хургада",
+        "Хургаде"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216989881",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216737076",
+      "name": "Hurghada Long Beach Resort",
+      "aliases": [
+        "Hurghada Long Beach Resort",
+        "Хургада Лонг-Бич Резорт",
+        "Long Beach Resort Hurghada"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216737076",
+        "ostrovok": "https://ostrovok.ru/hotel/egypt/hurghada/mid8936743/hurghada_long_beach_resort_all_inclusive/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hurgada-long-bich-rezort-614077976/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/hurgada/long-beach-resort-hurghada/"
+      },
+      "address_tokens": [],
+      "country": "Египет",
+      "geo": "Хургада",
+      "location_aliases": [
+        "Хургада",
+        "Хургаде"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216737076",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217158143",
+      "name": "Champa Island Nha Trang Resort Hotel & Spa",
+      "aliases": [
+        "Champa Island Nha Trang Resort Hotel & Spa",
+        "Отель Champa Island Nha Trang Resort Spa"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217158143",
+        "ostrovok": "https://ostrovok.ru/hotel/vietnam/nha_trang/mid6809540/champa_island_nha_trang_resort_hotel_spa/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/champa-island-nha-trang-resort-hotel-spa-1101788084/"
+      },
+      "address_tokens": [],
+      "country": "Вьетнам",
+      "geo": "Нячанг",
+      "location_aliases": [
+        "Нячанг",
+        "Нячанге"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217158143",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217079868",
+      "name": "Anrizon Hotel Nha Trang",
+      "aliases": [
+        "Anrizon Hotel Nha Trang",
+        "Отель Anrizon Nha Trang",
+        "Отель Anrizon Nha Trang"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217079868",
+        "ostrovok": "https://ostrovok.ru/hotel/vietnam/nha_trang/mid8910434/anrizon_hotel_nha_trang/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-anrizon-nha-trang-1101787043/"
+      },
+      "address_tokens": [],
+      "country": "Вьетнам",
+      "geo": "Нячанг",
+      "location_aliases": [
+        "Нячанг",
+        "Нячанге"
+      ],
+      "mapping_notes": {
+        "yandex_travel": "Карточка Anrizon имеет другой адрес: 56 Hoang Hoa Tham вместо 03–05 Pham Van Dong. Сопоставление не подтверждено."
+      },
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702217079868",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216573221",
+      "name": "Hotel Maya Kuala Lumpur City Center",
+      "aliases": [
+        "Hotel Maya Kuala Lumpur City Center",
+        "Hotel Maya Kuala Lumpur"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216573221",
+        "ostrovok": "https://ostrovok.ru/hotel/malaysia/kuala_lumpur/mid7547169/hotel_maya_kuala_lumpur/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-maya-kuala-lumpur-1116156898/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kuala-lumpur/hotel-maya-kuala-lumpur/"
+      },
+      "address_tokens": [],
+      "country": "Малайзия",
+      "geo": "Куала-Лумпур",
+      "location_aliases": [
+        "Куала-Лумпур",
+        "Куала-Лумпуре"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216573221",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216999383",
+      "name": "Sunway Putra Hotel Kuala Lumpur",
+      "aliases": [
+        "Sunway Putra Hotel Kuala Lumpur"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216999383",
+        "ostrovok": "https://ostrovok.ru/hotel/malaysia/kuala_lumpur/mid7547189/sunway_putra_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/sunway-putra-1116157192/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/kuala-lumpur/sunway-putra-hotel-kuala-lumpur/"
+      },
+      "address_tokens": [],
+      "country": "Малайзия",
+      "geo": "Куала-Лумпур",
+      "location_aliases": [
+        "Куала-Лумпур",
+        "Куала-Лумпуре"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216999383",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217516056",
+      "name": "Wyndham Singapore Hotel",
+      "aliases": [
+        "Wyndham Singapore Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217516056",
+        "ostrovok": "https://ostrovok.ru/hotel/singapore/singapore2/mid7548745/peninsula_excelsior_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/peninsula-excelsior-hotel-1116091696/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/singapore-sg/wyndham-singapore-hotel/"
+      },
+      "address_tokens": [],
+      "country": "Сингапур",
+      "geo": "Сингапур",
+      "location_aliases": [
+        "Сингапур",
+        "Сингапуре"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217516056",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216546235",
+      "name": "Jayleen Clarke Quay Hotel",
+      "aliases": [
+        "Jayleen Clarke Quay Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216546235",
+        "ostrovok": "https://ostrovok.ru/hotel/singapore/singapore2/mid7024982/jayleen_clarke_quay_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/jayleen-clarke-quay-hotel-1116091952/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/singapore-sg/jayleen-clarke-quay-hotel/"
+      },
+      "address_tokens": [],
+      "country": "Сингапур",
+      "geo": "Сингапур",
+      "location_aliases": [
+        "Сингапур",
+        "Сингапуре"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216546235",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216095116",
+      "name": "Hyatt Regency Belgrade",
+      "aliases": [
+        "Hyatt Regency Belgrade"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216095116",
+        "ostrovok": "https://ostrovok.ru/hotel/serbia/belgrade/mid7524227/hyatt_regency_belgrade/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hyatt-regency-belgrade-1102222754/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/belgrade/hyatt-regency-belgrade/"
+      },
+      "address_tokens": [],
+      "country": "Сербия",
+      "geo": "Белград",
+      "location_aliases": [
+        "Белград",
+        "Белграде"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216095116",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216512613",
+      "name": "Happy Star Club",
+      "aliases": [
+        "Happy Star Club"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216512613",
+        "ostrovok": "https://ostrovok.ru/hotel/serbia/belgrade/mid7852169/happy_star_club/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/happy-star-club-1102222696/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/belgrade/happy-star-club/"
+      },
+      "address_tokens": [],
+      "country": "Сербия",
+      "geo": "Белград",
+      "location_aliases": [
+        "Белград",
+        "Белграде"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216512613",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217069101",
+      "name": "Michelangelo Grand Hotel",
+      "aliases": [
+        "Michelangelo Grand Hotel",
+        "Michelangelo Grand Hotel Prague"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217069101",
+        "ostrovok": "https://ostrovok.ru/hotel/czech_republic/prague/mid7496393/hotel_beseda_prague/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/michelangelo-grand-hotel-prague-1115877655/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/prague/michelangelo-grand-hotel-prague/"
+      },
+      "address_tokens": [],
+      "country": "Чехия",
+      "geo": "Прага",
+      "location_aliases": [
+        "Прага",
+        "Праге"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217069101",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216012324",
+      "name": "Hotel Charles Central Czech Leading Hotels",
+      "aliases": [
+        "Hotel Charles Central Czech Leading Hotels",
+        "Hotel Charles Central - Czech Leading Hotels",
+        "Hotel Charles Central"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216012324",
+        "ostrovok": "https://ostrovok.ru/hotel/czech_republic/prague/mid7496280/hotel_charles_central/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-charles-central-1102227872/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/prague/hotel-charles-central/"
+      },
+      "address_tokens": [],
+      "country": "Чехия",
+      "geo": "Прага",
+      "location_aliases": [
+        "Прага",
+        "Праге"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702216012324",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217150641",
+      "name": "Pullman Colombo Downtown",
+      "aliases": [
+        "Pullman Colombo Downtown",
+        "NH Collection Colombo"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217150641",
+        "ostrovok": "https://ostrovok.ru/hotel/sri_lanka/colombo/mid8673570/movenpick_hotel_colombo/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/movenpick-hotel-colombo-1101121339/"
+      },
+      "address_tokens": [],
+      "country": "Шри-Ланка",
+      "geo": "Коломбо",
+      "location_aliases": [
+        "Коломбо"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217150641",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216403582",
+      "name": "Fairway Colombo Sri Lanka's First Hotel With Robot Technology",
+      "aliases": [
+        "Fairway Colombo Sri Lanka's First Hotel With Robot Technology",
+        "Fairway Colombo - Sri Lanka's First Hotel With Robot Technology",
+        "Fairway Colombo"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216403582",
+        "ostrovok": "https://ostrovok.ru/hotel/sri_lanka/colombo/mid8457937/zmax_fairway_colombo/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/fairway-colombo-1101110425/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/colombo/fairway-colombo/"
+      },
+      "address_tokens": [],
+      "country": "Шри-Ланка",
+      "geo": "Коломбо",
+      "location_aliases": [
+        "Коломбо"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216403582",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216502186",
+      "name": "Hotel Napoleon",
+      "aliases": [
+        "Hotel Napoleon",
+        "Отель Napoleon"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216502186",
+        "ostrovok": "https://ostrovok.ru/hotel/france/paris/mid7573161/hotel_napoleon_5/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hotel-napoleon-1102116758/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/paris-fr/hotel-napoleon/"
+      },
+      "address_tokens": [],
+      "country": "Франция",
+      "geo": "Париж",
+      "location_aliases": [
+        "Париж",
+        "Париже"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216502186",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217030612",
+      "name": "Pavillon Opera Lafayette",
+      "aliases": [
+        "Pavillon Opera Lafayette",
+        "Pavillon Opéra Lafayette"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217030612",
+        "ostrovok": "https://ostrovok.ru/hotel/france/paris/mid7862070/pavillon_opera_lafayette/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/pavillon-opera-lafayette-1115931140/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/paris-fr/pavillon-opera-lafayette/"
+      },
+      "address_tokens": [],
+      "country": "Франция",
+      "geo": "Париж",
+      "location_aliases": [
+        "Париж",
+        "Париже"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70358702217030612",
+      "registrations": []
+    },
+    {
+      "id": "add250-70000001028061622",
+      "name": "Radisson Blu Ростов-на-Дону",
+      "aliases": [
+        "Radisson Blu Ростов-на-Дону",
+        "Гостиница Radisson Blu, Ростов-на-Дону",
+        "Рэдиссон Блу Ростов-на-Дону (Radisson Blu Rostov-On-Don)",
+        "Radisson Blu, Ростов-на-Дону"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001028061622",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/rostov-on-don/mid8589787/don_hotel_rostov/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/radisson-blu-hotel-rostov-na-donu-613325818/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/rostov-na-donu/radisson-blu-rostov-na-donu/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Ростов-на-Дону",
+      "location_aliases": [
+        "Ростов-на-Дону",
+        "Ростове-на-Дону"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001028061622",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С612024020891",
+          "source_url": "https://travel.yandex.ru/hotels/rostov-na-donu/radisson-blu-rostov-na-donu/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С612024020891",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:07.066000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001037019521",
+      "name": "Арка",
+      "aliases": [
+        "Арка",
+        "Отель Arka",
+        "АРКА"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001037019521",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/rostov-on-don/mid9078213/arka_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/arka-hotel-by-ginza-project-613325044/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/rostov-na-donu/arka/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Ростов-на-Дону",
+      "location_aliases": [
+        "Ростов-на-Дону",
+        "Ростове-на-Дону"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001037019521",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С612025004561",
+          "source_url": "https://travel.yandex.ru/hotels/rostov-na-donu/arka/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С612025004561",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:12.521000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001030307637",
+      "name": "Воронеж Marriott",
+      "aliases": [
+        "Воронеж Marriott",
+        "Отель Voronezh Marriott",
+        "Voronezh Marriott Hotel",
+        "Марриотт Воронеж"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001030307637",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/voronezh/mid8746527/voronezh_marriott/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/voronezh-marriott-otel-614071147/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/voronezh/marriott-voronezh/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Воронеж",
+      "location_aliases": [
+        "Воронеж",
+        "Воронеже"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001030307637",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С362024010522",
+          "source_url": "https://travel.yandex.ru/hotels/voronezh/marriott-voronezh/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С362024010522",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:16.631000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001007370292",
+      "name": "Cosmos Smart Воронеж Отель",
+      "aliases": [
+        "Cosmos Smart Воронеж Отель",
+        "Отель Cosmos Smart Воронеж"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001007370292",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/voronezh/mid8258268/holiday_inn_express_vorzh__kirova/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/cosmos-smart-voronezh-615529393/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/voronezh/cosmos-smart-voronezh-otel/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Воронеж",
+      "location_aliases": [
+        "Воронеж",
+        "Воронеже"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001007370292",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С362024005961",
+          "source_url": "https://travel.yandex.ru/hotels/voronezh/cosmos-smart-voronezh-otel/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С362024005961",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:25.740000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001031675529",
+      "name": "7 Авеню",
+      "aliases": [
+        "7 Авеню",
+        "7 Авеню Отель и Спа",
+        "7 Авеню Отель и СПА"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001031675529",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/samara/mid8748805/7_avenue_hotelspa/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/7-avenue-hotel-spa-615545057/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/samara/7-aveniu-otel-i-spa/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Самара",
+      "location_aliases": [
+        "Самара",
+        "Самаре"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001031675529",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С632024017740",
+          "source_url": "https://travel.yandex.ru/hotels/samara/7-aveniu-otel-i-spa/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С632024017740",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:31.191000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-2533803071410131",
+      "name": "HolidayHall",
+      "aliases": [
+        "HolidayHall",
+        "HolidayHall Samara Hotel",
+        "HolidayHall Samara (ХолидейХолл Самара) (бывш. Holiday Inn Samara)",
+        "HolidayHall Samara"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/2533803071410131",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/samara/mid7467350/holiday_inn_hotel_samara/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/holidayhall-samara-hotel-612653400/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/samara/holidayhall-samara/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Самара",
+      "location_aliases": [
+        "Самара",
+        "Самаре"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/2533803071410131",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С632024000229",
+          "source_url": "https://travel.yandex.ru/hotels/samara/holidayhall-samara/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С632024000229",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:35.491000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001038166664",
+      "name": "Элит",
+      "aliases": [
+        "Элит",
+        "Отель Элит"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001038166664",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/derbent/mid6530579/elit_hotel_/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-elit-615525158/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/derbent/elit/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Дербент",
+      "location_aliases": [
+        "Дербент",
+        "Дербенте"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001038166664",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С052024022101",
+          "source_url": "https://travel.yandex.ru/hotels/derbent/elit/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С052024022101",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:39.435000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001038829658",
+      "name": "Си Зон",
+      "aliases": [
+        "Си Зон",
+        "Си Зон (Sea Zone)"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001038829658",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-seazone-1101587340/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/derbent/si-zon/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Дербент",
+      "location_aliases": [
+        "Дербент",
+        "Дербенте"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001038829658",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С052024000926",
+          "source_url": "https://travel.yandex.ru/hotels/derbent/si-zon/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С052024000926",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:43.859000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001032492858",
+      "name": "Radisson Саранск",
+      "aliases": [
+        "Radisson Саранск",
+        "Гостиница и Конгресс-Центр Radisson Саранск",
+        "Гостиница и Конгресс Центр Рэдиссон Саранск (Radisson Hotel & Congress Centre Saransk)",
+        "Гостиница и Конгресс Центр Radisson, Саранск"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001032492858",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/saransk/mid9211158/saransk_congress_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/radisson-hotel-congress-center-saransk-614077028/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/saransk/gostinitsa-i-kongress-tsentr-radisson-saransk/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Саранск",
+      "location_aliases": [
+        "Саранск",
+        "Саранске"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001032492858",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С632024009595",
+          "source_url": "https://travel.yandex.ru/hotels/saransk/gostinitsa-i-kongress-tsentr-radisson-saransk/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С632024009595",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:54.633000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001029877552",
+      "name": "Mercure Саранск Центр",
+      "aliases": [
+        "Mercure Саранск Центр",
+        "Отель Mercure Саранск Центр",
+        "Mercure Саранск Центр (Меркюр)",
+        "Mercure Саранск центр"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001029877552",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/saransk/mid8746528/mercure_saransk_center_opening_march_2018/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/mercure-saransk-tsentr-642198201/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/saransk/mercure-saransk-tsentr/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Саранск",
+      "location_aliases": [
+        "Саранск",
+        "Саранске"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001029877552",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С132024014773",
+          "source_url": "https://travel.yandex.ru/hotels/saransk/mercure-saransk-tsentr/?adults=2&checkinDate=2026-11-27&checkoutDate=2026-11-29&childrenAges=&lastSearchTimeMarker=1795609211174&oneNightChecked=false&roomCount=1",
+          "source_text": "Объект №С132024014773",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:20:13.135000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-1126428187916403",
+      "name": "Marins Астрахань",
+      "aliases": [
+        "Marins Астрахань",
+        "Гранд-отель Marins Астрахань"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/1126428187916403",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/astrakhan/mid7377979/al_pash_grand_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/marins-grand-otel-astrahan-613312377/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/astrahan/grand-otel-marins-astrakhan/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Астрахань",
+      "location_aliases": [
+        "Астрахань",
+        "Астрахани"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/1126428187916403",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С302024014717",
+          "source_url": "https://travel.yandex.ru/hotels/astrahan/grand-otel-marins-astrakhan/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С302024014717",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:11:59.774000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-1126428187900226",
+      "name": "Золотой затон",
+      "aliases": [
+        "Золотой затон",
+        "Отель Золотой Затон",
+        "Бизнес-отель \"Золотой Затон\"",
+        "Золотой Затон"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/1126428187900226",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/astrakhan/mid10678995/hotel_zolotoy_zaton/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/biznes-otel-zolotoy-zaton-614077373/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/astrahan/zolotoi-zaton/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Астрахань",
+      "location_aliases": [
+        "Астрахань",
+        "Астрахани"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/1126428187900226",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С302026027095",
+          "source_url": "https://travel.yandex.ru/hotels/astrahan/zolotoi-zaton/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С302026027095",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:12:04.606000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001023670751",
+      "name": "Звезда",
+      "aliases": [
+        "Звезда",
+        "Отель Гранд Звезда",
+        "Гранд отель Звезда"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001023670751",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/tver/mid8451954/grand_hotel_zvezda/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/grand-otel-zvezda-615524887/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tver/grand-otel-zvezda/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Тверь",
+      "location_aliases": [
+        "Тверь",
+        "Твери"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001023670751",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С692024008756",
+          "source_url": "https://travel.yandex.ru/hotels/tver/grand-otel-zvezda/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С692024008756",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:12:08.881000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001031659096",
+      "name": "Премьер отель",
+      "aliases": [
+        "Премьер отель",
+        "Отель Премьер"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001031659096",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/tver/mid8855286/premer_otel_3/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/tver/premer-otel/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Тверь",
+      "location_aliases": [
+        "Тверь",
+        "Твери"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001031659096",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С692024006818",
+          "source_url": "https://travel.yandex.ru/hotels/tver/premer-otel/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С692024006818",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:12:13.839000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001028921502",
+      "name": "Hilton Garden Inn Orenburg",
+      "aliases": [
+        "Hilton Garden Inn Orenburg"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001028921502",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/orenburg/mid8743007/hilton_garden_inn_orenburg_russia/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/hilton-garden-inn-orenburg-613315174/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/orenburg/hilton-garden-inn-orenburg/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Оренбург",
+      "location_aliases": [
+        "Оренбург",
+        "Оренбурге"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001028921502",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С562024012438",
+          "source_url": "https://travel.yandex.ru/hotels/orenburg/hilton-garden-inn-orenburg/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С562024012438",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:12:24.305000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-6755927722050257",
+      "name": "Олимп",
+      "aliases": [
+        "Олимп",
+        "Отель Олимп",
+        "Гостиница Олимп"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/6755927722050257",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/orenburg/mid7022264/olimp_hotel_4/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/otel-olimp-614079835/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/orenburg/olimp/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Оренбург",
+      "location_aliases": [
+        "Оренбург",
+        "Оренбурге"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/6755927722050257",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С562024012670",
+          "source_url": "https://travel.yandex.ru/hotels/orenburg/olimp/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С562024012670",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:12:29.301000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-4644865396796399",
+      "name": "Волгоград",
+      "aliases": [
+        "Волгоград",
+        "Отель Волгоград"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/4644865396796399",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/volgograd/mid8043415/gostinitsa_volgograd/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/volgograd-614071159/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/volgograd/otel-volgograd/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Волгоград",
+      "location_aliases": [
+        "Волгоград",
+        "Волгограде"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/4644865396796399",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С342024006463",
+          "source_url": "https://travel.yandex.ru/hotels/volgograd/otel-volgograd/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С342024006463",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:12:34.537000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001018497938",
+      "name": "Cosmos Волгоград Отель",
+      "aliases": [
+        "Cosmos Волгоград Отель",
+        "Отель Cosmos Волгоград"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001018497938",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/volgograd/mid10173253/cosmos_volgograd_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/cosmos-volgograd-hotel-612653378/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/volgograd/cosmos-volgograd-otel/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Волгоград",
+      "location_aliases": [
+        "Волгоград",
+        "Волгограде"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001018497938",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С342024016896",
+          "source_url": "https://travel.yandex.ru/hotels/volgograd/cosmos-volgograd-otel/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С342024016896",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:12:38.303000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001046678226",
+      "name": "Bridge",
+      "aliases": [
+        "Bridge",
+        "Отель Бридж",
+        "Бридж Отель",
+        "Бриджсенная"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001046678226",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/smolensk_oblast_smolensk/mid9331107/bridzh_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/bridge-hotel-617499074/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/smolensk/bridzhsennaia/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Смоленск",
+      "location_aliases": [
+        "Смоленск",
+        "Смоленске"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001046678226",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С672024013871",
+          "source_url": "https://travel.yandex.ru/hotels/smolensk/bridzhsennaia/?adults=2&checkinDate=2026-11-27&checkoutDate=2026-11-29&childrenAges=&lastSearchTimeMarker=1795609218699&oneNightChecked=false&roomCount=1",
+          "source_text": "Объект №С672024013871",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:20:20.778000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70000001007231322",
+      "name": "Респект-Hotel",
+      "aliases": [
+        "Респект-Hotel",
+        "Гостиница Респект-hotel",
+        "Респект",
+        "Респект Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001007231322",
+        "ostrovok": "https://ostrovok.ru/hotel/russia/smolensk_oblast_smolensk/mid6472054/respect_hotel_/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/respekt-hotel-615539277/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/smolensk/respekt-hotel/"
+      },
+      "address_tokens": [],
+      "country": "Россия",
+      "geo": "Смоленск",
+      "location_aliases": [
+        "Смоленск",
+        "Смоленске"
+      ],
+      "mapping_notes": {},
+      "stars": 3,
+      "stars_source": "https://otello.ru/hotel/70000001007231322",
+      "registrations": [
+        {
+          "registry": "ru_accommodation",
+          "country": "RU",
+          "registration_id": "С672024002184",
+          "source_url": "https://travel.yandex.ru/hotels/smolensk/respekt-hotel/?checkinDate=2026-11-27&checkoutDate=2026-11-29&adults=2",
+          "source_text": "Объект №С672024002184",
+          "verification_status": "source_observed",
+          "checked_at": "2026-11-25T12:12:44.006000Z"
+        }
+      ]
+    },
+    {
+      "id": "add250-70358702217534264",
+      "name": "Golden Tulip Doha Hotel",
+      "aliases": [
+        "Golden Tulip Doha Hotel",
+        "Golden Tulip Doha"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217534264",
+        "ostrovok": "https://ostrovok.ru/hotel/qatar/doha/mid8955480/golden_tulip_doha/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/golden-tulip-doha-luxury-city-hotel-1101316515/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/doha/golden-tulip-doha/"
+      },
+      "address_tokens": [],
+      "country": "Катар",
+      "geo": "Доха",
+      "location_aliases": [
+        "Доха",
+        "Дохе"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217534264",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217136332",
+      "name": "Hyatt Regency Oryx Doha",
+      "aliases": [
+        "Hyatt Regency Oryx Doha"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217136332",
+        "ostrovok": "https://ostrovok.ru/hotel/qatar/doha/mid7383376/oryx_rotana_doha/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/oryx-rotana-doha-1101320598/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/doha/hyatt-regency-oryx-doha/"
+      },
+      "address_tokens": [],
+      "country": "Катар",
+      "geo": "Доха",
+      "location_aliases": [
+        "Доха",
+        "Дохе"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217136332",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216111688",
+      "name": "Gulf Hotel Convention and SPA",
+      "aliases": [
+        "Gulf Hotel Convention and SPA"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216111688",
+        "ostrovok": "https://ostrovok.ru/hotel/bahrain/manama/mid7490315/gulf_hotel_bahrain/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/gulf-1556470838/"
+      },
+      "address_tokens": [],
+      "country": "Бахрейн",
+      "geo": "Манама",
+      "location_aliases": [
+        "Манама",
+        "Манаме"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216111688",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217054379",
+      "name": "Le Méridien City Centre Bahrain",
+      "aliases": [
+        "Le Méridien City Centre Bahrain"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217054379",
+        "ostrovok": "https://ostrovok.ru/hotel/bahrain/manama/mid6551555/le_meridien_bahrain_city_centre/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/le-meridien-bahrain-city-centre-1101173980/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/manama/le-meridien-city-centre-bahrain-65409679392/"
+      },
+      "address_tokens": [],
+      "country": "Бахрейн",
+      "geo": "Манама",
+      "location_aliases": [
+        "Манама",
+        "Манаме"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702217054379",
+      "registrations": []
+    },
+    {
+      "id": "add250-70000001068889260",
+      "name": "Novotel Riyadh Al Anoud",
+      "aliases": [
+        "Novotel Riyadh Al Anoud"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001068889260",
+        "ostrovok": "https://ostrovok.ru/hotel/saudi_arabia/riyadh/mid7599756/novotel_al_anoud/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/novotel-al-anoud-1115857368/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/riyadh/novotel-riyadh-al-anoud/"
+      },
+      "address_tokens": [],
+      "country": "Саудовская Аравия",
+      "geo": "Эр-Рияд",
+      "location_aliases": [
+        "Эр-Рияд",
+        "Эр-Рияде"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70000001068889260",
+      "registrations": []
+    },
+    {
+      "id": "add250-70000001075072961",
+      "name": "Crowne plaza Riyadh palace",
+      "aliases": [
+        "Crowne plaza Riyadh palace",
+        "Crowne Plaza Riyadh Palace by IHG",
+        "Crowne Plaza Riyadh Palace"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70000001075072961",
+        "ostrovok": "https://ostrovok.ru/hotel/saudi_arabia/riyadh/mid7376875/top_riyadh_palace_hotel_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/crowne-plaza-riyadh-palace-1102245715/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/riyadh/crowne-plaza-riyadh-palace/"
+      },
+      "address_tokens": [],
+      "country": "Саудовская Аравия",
+      "geo": "Эр-Рияд",
+      "location_aliases": [
+        "Эр-Рияд",
+        "Эр-Рияде"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70000001075072961",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216688385",
+      "name": "Lotte Hotel World",
+      "aliases": [
+        "Lotte Hotel World"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216688385",
+        "ostrovok": "https://ostrovok.ru/hotel/south_korea/seoul/mid7524095/lotte_hotel_world/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/lotte-hotel-world-1102132027/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/seoul/lotte-hotel-world/"
+      },
+      "address_tokens": [],
+      "country": "Южная Корея",
+      "geo": "Сеул",
+      "location_aliases": [
+        "Сеул",
+        "Сеуле"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216688385",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216129830",
+      "name": "Novotel Ambassador Seoul Dongdaemun Hotels & Residences",
+      "aliases": [
+        "Novotel Ambassador Seoul Dongdaemun Hotels & Residences"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216129830",
+        "ostrovok": "https://ostrovok.ru/hotel/south_korea/seoul/mid8868626/novotel_ambassador_dongdaemun/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/novotel-ambassador-seoul-dongdaemun-hotels-residences-614081397/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/seoul/novotel-ambassador-seoul-dongdaemun-hotels-residences/"
+      },
+      "address_tokens": [],
+      "country": "Южная Корея",
+      "geo": "Сеул",
+      "location_aliases": [
+        "Сеул",
+        "Сеуле"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216129830",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702215918238",
+      "name": "Alhambra Thalasso",
+      "aliases": [
+        "Alhambra Thalasso",
+        "Alhambra Thalasso Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702215918238",
+        "ostrovok": "https://ostrovok.ru/hotel/tunisia/hammamet/mid7596321/alhambra_thalasso_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/alhambra-thalasso-1102286344/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/hammamet/alhambra-thalasso-hotel/"
+      },
+      "address_tokens": [],
+      "country": "Тунис",
+      "geo": "Хаммамет",
+      "location_aliases": [
+        "Хаммамет",
+        "Хаммамете"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702215918238",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702215869461",
+      "name": "Hotel Sol Azur Beach",
+      "aliases": [
+        "Hotel Sol Azur Beach",
+        "Отель Sol Azur Beach",
+        "Sol Azur Beach & Congres"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702215869461",
+        "ostrovok": "https://ostrovok.ru/hotel/tunisia/hammamet/mid8478113/sol_azur_beach_congres_2/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/sol-azur-beach-congres-1115958359/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/hammamet/club-novostar-sol-azur-beach-congress/"
+      },
+      "address_tokens": [],
+      "country": "Тунис",
+      "geo": "Хаммамет",
+      "location_aliases": [
+        "Хаммамет",
+        "Хаммамете"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702215869461",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702215997337",
+      "name": "Tivoli Doelen Amsterdam Hotel",
+      "aliases": [
+        "Tivoli Doelen Amsterdam Hotel"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702215997337",
+        "ostrovok": "https://ostrovok.ru/hotel/netherlands/amsterdam/mid7562546/nh_doelen/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/tivoli-doelen-amsterdam-hotel-1116081297/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/amsterdam/tivoli-doelen-amsterdam-hotel/"
+      },
+      "address_tokens": [],
+      "country": "Нидерланды",
+      "geo": "Амстердам",
+      "location_aliases": [
+        "Амстердам",
+        "Амстердаме"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702215997337",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217500806",
+      "name": "Best Western Amsterdam",
+      "aliases": [
+        "Best Western Amsterdam"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217500806",
+        "ostrovok": "https://ostrovok.ru/hotel/netherlands/amsterdam/mid7563938/west_side_inn_amsterdam/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/west-side-inn-amsterdam-1116081533/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/amsterdam/best-western-amsterdam/"
+      },
+      "address_tokens": [],
+      "country": "Нидерланды",
+      "geo": "Амстердам",
+      "location_aliases": [
+        "Амстердам",
+        "Амстердаме"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702217500806",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216472838",
+      "name": "Hotel Amigo a Rocco Forte Hotel",
+      "aliases": [
+        "Hotel Amigo a Rocco Forte Hotel",
+        "Hotel Amigo, a Rocco Forte Hotel",
+        "Hotel Amigo"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216472838",
+        "ostrovok": "https://ostrovok.ru/hotel/belgium/brussels/mid7537661/rocco_forte_hotel_amigo/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/rocco-forte-hotel-amigo-1102221251/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/brussels/rocco-forte-hotel-amigo/"
+      },
+      "address_tokens": [],
+      "country": "Бельгия",
+      "geo": "Брюссель",
+      "location_aliases": [
+        "Брюссель",
+        "Брюсселе"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216472838",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702217095810",
+      "name": "First Euroflat Hotel",
+      "aliases": [
+        "First Euroflat Hotel",
+        "Отель First Euroflat"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702217095810",
+        "ostrovok": "https://ostrovok.ru/hotel/belgium/brussels/mid7537417/first_euroflat_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/first-euroflat-hotel-1102220283/"
+      },
+      "address_tokens": [],
+      "country": "Бельгия",
+      "geo": "Брюссель",
+      "location_aliases": [
+        "Брюссель",
+        "Брюсселе"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702217095810",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216981544",
+      "name": "The Dolder Grand",
+      "aliases": [
+        "The Dolder Grand"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216981544",
+        "ostrovok": "https://ostrovok.ru/hotel/switzerland/zurich/mid7393872/the_dolder_grand/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/the-dolder-grand-1101358534/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/zurich/the-dolder-grand/"
+      },
+      "address_tokens": [],
+      "country": "Швейцария",
+      "geo": "Цюрих",
+      "location_aliases": [
+        "Цюрих",
+        "Цюрихе"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216981544",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216428410",
+      "name": "Mama Shelter Zurich",
+      "aliases": [
+        "Mama Shelter Zurich",
+        "Отель Mama Shelter Zurich"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216428410",
+        "ostrovok": "https://ostrovok.ru/hotel/switzerland/zurich/mid9931266/becozy_self_checkin_and_popup_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/becozy-self-check-in-and-pop-up-hotel-1433469526/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/zurich/mama-shelter-zurich/"
+      },
+      "address_tokens": [],
+      "country": "Швейцария",
+      "geo": "Цюрих",
+      "location_aliases": [
+        "Цюрих",
+        "Цюрихе"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216428410",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216084657",
+      "name": "Anantara The Marker Dublin A Leading Hotel of the World",
+      "aliases": [
+        "Anantara The Marker Dublin A Leading Hotel of the World",
+        "Anantara The Marker Dublin - A Leading Hotel of the World"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216084657",
+        "ostrovok": "https://ostrovok.ru/hotel/ireland/dublin/mid7661694/the_marker_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/the-marker-hotel-1102189956/"
+      },
+      "address_tokens": [],
+      "country": "Ирландия",
+      "geo": "Дублин",
+      "location_aliases": [
+        "Дублин",
+        "Дублине"
+      ],
+      "mapping_notes": {},
+      "stars": 5,
+      "stars_source": "https://otello.ru/hotel/70358702216084657",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216114456",
+      "name": "The Hendrick Smithfield",
+      "aliases": [
+        "The Hendrick Smithfield"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216114456",
+        "ostrovok": "https://ostrovok.ru/hotel/ireland/dublin/mid8951337/the_hendrick_smithfield/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/the-hendrick-smithfield-1102190030/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/dublin-ie/the-hendrick-smithfield/"
+      },
+      "address_tokens": [],
+      "country": "Ирландия",
+      "geo": "Дублин",
+      "location_aliases": [
+        "Дублин",
+        "Дублине"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216114456",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216748072",
+      "name": "Elite Palace Hotel & Spa",
+      "aliases": [
+        "Elite Palace Hotel & Spa"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216748072",
+        "ostrovok": "https://ostrovok.ru/hotel/sweden/stockholm/mid7539234/elite_palace_hotel/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/elite-palace-hotel-1101942026/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/stockholm/elite-palace-hotel-spa/"
+      },
+      "address_tokens": [],
+      "country": "Швеция",
+      "geo": "Стокгольм",
+      "location_aliases": [
+        "Стокгольм",
+        "Стокгольме"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216748072",
+      "registrations": []
+    },
+    {
+      "id": "add250-70358702216426604",
+      "name": "Courtyard by Marriott Stockholm Kungsholmen",
+      "aliases": [
+        "Courtyard by Marriott Stockholm Kungsholmen"
+      ],
+      "urls": {
+        "otello": "https://otello.ru/hotel/70358702216426604",
+        "ostrovok": "https://ostrovok.ru/hotel/sweden/stockholm/mid7466869/courtyard_by_marriott_stockholm_kungsholmen/",
+        "ozon_travel": "https://www.ozon.ru/travel/hotels/product/courtyard-stockholm-kungsholmen-1101941377/",
+        "yandex_travel": "https://travel.yandex.ru/hotels/stockholm/courtyard-by-marriott-stockholm-kungsholmen/"
+      },
+      "address_tokens": [],
+      "country": "Швеция",
+      "geo": "Стокгольм",
+      "location_aliases": [
+        "Стокгольм",
+        "Стокгольме"
+      ],
+      "mapping_notes": {},
+      "stars": 4,
+      "stars_source": "https://otello.ru/hotel/70358702216426604",
+      "registrations": []
     }
   ],
   "platforms": [
