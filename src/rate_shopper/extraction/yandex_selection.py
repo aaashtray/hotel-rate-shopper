@@ -34,6 +34,13 @@ def parse_selection(
             ):
                 starts.append(i - 1)
     starts = sorted(set(starts))
+    # Some cards contain only an AX heading and rates, without amenities or a
+    # photo marker. Use explicitly observed headings, never guess a room name.
+    room_headings = {" ".join(title.split()) for title in raw.get("room_headings", [])}
+    content_end = lines.index("Об этом месте") if "Об этом месте" in lines else len(lines)
+    starts = sorted(set(starts) | {
+        i for i, line in enumerate(lines[:content_end]) if line in room_headings
+    })
     cards, unresolved_bank = [], []
     for n, start in enumerate(starts):
         end = starts[n + 1] if n + 1 < len(starts) else len(lines)
@@ -110,6 +117,7 @@ def parse_selection(
                 "platform": "yandex_travel",
                 "checked_at": raw["checked_at"],
                 "url": raw["url"],
+                "requested_url": raw.get("requested_url"),
                 "title": raw["title"],
                 "snapshot": "Страница не найдена",
                 "cards": [],
@@ -129,6 +137,7 @@ def parse_selection(
         "platform": "yandex_travel",
         "checked_at": raw["checked_at"],
         "url": raw["url"],
+        "requested_url": raw.get("requested_url"),
         "title": raw["title"],
         "snapshot": snapshot,
         "cards": cards,

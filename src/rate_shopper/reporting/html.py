@@ -16,11 +16,21 @@ def write_html(report: dict[str, Any], output: Path) -> None:
         stamp = datetime.fromisoformat(report["checked_at"]).astimezone(
             ZoneInfo(monitoring.get("timezone", "Europe/Moscow"))
         ).strftime("%d.%m.%Y")
+        names = {"otello": "Отелло", "ostrovok": "Островок",
+                 "yandex_travel": "Яндекс", "ozon_travel": "Ozon"}
+        coverage = []
+        for platform in report["platforms"]:
+            rows = [o for o in report["observations"] if o["platform"] == platform]
+            checked = sum(bool(o.get("checked_at")) for o in rows)
+            available = sum(o["status"] == "AVAILABLE" for o in rows)
+            coverage.append(f'{names.get(platform, platform)} — {checked}/{len(rows)} '
+                            f'(с ценами: {available})')
         banner = (
             '<p class="monitoring-note" style="margin-top:14px;max-width:950px">'
             f'Сбор: {stamp}. План обновлений: раз в две недели, понедельник, 09:00 МСК. '
             'Проживание — ближайшая пятница–воскресенье. '
-            'В этом срезе обновлены Отелло и Островок; Яндекс и Ozon ожидают обновления.'
+            f'Проверено отелей: {escape("; ".join(coverage))}. '
+            'Неполное покрытие указано для каждой площадки; старые цены не подмешиваются.'
             '</p>'
         )
         previous = monitoring.get("previous_snapshot_url", "")

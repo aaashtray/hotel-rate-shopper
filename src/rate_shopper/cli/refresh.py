@@ -73,7 +73,11 @@ def main(argv: list[str]) -> int:
             "interval_weeks": settings["interval_weeks"], "run_time": settings["run_time"],
             "stay": settings["stay"],
             "automatic_platforms": settings["automated_platforms"],
-            "pending_platforms": settings["manual_platforms"],
+            "pending_platforms": [
+                p for p in settings["manual_platforms"]
+                if not any(o["platform"] == p and o.get("checked_at")
+                           for o in report["observations"])
+            ],
         }
         save_json(destination / "report.json", report)
         write_html(report, destination)

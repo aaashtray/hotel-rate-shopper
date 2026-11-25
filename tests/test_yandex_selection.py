@@ -110,6 +110,15 @@ def test_404_is_distinct_and_removes_profile_header() -> None:
     )
 
 
+def test_redirect_keeps_requested_url_but_does_not_confirm_different_page() -> None:
+    r = raw("Нет доступных вариантов на ваши даты\nОб этом месте\n")
+    r["requested_url"] = r["url"]
+    r["url"] = r["url"].replace("/synthetic/", "/different/")
+    c, _ = parse_selection(r)
+    assert c["requested_url"] == r["requested_url"]
+    assert capture_status(BrowserCapture.model_validate(c), SCENARIO, TARGET) == Status.UNKNOWN
+
+
 def test_ambiguous_second_price_is_rejected() -> None:
     with pytest.raises(ValueError, match="crossed-out"):
         parse_selection(
@@ -118,3 +127,18 @@ def test_ambiguous_second_price_is_rejected() -> None:
                 "Забронировать\nОб этом месте\n"
             )
         )
+
+
+def test_observed_ax_headings_support_cards_without_amenities() -> None:
+    r = raw(
+        "Twin\nВключён завтрак\n100 ₽\nКорпоративный\nза 2 ночи\nЗабронировать\n"
+        "Suite\nБез питания\n200 ₽\nза 2 ночи\nЗабронировать\n"
+        "Об этом месте\nNearby\nБез питания\n1 ₽\nза 2 ночи\nЗабронировать\n"
+    )
+    assert parse_selection(r)[0]["cards"] == []
+    r["room_headings"] = ["Twin", "Suite", "Nearby"]
+    c, _ = parse_selection(r)
+    assert [card["text"] for card in c["cards"]] == ["Twin", "Suite"]
+    offers = extract(BrowserCapture.model_validate(c), SCENARIO, TARGET, "synthetic")
+    assert len(offers) == 2
+    assert offers[0].access_type == "corporate"

@@ -7,6 +7,7 @@ from typing import Any
 
 import pytest
 
+from rate_shopper.reporting.html import write_html
 from rate_shopper.reporting.publication import public_report, public_url
 from rate_shopper.reporting.update import prepare_update
 
@@ -182,3 +183,17 @@ def test_invalid_update_preserves_published_version(tmp_path: Path, failure: str
     with pytest.raises(ValueError):
         prepare_update(source, site)
     assert (site / "report.json").read_bytes() == previous
+
+
+def test_monitoring_pages_show_actual_partial_browser_coverage(tmp_path: Path) -> None:
+    report = synthetic_report()
+    report["monitoring"] = {"timezone": "Europe/Moscow"}
+    report["observations"].append({
+        "hotel_id": "uncollected", "platform": "yandex_travel", "status": "UNKNOWN",
+        "checked_at": None,
+    })
+    write_html(report, tmp_path)
+    for name in ("index.html", "hotel-statistics-otello.html", "hotel-map-otello.html"):
+        html = (tmp_path / name).read_text()
+        assert "Яндекс — 1/2 (с ценами: 1)" in html
+        assert "ожидают обновления" not in html
