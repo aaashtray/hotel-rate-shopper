@@ -17,6 +17,21 @@ FILES = (
 )
 
 
+def archive_html(content: bytes, name: str) -> bytes:
+    """Keep historical data intact while making archive navigation reversible."""
+    content = content.replace(b'href="history/', b'href="../../history/')
+    if name not in FILES[:4] or b'id="current-snapshot"' in content:
+        return content
+    link = (
+        '<p style="margin-top:14px"><a id="current-snapshot" '
+        f'href="../../{name}" style="display:inline-flex;align-items:center;'
+        'padding:10px 14px;border-radius:8px;background:#A7FC26;color:#084008;'
+        'font-size:14px;font-weight:700;text-decoration:none">'
+        'Актуальный срез</a></p>'
+    ).encode()
+    return content.replace(b'</header>', link + b'</header>', 1)
+
+
 def prepare_update(source: Path, site: Path) -> None:
     report = json.loads((source / "report.json").read_text())
     if report["collection_status"] == "FAILED" or not report["offers"]:
@@ -48,7 +63,7 @@ def prepare_update(source: Path, site: Path) -> None:
                     continue
                 content = original.read_bytes()
                 if original.suffix == ".html":
-                    content = content.replace(b'href="history/', b'href="../../history/')
+                    content = archive_html(content, name)
                 if dest.exists() and dest.read_bytes() != content:
                     raise ValueError(f"Immutable archive conflict: {name}")
                 if not dest.exists():
@@ -68,6 +83,13 @@ def prepare_update(source: Path, site: Path) -> None:
         write_html(projected, staging)
         (staging / "report.json").write_text(json.dumps(projected, ensure_ascii=False) + "\n")
         shutil.copy2(source / "hotel-rates.xlsx", staging / "hotel-rates.xlsx")
+        # Upgrade navigation in already published archives without re-rendering
+        # their report data, calculations, Excel workbooks or historical layout.
+        for page in (site / "history").glob("*/*.html"):
+            content = page.read_bytes()
+            updated = archive_html(content, page.name)
+            if updated != content:
+                page.write_bytes(updated)
         for name in FILES:
             shutil.copy2(staging / name, site / name)
         shutil.copytree(staging / "assets", site / "assets", dirs_exist_ok=True)

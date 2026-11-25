@@ -161,6 +161,13 @@ def test_update_archives_previous_and_is_idempotent(tmp_path: Path) -> None:
     update_fixture(source)
     prepare_update(source, site)
     assert (site / "history/synthetic-old/report.json").read_bytes() == old_bytes
+    for name in ("index.html", "hotel-interface-otello.html", "hotel-statistics-otello.html",
+                 "hotel-map-otello.html"):
+        archived = (site / "history/synthetic-old" / name).read_text()
+        assert f'href="../../{name}"' in archived
+        assert archived.count('id="current-snapshot"') == 1
+        assert "Актуальный срез" in archived
+        assert 'id="current-snapshot"' not in (site / name).read_text()
     current = (site / "report.json").read_bytes()
     assert b"PRIVATE_SENTINEL" not in current
     assert b"history/synthetic-old/hotel-interface-otello.html" in current

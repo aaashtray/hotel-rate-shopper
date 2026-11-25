@@ -59,6 +59,11 @@ if history.exists():
         previous = json.loads((snapshot / "report.json").read_text())
         assert previous["publication"]["scope"] in {"public_only", "all_collected_prices"}
         assert all("evidence" not in o for o in previous["observations"])
+        for name in ("index.html", "hotel-interface-otello.html", "hotel-statistics-otello.html",
+                     "hotel-map-otello.html"):
+            header = (snapshot / name).read_text().split("</header>", 1)[0]
+            assert header.count('id="current-snapshot"') == 1, "Missing or duplicate return link"
+            assert f'href="../../{name}"' in header and (snapshot / "../.." / name).is_file()
 with zipfile.ZipFile(site / "hotel-rates.xlsx") as z:
     ns = {"x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
     sheet = ET.fromstring(z.read("xl/worksheets/sheet1.xml"))
