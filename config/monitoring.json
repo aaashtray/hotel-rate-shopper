@@ -1,0 +1,13 @@
+{
+  "timezone": "Europe/Moscow",
+  "first_monday": "2026-11-30",
+  "interval_weeks": 2,
+  "run_time": "09:00",
+  "stay": "following_friday_to_sunday",
+  "adults": 2,
+  "rooms": 1,
+  "nights": 2,
+  "automated_platforms": ["otello", "ostrovok"],
+  "manual_platforms": ["yandex_travel", "ozon_travel"],
+  "pilot_hotel_ids": ["savoy", "vega", "geo-7", "geo-15", "kazan-nogay", "geo-0", "geo-5", "geo-18", "rove_dubai_marina", "ibis_styles_old_tbilisi"]
+}

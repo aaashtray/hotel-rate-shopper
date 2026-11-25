@@ -22,3 +22,5 @@ work/
 .DS_Store
 
 .map-cache/
+
+node_modules/

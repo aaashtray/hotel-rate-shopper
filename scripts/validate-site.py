@@ -49,8 +49,16 @@ for name in ("index.html", "hotel-interface-otello.html", "hotel-statistics-otel
         assert (site / href).is_file(), f"Broken local resource: {name} -> {href}"
 allowed = {"assets", "index.html", "hotel-interface-otello.html", "hotel-statistics-otello.html",
            "hotel-map-otello.html", "парсер цен.html", "hotel-rates.xlsx",
-           "report.json", ".nojekyll"}
+           "report.json", ".nojekyll", "history"}
 assert not (set(p.name for p in site.iterdir()) - allowed), "Unexpected publish artifact"
+history = site / "history"
+if history.exists():
+    for snapshot in history.iterdir():
+        assert snapshot.is_dir() and re.fullmatch(r"[A-Za-z0-9_-]+", snapshot.name)
+        assert not (set(p.name for p in snapshot.iterdir()) - (allowed - {"history"}))
+        previous = json.loads((snapshot / "report.json").read_text())
+        assert previous["publication"]["scope"] in {"public_only", "all_collected_prices"}
+        assert all("evidence" not in o for o in previous["observations"])
 with zipfile.ZipFile(site / "hotel-rates.xlsx") as z:
     ns = {"x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
     sheet = ET.fromstring(z.read("xl/worksheets/sheet1.xml"))

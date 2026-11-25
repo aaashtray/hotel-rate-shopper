@@ -11,6 +11,10 @@ from rate_shopper.pipeline import run
 
 
 def main() -> int:
+    if sys.argv[1:2] == ["refresh"]:
+        from rate_shopper.cli.refresh import main as refresh_main
+
+        return refresh_main(sys.argv[2:])
     if sys.argv[1:2] == ["collect"]:
         from rate_shopper.connectors.browser import main as collect_main
 

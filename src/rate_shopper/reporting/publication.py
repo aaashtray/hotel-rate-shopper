@@ -50,6 +50,11 @@ def public_report(
         "scope": "all_collected_prices" if include_conditional else "public_only",
         "note": note,
     }
+    if isinstance(source.get("monitoring"), dict):
+        result["monitoring"] = {k: deepcopy(source["monitoring"][k]) for k in (
+            "snapshot_id", "timezone", "interval_weeks", "run_time", "stay",
+            "automatic_platforms", "pending_platforms", "previous_snapshot_url",
+        ) if k in source["monitoring"]}
     if not include_conditional and "scopes" in result["statistics"]:
         result["statistics"]["scopes"] = {
             "public": result["statistics"]["scopes"]["public"]

@@ -1,11 +1,14 @@
 """Synthetic publication checks: no private prices or session evidence escape."""
+import hashlib
 import json
 from copy import deepcopy
+from pathlib import Path
 from typing import Any
 
 import pytest
 
 from rate_shopper.reporting.publication import public_report, public_url
+from rate_shopper.reporting.update import prepare_update
 
 
 def synthetic_report() -> dict[str, Any]:
@@ -130,3 +133,52 @@ def test_regular_statistics_reject_corporate_references() -> None:
     }
     with pytest.raises(ValueError, match="ineligible offer for regular"):
         public_report(source, include_conditional=True)
+
+
+def update_fixture(source: Path, snapshot_id: str = "synthetic-new") -> None:
+    source.mkdir(exist_ok=True)
+    report = synthetic_report()
+    report["offers"] = report["offers"][:1]
+    report["offers"][0]["member_total"] = None
+    report["collection_status"] = "PARTIAL_SUCCESS"
+    report["monitoring"] = {"snapshot_id": snapshot_id, "private": "PRIVATE_SENTINEL"}
+    (source / "report.json").write_text(json.dumps(report))
+    # Explicitly synthetic workbook bytes: these tests exercise pairing, not XLSX rendering.
+    (source / "hotel-rates.xlsx").write_bytes(b"synthetic workbook")
+    (source / "workbook-manifest.json").write_text(json.dumps({
+        key: hashlib.sha256((source / filename).read_bytes()).hexdigest()
+        for filename, key in (("report.json", "report_sha256"),
+                              ("hotel-rates.xlsx", "xlsx_sha256"))
+    }))
+
+
+def test_update_archives_previous_and_is_idempotent(tmp_path: Path) -> None:
+    source, site = tmp_path / "source", tmp_path / "site"
+    update_fixture(source, "synthetic-old")
+    prepare_update(source, site)
+    old_bytes = (site / "report.json").read_bytes()
+    update_fixture(source)
+    prepare_update(source, site)
+    assert (site / "history/synthetic-old/report.json").read_bytes() == old_bytes
+    current = (site / "report.json").read_bytes()
+    assert b"PRIVATE_SENTINEL" not in current
+    assert b"history/synthetic-old/hotel-interface-otello.html" in current
+    prepare_update(source, site)
+    assert (site / "report.json").read_bytes() == current
+
+
+@pytest.mark.parametrize("failure", ["failed", "mismatched_excel"])
+def test_invalid_update_preserves_published_version(tmp_path: Path, failure: str) -> None:
+    source, site = tmp_path / "source", tmp_path / "site"
+    update_fixture(source)
+    prepare_update(source, site)
+    previous = (site / "report.json").read_bytes()
+    if failure == "failed":
+        report = json.loads((source / "report.json").read_text())
+        report["collection_status"] = "FAILED"
+        (source / "report.json").write_text(json.dumps(report))
+    else:
+        (source / "hotel-rates.xlsx").write_bytes(b"stale workbook")
+    with pytest.raises(ValueError):
+        prepare_update(source, site)
+    assert (site / "report.json").read_bytes() == previous

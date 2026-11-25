@@ -1,12 +1,34 @@
 import base64
 import json
 import shutil
+from datetime import datetime
+from html import escape
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 
 def write_html(report: dict[str, Any], output: Path) -> None:
     root = Path(__file__).parent
+    monitoring = report.get("monitoring")
+    banner = ""
+    if monitoring:
+        stamp = datetime.fromisoformat(report["checked_at"]).astimezone(
+            ZoneInfo(monitoring.get("timezone", "Europe/Moscow"))
+        ).strftime("%d.%m.%Y")
+        banner = (
+            '<p class="monitoring-note" style="margin-top:14px;max-width:950px">'
+            f'Сбор: {stamp}. План обновлений: раз в две недели, понедельник, 09:00 МСК. '
+            'Проживание — ближайшая пятница–воскресенье. '
+            'В этом срезе обновлены Отелло и Островок; Яндекс и Ozon ожидают обновления.'
+            '</p>'
+        )
+        previous = monitoring.get("previous_snapshot_url", "")
+        # Only relative archive links authored by our publisher are accepted.
+        if (isinstance(previous, str) and previous.startswith("history/")
+                and ".." not in previous and ":" not in previous):
+            banner += (f'<p style="margin-top:10px"><a style="color:#A7FC26" '
+                       f'href="{escape(previous, quote=True)}">Предыдущий срез</a></p>')
     def expand(template: str) -> str:
         # Recursive substitution keeps each delivered HTML autonomous and offline.
         for token, filename in (
@@ -18,6 +40,8 @@ def write_html(report: dict[str, Any], output: Path) -> None:
         ):
             if token in template:
                 template = template.replace(token, (root / filename).read_text())
+        if banner:
+            template = template.replace("</header>", banner + "</header>", 1)
         return template
     template = expand((root / "dashboard.html").read_text())
     data = json.dumps(report, ensure_ascii=False).replace("<", "\\u003c")

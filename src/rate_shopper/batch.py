@@ -7,8 +7,11 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
 
+from rate_shopper.connectors.browser import scenario_url
+from rate_shopper.domain.api_capture import ApiCapture
 from rate_shopper.domain.capture import BatchConfig, BrowserCapture
 from rate_shopper.domain.models import Offer, Platform, Scenario, Status
+from rate_shopper.extraction import http_rates
 from rate_shopper.extraction.browser import capture_status, extract
 from rate_shopper.matching.rules import match
 from rate_shopper.quality.gates import issues
@@ -21,16 +24,18 @@ STATUS_REASONS = {
     Status.CAPTCHA: "Сайт запросил CAPTCHA. Сбор остановлен",
     Status.PRICE_NOT_EXPOSED: "Карточка открыта, но тарифы не получены",
     Status.UNKNOWN: "Название, география или адрес требуют проверки",
-    Status.SCENARIO_MISMATCH: "Даты, гости или длительность не подтверждены",
+    Status.SCENARIO_MISMATCH: "Не совпали даты, гости, длительность или валюта",
     Status.PARSE_ERROR: "Тарифные блоки получены, цена не разобрана",
 }
 
 
-def load_captures(directory: Path) -> list[tuple[Path, BrowserCapture]]:
-    captures = []
+def load_captures(directory: Path) -> list[tuple[Path, BrowserCapture | ApiCapture]]:
+    captures: list[tuple[Path, BrowserCapture | ApiCapture]] = []
     for path in sorted(directory.glob("*.json")):
         data = json.loads(path.read_text())
-        if isinstance(data, dict) and "cards" in data:
+        if isinstance(data, dict) and data.get("capture_method") == "http_json":
+            captures.append((path, ApiCapture.model_validate(data)))
+        elif isinstance(data, dict) and "cards" in data:
             captures.append((path, BrowserCapture.model_validate(data)))
     return captures
 
@@ -71,7 +76,7 @@ def write_batch(
                         platform=platform,
                         status="UNKNOWN",
                         offer_count=0,
-                        source_url=url,
+                        source_url=scenario_url(url, platform, scenario) if url else None,
                         discovery_status="candidate_found" if url else "search_pending",
                         mapping_note=hotel.mapping_notes.get(platform, ""),
                         reason=("Карточка найдена, тарифы ещё не собраны" if url
@@ -90,8 +95,16 @@ def write_batch(
                 raise ValueError("Evidence integrity failure")
             if not evidence.exists():
                 evidence.write_bytes(content)
-            status = capture_status(capture, scenario, hotel)
-            parsed = extract(capture, scenario, hotel, digest)
+            if isinstance(capture, ApiCapture):
+                try:
+                    status = http_rates.capture_status(capture, scenario, hotel)
+                    parsed = http_rates.extract(capture, scenario, hotel, digest)
+                except (AttributeError, KeyError, TypeError, ValueError):
+                    # A changed response schema must not erase other hotels' results.
+                    status, parsed = Status.PARSE_ERROR, []
+            else:
+                status = capture_status(capture, scenario, hotel)
+                parsed = extract(capture, scenario, hotel, digest)
             if status == Status.AVAILABLE and not parsed:
                 status = Status.PARSE_ERROR
             offers.extend(parsed)
@@ -151,7 +164,6 @@ def write_batch(
     }
     counts = Counter(o["status"] for o in observations)
     extracted_observations = counts["AVAILABLE"] + counts["SOLD_OUT"]
-    business_success = sum(not quality[o.id] for o in offers) + counts["SOLD_OUT"]
     expected = len(config.hotels) * len(config.platforms)
     report: dict[str, Any] = {
         "schema_version": 6,
@@ -166,7 +178,7 @@ def write_batch(
         "quality_issues": quality,
         "rejected_captures": rejected_captures,
         "excluded_platforms": config.excluded_platforms,
-        "status": "PARTIAL_SUCCESS" if business_success else "FAILED",
+        "status": "PARTIAL_SUCCESS" if extracted_observations else "FAILED",
         "collection_status": "SUCCESS"
         if extracted_observations == expected
         else "PARTIAL_SUCCESS"
@@ -193,6 +205,15 @@ def write_batch(
             "Налоги и точное время отмены не подтверждены для большинства тарифов.",
         ],
     }
+    if any(isinstance(c, ApiCapture) for _, c in captures):
+        report["notes"] = [
+            "HTTP-срез: Отелло и Островок, полная стоимость проживания в рублях.",
+            "Яндекс и Ozon на эти даты не обновлены. Старые цены в этот срез не подмешиваются.",
+            "Островок: даты связаны с принятым API-запросом, ответ подтверждает отель и гостей; "
+            "даты не дублируются в ответе. Эти цены участвуют только в предварительном сравнении.",
+            "Цена и условия взяты из одного предложения. Неизвестные условия не считаются другими.",
+            "Известные дополнительные сборы и спорные объекты исключены из расчёта разрыва.",
+        ]
     report["statistics"] = statistics_bundle(offers, config, observations, matches)
     seed_path = config_path.with_name("registration-seeds.json")
     report["registration_references"] = (

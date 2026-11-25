@@ -8,13 +8,28 @@ from decimal import ROUND_HALF_UP, Decimal
 from typing import Any
 
 from rate_shopper.domain.capture import BatchConfig
-from rate_shopper.domain.models import Offer, Platform
+from rate_shopper.domain.models import Offer, Platform, Scenario
 
 PRICE_SCOPES = {
     "all": "Все собранные цены",
     "regular": "Без Пэй и корпоративных",
     "public": "Только публичные",
 }
+
+
+def preliminary_scenario(offer: Offer) -> Scenario | None:
+    """Request-bound HTTP quotes are eligible only for exploratory comparisons.
+
+    The HTTP extractor sets this marker only after checking source identity, request
+    dates, occupancy, enabled payment and an explicit stay total. Strict matching
+    still requires observed_scenario and independent registration confirmation.
+    """
+    if offer.observed_scenario is not None:
+        return offer.observed_scenario
+    if (offer.platform == Platform.OSTROVOK
+            and offer.source_fragments.get("scenario_binding") == "api_request_response"):
+        return offer.url_scenario
+    return None
 
 
 def statistic_price(offer: Offer, scope: str) -> Decimal | None:
@@ -59,6 +74,8 @@ def preliminary_statistics(
             b = cheapest.get(platform)
             a_total = statistic_price(a, price_scope) if a else None
             b_total = statistic_price(b, price_scope) if b else None
+            a_scenario = preliminary_scenario(a) if a else None
+            b_scenario = preliminary_scenario(b) if b else None
             row: dict[str, Any] = {
                 "hotel_id": hotel.id, "platform": platform.value,
                 "reference_offer_id": a.id if a else None,
@@ -80,8 +97,8 @@ def preliminary_statistics(
                     "no_otello_price" if not a else "no_competitor_price"
                 )
                 row["missing_status"] = status
-            elif a.observed_scenario is None or b.observed_scenario is None or (
-                a.observed_scenario.signature() != b.observed_scenario.signature()
+            elif a_scenario is None or b_scenario is None or (
+                a_scenario.signature() != b_scenario.signature()
             ):
                 row["reason"] = "scenario_mismatch"
             elif hotel.mapping_notes.get(platform) or hotel.mapping_notes.get(Platform.OTELLO):
